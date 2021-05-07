@@ -1,0 +1,747 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.1">
+  <Nodes>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="113" y="29" width="779" height="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container - Initial Food Establishments Dimensions</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="1">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="138" y="89" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" FileFormat="23">aka:ChicagoFoodInspection|||select ChicagoFoodInspectionInitialLoad.[Inspection ID],
+	ChicagoFoodInspectionInitialLoad.[DBA Name],
+	ChicagoFoodInspectionInitialLoad.[AKA Name],
+	ChicagoFoodInspectionInitialLoad.[License #],
+	ChicagoFoodInspectionInitialLoad.[Facility Type],
+	ChicagoFoodInspectionInitialLoad.Risk,
+	ChicagoFoodInspectionInitialLoad.Address,
+	ChicagoFoodInspectionInitialLoad.City,
+	ChicagoFoodInspectionInitialLoad.State,
+	ChicagoFoodInspectionInitialLoad.Zip,
+	ChicagoFoodInspectionInitialLoad.[Inspection Date],
+	ChicagoFoodInspectionInitialLoad.[Inspection Type],
+	ChicagoFoodInspectionInitialLoad.Results,
+	ChicagoFoodInspectionInitialLoad.Violations,
+	ChicagoFoodInspectionInitialLoad.Latitude,
+	ChicagoFoodInspectionInitialLoad.Longitude,
+	ChicagoFoodInspectionInitialLoad.Location,
+	ChicagoFoodInspectionInitialLoad.InspectionDate_Out 
+from ChicagoFoodInspectionInitialLoad</File>
+              <FormatSpecificOptions>
+                <PreSQL />
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <NoProgress>True</NoProgress>
+                <CacheData>False</CacheData>
+                <TableStyle>Quoted</TableStyle>
+                <ReadUncommitted>False</ReadUncommitted>
+                <PostSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:ChicagoFoodInspection
+Query=select ChicagoFoodInspection...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Inspection ID" source="File: aka:ChicagoFoodInspection|||select ChicagoFoodInspectionInitialLoad.[Inspection ID],&#xA;	ChicagoFoodInspectionInitialLoad.[DBA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[AKA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[License #],&#xA;	ChicagoFoodInspectionInitialLoad.[Facility Type],&#xA;	ChicagoFoodInspectionInitialLoad.Risk,&#xA;	ChicagoFoodInspectionInitialLoad.Address,&#xA;	ChicagoFoodInspectionInitialLoad.City,&#xA;	ChicagoFoodInspectionInitialLoad.State,&#xA;	ChicagoFoodInspectionInitialLoad.Zip,&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Date],&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Type],&#xA;	ChicagoFoodInspectionInitialLoad.Results,&#xA;	ChicagoFoodInspectionInitialLoad.Violations,&#xA;	ChicagoFoodInspectionInitialLoad.Latitude,&#xA;	ChicagoFoodInspectionInitialLoad.Longitude,&#xA;	ChicagoFoodInspectionInitialLoad.Location,&#xA;	ChicagoFoodInspectionInitialLoad.InspectionDate_Out &#xA;from ChicagoFoodInspectionInitialLoad" type="Int32" />
+                <Field name="DBA Name" size="79" source="File: aka:ChicagoFoodInspection|||select ChicagoFoodInspectionInitialLoad.[Inspection ID],&#xA;	ChicagoFoodInspectionInitialLoad.[DBA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[AKA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[License #],&#xA;	ChicagoFoodInspectionInitialLoad.[Facility Type],&#xA;	ChicagoFoodInspectionInitialLoad.Risk,&#xA;	ChicagoFoodInspectionInitialLoad.Address,&#xA;	ChicagoFoodInspectionInitialLoad.City,&#xA;	ChicagoFoodInspectionInitialLoad.State,&#xA;	ChicagoFoodInspectionInitialLoad.Zip,&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Date],&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Type],&#xA;	ChicagoFoodInspectionInitialLoad.Results,&#xA;	ChicagoFoodInspectionInitialLoad.Violations,&#xA;	ChicagoFoodInspectionInitialLoad.Latitude,&#xA;	ChicagoFoodInspectionInitialLoad.Longitude,&#xA;	ChicagoFoodInspectionInitialLoad.Location,&#xA;	ChicagoFoodInspectionInitialLoad.InspectionDate_Out &#xA;from ChicagoFoodInspectionInitialLoad" type="V_String" />
+                <Field name="AKA Name" size="79" source="File: aka:ChicagoFoodInspection|||select ChicagoFoodInspectionInitialLoad.[Inspection ID],&#xA;	ChicagoFoodInspectionInitialLoad.[DBA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[AKA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[License #],&#xA;	ChicagoFoodInspectionInitialLoad.[Facility Type],&#xA;	ChicagoFoodInspectionInitialLoad.Risk,&#xA;	ChicagoFoodInspectionInitialLoad.Address,&#xA;	ChicagoFoodInspectionInitialLoad.City,&#xA;	ChicagoFoodInspectionInitialLoad.State,&#xA;	ChicagoFoodInspectionInitialLoad.Zip,&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Date],&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Type],&#xA;	ChicagoFoodInspectionInitialLoad.Results,&#xA;	ChicagoFoodInspectionInitialLoad.Violations,&#xA;	ChicagoFoodInspectionInitialLoad.Latitude,&#xA;	ChicagoFoodInspectionInitialLoad.Longitude,&#xA;	ChicagoFoodInspectionInitialLoad.Location,&#xA;	ChicagoFoodInspectionInitialLoad.InspectionDate_Out &#xA;from ChicagoFoodInspectionInitialLoad" type="V_String" />
+                <Field name="License #" source="File: aka:ChicagoFoodInspection|||select ChicagoFoodInspectionInitialLoad.[Inspection ID],&#xA;	ChicagoFoodInspectionInitialLoad.[DBA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[AKA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[License #],&#xA;	ChicagoFoodInspectionInitialLoad.[Facility Type],&#xA;	ChicagoFoodInspectionInitialLoad.Risk,&#xA;	ChicagoFoodInspectionInitialLoad.Address,&#xA;	ChicagoFoodInspectionInitialLoad.City,&#xA;	ChicagoFoodInspectionInitialLoad.State,&#xA;	ChicagoFoodInspectionInitialLoad.Zip,&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Date],&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Type],&#xA;	ChicagoFoodInspectionInitialLoad.Results,&#xA;	ChicagoFoodInspectionInitialLoad.Violations,&#xA;	ChicagoFoodInspectionInitialLoad.Latitude,&#xA;	ChicagoFoodInspectionInitialLoad.Longitude,&#xA;	ChicagoFoodInspectionInitialLoad.Location,&#xA;	ChicagoFoodInspectionInitialLoad.InspectionDate_Out &#xA;from ChicagoFoodInspectionInitialLoad" type="Int32" />
+                <Field name="Facility Type" size="47" source="File: aka:ChicagoFoodInspection|||select ChicagoFoodInspectionInitialLoad.[Inspection ID],&#xA;	ChicagoFoodInspectionInitialLoad.[DBA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[AKA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[License #],&#xA;	ChicagoFoodInspectionInitialLoad.[Facility Type],&#xA;	ChicagoFoodInspectionInitialLoad.Risk,&#xA;	ChicagoFoodInspectionInitialLoad.Address,&#xA;	ChicagoFoodInspectionInitialLoad.City,&#xA;	ChicagoFoodInspectionInitialLoad.State,&#xA;	ChicagoFoodInspectionInitialLoad.Zip,&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Date],&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Type],&#xA;	ChicagoFoodInspectionInitialLoad.Results,&#xA;	ChicagoFoodInspectionInitialLoad.Violations,&#xA;	ChicagoFoodInspectionInitialLoad.Latitude,&#xA;	ChicagoFoodInspectionInitialLoad.Longitude,&#xA;	ChicagoFoodInspectionInitialLoad.Location,&#xA;	ChicagoFoodInspectionInitialLoad.InspectionDate_Out &#xA;from ChicagoFoodInspectionInitialLoad" type="V_String" />
+                <Field name="Risk" size="15" source="File: aka:ChicagoFoodInspection|||select ChicagoFoodInspectionInitialLoad.[Inspection ID],&#xA;	ChicagoFoodInspectionInitialLoad.[DBA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[AKA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[License #],&#xA;	ChicagoFoodInspectionInitialLoad.[Facility Type],&#xA;	ChicagoFoodInspectionInitialLoad.Risk,&#xA;	ChicagoFoodInspectionInitialLoad.Address,&#xA;	ChicagoFoodInspectionInitialLoad.City,&#xA;	ChicagoFoodInspectionInitialLoad.State,&#xA;	ChicagoFoodInspectionInitialLoad.Zip,&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Date],&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Type],&#xA;	ChicagoFoodInspectionInitialLoad.Results,&#xA;	ChicagoFoodInspectionInitialLoad.Violations,&#xA;	ChicagoFoodInspectionInitialLoad.Latitude,&#xA;	ChicagoFoodInspectionInitialLoad.Longitude,&#xA;	ChicagoFoodInspectionInitialLoad.Location,&#xA;	ChicagoFoodInspectionInitialLoad.InspectionDate_Out &#xA;from ChicagoFoodInspectionInitialLoad" type="String" />
+                <Field name="Address" size="39" source="File: aka:ChicagoFoodInspection|||select ChicagoFoodInspectionInitialLoad.[Inspection ID],&#xA;	ChicagoFoodInspectionInitialLoad.[DBA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[AKA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[License #],&#xA;	ChicagoFoodInspectionInitialLoad.[Facility Type],&#xA;	ChicagoFoodInspectionInitialLoad.Risk,&#xA;	ChicagoFoodInspectionInitialLoad.Address,&#xA;	ChicagoFoodInspectionInitialLoad.City,&#xA;	ChicagoFoodInspectionInitialLoad.State,&#xA;	ChicagoFoodInspectionInitialLoad.Zip,&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Date],&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Type],&#xA;	ChicagoFoodInspectionInitialLoad.Results,&#xA;	ChicagoFoodInspectionInitialLoad.Violations,&#xA;	ChicagoFoodInspectionInitialLoad.Latitude,&#xA;	ChicagoFoodInspectionInitialLoad.Longitude,&#xA;	ChicagoFoodInspectionInitialLoad.Location,&#xA;	ChicagoFoodInspectionInitialLoad.InspectionDate_Out &#xA;from ChicagoFoodInspectionInitialLoad" type="V_String" />
+                <Field name="City" size="20" source="File: aka:ChicagoFoodInspection|||select ChicagoFoodInspectionInitialLoad.[Inspection ID],&#xA;	ChicagoFoodInspectionInitialLoad.[DBA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[AKA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[License #],&#xA;	ChicagoFoodInspectionInitialLoad.[Facility Type],&#xA;	ChicagoFoodInspectionInitialLoad.Risk,&#xA;	ChicagoFoodInspectionInitialLoad.Address,&#xA;	ChicagoFoodInspectionInitialLoad.City,&#xA;	ChicagoFoodInspectionInitialLoad.State,&#xA;	ChicagoFoodInspectionInitialLoad.Zip,&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Date],&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Type],&#xA;	ChicagoFoodInspectionInitialLoad.Results,&#xA;	ChicagoFoodInspectionInitialLoad.Violations,&#xA;	ChicagoFoodInspectionInitialLoad.Latitude,&#xA;	ChicagoFoodInspectionInitialLoad.Longitude,&#xA;	ChicagoFoodInspectionInitialLoad.Location,&#xA;	ChicagoFoodInspectionInitialLoad.InspectionDate_Out &#xA;from ChicagoFoodInspectionInitialLoad" type="V_String" />
+                <Field name="State" size="2" source="File: aka:ChicagoFoodInspection|||select ChicagoFoodInspectionInitialLoad.[Inspection ID],&#xA;	ChicagoFoodInspectionInitialLoad.[DBA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[AKA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[License #],&#xA;	ChicagoFoodInspectionInitialLoad.[Facility Type],&#xA;	ChicagoFoodInspectionInitialLoad.Risk,&#xA;	ChicagoFoodInspectionInitialLoad.Address,&#xA;	ChicagoFoodInspectionInitialLoad.City,&#xA;	ChicagoFoodInspectionInitialLoad.State,&#xA;	ChicagoFoodInspectionInitialLoad.Zip,&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Date],&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Type],&#xA;	ChicagoFoodInspectionInitialLoad.Results,&#xA;	ChicagoFoodInspectionInitialLoad.Violations,&#xA;	ChicagoFoodInspectionInitialLoad.Latitude,&#xA;	ChicagoFoodInspectionInitialLoad.Longitude,&#xA;	ChicagoFoodInspectionInitialLoad.Location,&#xA;	ChicagoFoodInspectionInitialLoad.InspectionDate_Out &#xA;from ChicagoFoodInspectionInitialLoad" type="String" />
+                <Field name="Zip" source="File: aka:ChicagoFoodInspection|||select ChicagoFoodInspectionInitialLoad.[Inspection ID],&#xA;	ChicagoFoodInspectionInitialLoad.[DBA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[AKA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[License #],&#xA;	ChicagoFoodInspectionInitialLoad.[Facility Type],&#xA;	ChicagoFoodInspectionInitialLoad.Risk,&#xA;	ChicagoFoodInspectionInitialLoad.Address,&#xA;	ChicagoFoodInspectionInitialLoad.City,&#xA;	ChicagoFoodInspectionInitialLoad.State,&#xA;	ChicagoFoodInspectionInitialLoad.Zip,&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Date],&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Type],&#xA;	ChicagoFoodInspectionInitialLoad.Results,&#xA;	ChicagoFoodInspectionInitialLoad.Violations,&#xA;	ChicagoFoodInspectionInitialLoad.Latitude,&#xA;	ChicagoFoodInspectionInitialLoad.Longitude,&#xA;	ChicagoFoodInspectionInitialLoad.Location,&#xA;	ChicagoFoodInspectionInitialLoad.InspectionDate_Out &#xA;from ChicagoFoodInspectionInitialLoad" type="Int32" />
+                <Field name="Inspection Date" size="10" source="File: aka:ChicagoFoodInspection|||select ChicagoFoodInspectionInitialLoad.[Inspection ID],&#xA;	ChicagoFoodInspectionInitialLoad.[DBA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[AKA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[License #],&#xA;	ChicagoFoodInspectionInitialLoad.[Facility Type],&#xA;	ChicagoFoodInspectionInitialLoad.Risk,&#xA;	ChicagoFoodInspectionInitialLoad.Address,&#xA;	ChicagoFoodInspectionInitialLoad.City,&#xA;	ChicagoFoodInspectionInitialLoad.State,&#xA;	ChicagoFoodInspectionInitialLoad.Zip,&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Date],&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Type],&#xA;	ChicagoFoodInspectionInitialLoad.Results,&#xA;	ChicagoFoodInspectionInitialLoad.Violations,&#xA;	ChicagoFoodInspectionInitialLoad.Latitude,&#xA;	ChicagoFoodInspectionInitialLoad.Longitude,&#xA;	ChicagoFoodInspectionInitialLoad.Location,&#xA;	ChicagoFoodInspectionInitialLoad.InspectionDate_Out &#xA;from ChicagoFoodInspectionInitialLoad" type="String" />
+                <Field name="Inspection Type" size="41" source="File: aka:ChicagoFoodInspection|||select ChicagoFoodInspectionInitialLoad.[Inspection ID],&#xA;	ChicagoFoodInspectionInitialLoad.[DBA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[AKA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[License #],&#xA;	ChicagoFoodInspectionInitialLoad.[Facility Type],&#xA;	ChicagoFoodInspectionInitialLoad.Risk,&#xA;	ChicagoFoodInspectionInitialLoad.Address,&#xA;	ChicagoFoodInspectionInitialLoad.City,&#xA;	ChicagoFoodInspectionInitialLoad.State,&#xA;	ChicagoFoodInspectionInitialLoad.Zip,&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Date],&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Type],&#xA;	ChicagoFoodInspectionInitialLoad.Results,&#xA;	ChicagoFoodInspectionInitialLoad.Violations,&#xA;	ChicagoFoodInspectionInitialLoad.Latitude,&#xA;	ChicagoFoodInspectionInitialLoad.Longitude,&#xA;	ChicagoFoodInspectionInitialLoad.Location,&#xA;	ChicagoFoodInspectionInitialLoad.InspectionDate_Out &#xA;from ChicagoFoodInspectionInitialLoad" type="V_String" />
+                <Field name="Results" size="20" source="File: aka:ChicagoFoodInspection|||select ChicagoFoodInspectionInitialLoad.[Inspection ID],&#xA;	ChicagoFoodInspectionInitialLoad.[DBA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[AKA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[License #],&#xA;	ChicagoFoodInspectionInitialLoad.[Facility Type],&#xA;	ChicagoFoodInspectionInitialLoad.Risk,&#xA;	ChicagoFoodInspectionInitialLoad.Address,&#xA;	ChicagoFoodInspectionInitialLoad.City,&#xA;	ChicagoFoodInspectionInitialLoad.State,&#xA;	ChicagoFoodInspectionInitialLoad.Zip,&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Date],&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Type],&#xA;	ChicagoFoodInspectionInitialLoad.Results,&#xA;	ChicagoFoodInspectionInitialLoad.Violations,&#xA;	ChicagoFoodInspectionInitialLoad.Latitude,&#xA;	ChicagoFoodInspectionInitialLoad.Longitude,&#xA;	ChicagoFoodInspectionInitialLoad.Location,&#xA;	ChicagoFoodInspectionInitialLoad.InspectionDate_Out &#xA;from ChicagoFoodInspectionInitialLoad" type="V_String" />
+                <Field name="Violations" size="16777216" source="File: aka:ChicagoFoodInspection|||select ChicagoFoodInspectionInitialLoad.[Inspection ID],&#xA;	ChicagoFoodInspectionInitialLoad.[DBA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[AKA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[License #],&#xA;	ChicagoFoodInspectionInitialLoad.[Facility Type],&#xA;	ChicagoFoodInspectionInitialLoad.Risk,&#xA;	ChicagoFoodInspectionInitialLoad.Address,&#xA;	ChicagoFoodInspectionInitialLoad.City,&#xA;	ChicagoFoodInspectionInitialLoad.State,&#xA;	ChicagoFoodInspectionInitialLoad.Zip,&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Date],&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Type],&#xA;	ChicagoFoodInspectionInitialLoad.Results,&#xA;	ChicagoFoodInspectionInitialLoad.Violations,&#xA;	ChicagoFoodInspectionInitialLoad.Latitude,&#xA;	ChicagoFoodInspectionInitialLoad.Longitude,&#xA;	ChicagoFoodInspectionInitialLoad.Location,&#xA;	ChicagoFoodInspectionInitialLoad.InspectionDate_Out &#xA;from ChicagoFoodInspectionInitialLoad" type="V_String" />
+                <Field name="Latitude" size="18" source="File: aka:ChicagoFoodInspection|||select ChicagoFoodInspectionInitialLoad.[Inspection ID],&#xA;	ChicagoFoodInspectionInitialLoad.[DBA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[AKA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[License #],&#xA;	ChicagoFoodInspectionInitialLoad.[Facility Type],&#xA;	ChicagoFoodInspectionInitialLoad.Risk,&#xA;	ChicagoFoodInspectionInitialLoad.Address,&#xA;	ChicagoFoodInspectionInitialLoad.City,&#xA;	ChicagoFoodInspectionInitialLoad.State,&#xA;	ChicagoFoodInspectionInitialLoad.Zip,&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Date],&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Type],&#xA;	ChicagoFoodInspectionInitialLoad.Results,&#xA;	ChicagoFoodInspectionInitialLoad.Violations,&#xA;	ChicagoFoodInspectionInitialLoad.Latitude,&#xA;	ChicagoFoodInspectionInitialLoad.Longitude,&#xA;	ChicagoFoodInspectionInitialLoad.Location,&#xA;	ChicagoFoodInspectionInitialLoad.InspectionDate_Out &#xA;from ChicagoFoodInspectionInitialLoad" type="String" />
+                <Field name="Longitude" size="18" source="File: aka:ChicagoFoodInspection|||select ChicagoFoodInspectionInitialLoad.[Inspection ID],&#xA;	ChicagoFoodInspectionInitialLoad.[DBA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[AKA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[License #],&#xA;	ChicagoFoodInspectionInitialLoad.[Facility Type],&#xA;	ChicagoFoodInspectionInitialLoad.Risk,&#xA;	ChicagoFoodInspectionInitialLoad.Address,&#xA;	ChicagoFoodInspectionInitialLoad.City,&#xA;	ChicagoFoodInspectionInitialLoad.State,&#xA;	ChicagoFoodInspectionInitialLoad.Zip,&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Date],&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Type],&#xA;	ChicagoFoodInspectionInitialLoad.Results,&#xA;	ChicagoFoodInspectionInitialLoad.Violations,&#xA;	ChicagoFoodInspectionInitialLoad.Latitude,&#xA;	ChicagoFoodInspectionInitialLoad.Longitude,&#xA;	ChicagoFoodInspectionInitialLoad.Location,&#xA;	ChicagoFoodInspectionInitialLoad.InspectionDate_Out &#xA;from ChicagoFoodInspectionInitialLoad" type="String" />
+                <Field name="Location" size="40" source="File: aka:ChicagoFoodInspection|||select ChicagoFoodInspectionInitialLoad.[Inspection ID],&#xA;	ChicagoFoodInspectionInitialLoad.[DBA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[AKA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[License #],&#xA;	ChicagoFoodInspectionInitialLoad.[Facility Type],&#xA;	ChicagoFoodInspectionInitialLoad.Risk,&#xA;	ChicagoFoodInspectionInitialLoad.Address,&#xA;	ChicagoFoodInspectionInitialLoad.City,&#xA;	ChicagoFoodInspectionInitialLoad.State,&#xA;	ChicagoFoodInspectionInitialLoad.Zip,&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Date],&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Type],&#xA;	ChicagoFoodInspectionInitialLoad.Results,&#xA;	ChicagoFoodInspectionInitialLoad.Violations,&#xA;	ChicagoFoodInspectionInitialLoad.Latitude,&#xA;	ChicagoFoodInspectionInitialLoad.Longitude,&#xA;	ChicagoFoodInspectionInitialLoad.Location,&#xA;	ChicagoFoodInspectionInitialLoad.InspectionDate_Out &#xA;from ChicagoFoodInspectionInitialLoad" type="String" />
+                <Field name="InspectionDate_Out" source="File: aka:ChicagoFoodInspection|||select ChicagoFoodInspectionInitialLoad.[Inspection ID],&#xA;	ChicagoFoodInspectionInitialLoad.[DBA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[AKA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[License #],&#xA;	ChicagoFoodInspectionInitialLoad.[Facility Type],&#xA;	ChicagoFoodInspectionInitialLoad.Risk,&#xA;	ChicagoFoodInspectionInitialLoad.Address,&#xA;	ChicagoFoodInspectionInitialLoad.City,&#xA;	ChicagoFoodInspectionInitialLoad.State,&#xA;	ChicagoFoodInspectionInitialLoad.Zip,&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Date],&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Type],&#xA;	ChicagoFoodInspectionInitialLoad.Results,&#xA;	ChicagoFoodInspectionInitialLoad.Violations,&#xA;	ChicagoFoodInspectionInitialLoad.Latitude,&#xA;	ChicagoFoodInspectionInitialLoad.Longitude,&#xA;	ChicagoFoodInspectionInitialLoad.Location,&#xA;	ChicagoFoodInspectionInitialLoad.InspectionDate_Out &#xA;from ChicagoFoodInspectionInitialLoad" type="Date" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="2">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="270" y="89" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Inspection ID" selected="True" />
+                <SelectField field="DBA Name" selected="True" />
+                <SelectField field="AKA Name" selected="True" />
+                <SelectField field="License #" selected="True" />
+                <SelectField field="Facility Type" selected="True" />
+                <SelectField field="Risk" selected="True" />
+                <SelectField field="Address" selected="True" />
+                <SelectField field="City" selected="True" />
+                <SelectField field="State" selected="True" />
+                <SelectField field="Zip" selected="True" />
+                <SelectField field="Inspection Date" selected="True" />
+                <SelectField field="Inspection Type" selected="True" />
+                <SelectField field="Results" selected="True" />
+                <SelectField field="Violations" selected="True" />
+                <SelectField field="Latitude" selected="True" />
+                <SelectField field="Longitude" selected="True" />
+                <SelectField field="Location" selected="True" />
+                <SelectField field="InspectionDate_Out" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="3">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+            <Position x="390" y="90" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UniqueFields>
+                <Field field="Inspection ID" />
+              </UniqueFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+        </Node>
+        <Node ToolID="4">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+            <Position x="486" y="78" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldName>RecordID</FieldName>
+              <StartValue>1</StartValue>
+              <FieldType>Int32</FieldType>
+              <FieldSize>6</FieldSize>
+              <Position>0</Position>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+        </Node>
+        <Node ToolID="5">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="618" y="78" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="DateTimeNow()" field="DI_CreateDate" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[DI_CreateDate = DateTimeNow()
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="6">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="762" y="78" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="23">aka:ChicagoFoodInspection|||Dim_FoodEstablishments</File>
+              <Passwords />
+              <CachedCosmeticName />
+              <FormatSpecificOptions>
+                <TransactionSize>10000</TransactionSize>
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <PostSQL />
+                <TableStyle>Quoted</TableStyle>
+                <PreSQL />
+                <TransactionMessages>False</TransactionMessages>
+                <OutputOption>Create</OutputOption>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:ChicagoFoodInspection
+Query=Dim_FoodEstablishments</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="113" y="293" width="779" height="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container - Food Establishments Dimensions without license &amp; risk Category</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="8">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="138" y="353" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <CachedCosmeticName />
+              <File RecordLimit="" FileFormat="23">aka:ChicagoFoodInspection|||select ChicagoFoodInspectionInitialLoad.[Inspection ID],
+	ChicagoFoodInspectionInitialLoad.[DBA Name],
+	ChicagoFoodInspectionInitialLoad.[AKA Name],
+	ChicagoFoodInspectionInitialLoad.[License #],
+	ChicagoFoodInspectionInitialLoad.[Facility Type],
+	ChicagoFoodInspectionInitialLoad.Risk,
+	ChicagoFoodInspectionInitialLoad.Address,
+	ChicagoFoodInspectionInitialLoad.City,
+	ChicagoFoodInspectionInitialLoad.State,
+	ChicagoFoodInspectionInitialLoad.Zip,
+	ChicagoFoodInspectionInitialLoad.[Inspection Date],
+	ChicagoFoodInspectionInitialLoad.[Inspection Type],
+	ChicagoFoodInspectionInitialLoad.Results,
+	ChicagoFoodInspectionInitialLoad.Violations,
+	ChicagoFoodInspectionInitialLoad.Latitude,
+	ChicagoFoodInspectionInitialLoad.Longitude,
+	ChicagoFoodInspectionInitialLoad.Location,
+	ChicagoFoodInspectionInitialLoad.InspectionDate_Out 
+from ChicagoFoodInspectionInitialLoad</File>
+              <FormatSpecificOptions>
+                <PreSQL />
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <NoProgress>True</NoProgress>
+                <CacheData>False</CacheData>
+                <TableStyle>Quoted</TableStyle>
+                <ReadUncommitted>False</ReadUncommitted>
+                <PostSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:ChicagoFoodInspection
+Query=select ChicagoFoodInspection...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Inspection ID" source="File: aka:ChicagoFoodInspection|||select ChicagoFoodInspectionInitialLoad.[Inspection ID],&#xA;	ChicagoFoodInspectionInitialLoad.[DBA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[AKA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[License #],&#xA;	ChicagoFoodInspectionInitialLoad.[Facility Type],&#xA;	ChicagoFoodInspectionInitialLoad.Risk,&#xA;	ChicagoFoodInspectionInitialLoad.Address,&#xA;	ChicagoFoodInspectionInitialLoad.City,&#xA;	ChicagoFoodInspectionInitialLoad.State,&#xA;	ChicagoFoodInspectionInitialLoad.Zip,&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Date],&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Type],&#xA;	ChicagoFoodInspectionInitialLoad.Results,&#xA;	ChicagoFoodInspectionInitialLoad.Violations,&#xA;	ChicagoFoodInspectionInitialLoad.Latitude,&#xA;	ChicagoFoodInspectionInitialLoad.Longitude,&#xA;	ChicagoFoodInspectionInitialLoad.Location,&#xA;	ChicagoFoodInspectionInitialLoad.InspectionDate_Out &#xA;from ChicagoFoodInspectionInitialLoad" type="Int32" />
+                <Field name="DBA Name" size="79" source="File: aka:ChicagoFoodInspection|||select ChicagoFoodInspectionInitialLoad.[Inspection ID],&#xA;	ChicagoFoodInspectionInitialLoad.[DBA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[AKA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[License #],&#xA;	ChicagoFoodInspectionInitialLoad.[Facility Type],&#xA;	ChicagoFoodInspectionInitialLoad.Risk,&#xA;	ChicagoFoodInspectionInitialLoad.Address,&#xA;	ChicagoFoodInspectionInitialLoad.City,&#xA;	ChicagoFoodInspectionInitialLoad.State,&#xA;	ChicagoFoodInspectionInitialLoad.Zip,&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Date],&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Type],&#xA;	ChicagoFoodInspectionInitialLoad.Results,&#xA;	ChicagoFoodInspectionInitialLoad.Violations,&#xA;	ChicagoFoodInspectionInitialLoad.Latitude,&#xA;	ChicagoFoodInspectionInitialLoad.Longitude,&#xA;	ChicagoFoodInspectionInitialLoad.Location,&#xA;	ChicagoFoodInspectionInitialLoad.InspectionDate_Out &#xA;from ChicagoFoodInspectionInitialLoad" type="V_String" />
+                <Field name="AKA Name" size="79" source="File: aka:ChicagoFoodInspection|||select ChicagoFoodInspectionInitialLoad.[Inspection ID],&#xA;	ChicagoFoodInspectionInitialLoad.[DBA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[AKA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[License #],&#xA;	ChicagoFoodInspectionInitialLoad.[Facility Type],&#xA;	ChicagoFoodInspectionInitialLoad.Risk,&#xA;	ChicagoFoodInspectionInitialLoad.Address,&#xA;	ChicagoFoodInspectionInitialLoad.City,&#xA;	ChicagoFoodInspectionInitialLoad.State,&#xA;	ChicagoFoodInspectionInitialLoad.Zip,&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Date],&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Type],&#xA;	ChicagoFoodInspectionInitialLoad.Results,&#xA;	ChicagoFoodInspectionInitialLoad.Violations,&#xA;	ChicagoFoodInspectionInitialLoad.Latitude,&#xA;	ChicagoFoodInspectionInitialLoad.Longitude,&#xA;	ChicagoFoodInspectionInitialLoad.Location,&#xA;	ChicagoFoodInspectionInitialLoad.InspectionDate_Out &#xA;from ChicagoFoodInspectionInitialLoad" type="V_String" />
+                <Field name="License #" source="File: aka:ChicagoFoodInspection|||select ChicagoFoodInspectionInitialLoad.[Inspection ID],&#xA;	ChicagoFoodInspectionInitialLoad.[DBA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[AKA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[License #],&#xA;	ChicagoFoodInspectionInitialLoad.[Facility Type],&#xA;	ChicagoFoodInspectionInitialLoad.Risk,&#xA;	ChicagoFoodInspectionInitialLoad.Address,&#xA;	ChicagoFoodInspectionInitialLoad.City,&#xA;	ChicagoFoodInspectionInitialLoad.State,&#xA;	ChicagoFoodInspectionInitialLoad.Zip,&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Date],&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Type],&#xA;	ChicagoFoodInspectionInitialLoad.Results,&#xA;	ChicagoFoodInspectionInitialLoad.Violations,&#xA;	ChicagoFoodInspectionInitialLoad.Latitude,&#xA;	ChicagoFoodInspectionInitialLoad.Longitude,&#xA;	ChicagoFoodInspectionInitialLoad.Location,&#xA;	ChicagoFoodInspectionInitialLoad.InspectionDate_Out &#xA;from ChicagoFoodInspectionInitialLoad" type="Int32" />
+                <Field name="Facility Type" size="47" source="File: aka:ChicagoFoodInspection|||select ChicagoFoodInspectionInitialLoad.[Inspection ID],&#xA;	ChicagoFoodInspectionInitialLoad.[DBA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[AKA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[License #],&#xA;	ChicagoFoodInspectionInitialLoad.[Facility Type],&#xA;	ChicagoFoodInspectionInitialLoad.Risk,&#xA;	ChicagoFoodInspectionInitialLoad.Address,&#xA;	ChicagoFoodInspectionInitialLoad.City,&#xA;	ChicagoFoodInspectionInitialLoad.State,&#xA;	ChicagoFoodInspectionInitialLoad.Zip,&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Date],&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Type],&#xA;	ChicagoFoodInspectionInitialLoad.Results,&#xA;	ChicagoFoodInspectionInitialLoad.Violations,&#xA;	ChicagoFoodInspectionInitialLoad.Latitude,&#xA;	ChicagoFoodInspectionInitialLoad.Longitude,&#xA;	ChicagoFoodInspectionInitialLoad.Location,&#xA;	ChicagoFoodInspectionInitialLoad.InspectionDate_Out &#xA;from ChicagoFoodInspectionInitialLoad" type="V_String" />
+                <Field name="Risk" size="15" source="File: aka:ChicagoFoodInspection|||select ChicagoFoodInspectionInitialLoad.[Inspection ID],&#xA;	ChicagoFoodInspectionInitialLoad.[DBA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[AKA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[License #],&#xA;	ChicagoFoodInspectionInitialLoad.[Facility Type],&#xA;	ChicagoFoodInspectionInitialLoad.Risk,&#xA;	ChicagoFoodInspectionInitialLoad.Address,&#xA;	ChicagoFoodInspectionInitialLoad.City,&#xA;	ChicagoFoodInspectionInitialLoad.State,&#xA;	ChicagoFoodInspectionInitialLoad.Zip,&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Date],&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Type],&#xA;	ChicagoFoodInspectionInitialLoad.Results,&#xA;	ChicagoFoodInspectionInitialLoad.Violations,&#xA;	ChicagoFoodInspectionInitialLoad.Latitude,&#xA;	ChicagoFoodInspectionInitialLoad.Longitude,&#xA;	ChicagoFoodInspectionInitialLoad.Location,&#xA;	ChicagoFoodInspectionInitialLoad.InspectionDate_Out &#xA;from ChicagoFoodInspectionInitialLoad" type="String" />
+                <Field name="Address" size="39" source="File: aka:ChicagoFoodInspection|||select ChicagoFoodInspectionInitialLoad.[Inspection ID],&#xA;	ChicagoFoodInspectionInitialLoad.[DBA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[AKA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[License #],&#xA;	ChicagoFoodInspectionInitialLoad.[Facility Type],&#xA;	ChicagoFoodInspectionInitialLoad.Risk,&#xA;	ChicagoFoodInspectionInitialLoad.Address,&#xA;	ChicagoFoodInspectionInitialLoad.City,&#xA;	ChicagoFoodInspectionInitialLoad.State,&#xA;	ChicagoFoodInspectionInitialLoad.Zip,&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Date],&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Type],&#xA;	ChicagoFoodInspectionInitialLoad.Results,&#xA;	ChicagoFoodInspectionInitialLoad.Violations,&#xA;	ChicagoFoodInspectionInitialLoad.Latitude,&#xA;	ChicagoFoodInspectionInitialLoad.Longitude,&#xA;	ChicagoFoodInspectionInitialLoad.Location,&#xA;	ChicagoFoodInspectionInitialLoad.InspectionDate_Out &#xA;from ChicagoFoodInspectionInitialLoad" type="V_String" />
+                <Field name="City" size="20" source="File: aka:ChicagoFoodInspection|||select ChicagoFoodInspectionInitialLoad.[Inspection ID],&#xA;	ChicagoFoodInspectionInitialLoad.[DBA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[AKA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[License #],&#xA;	ChicagoFoodInspectionInitialLoad.[Facility Type],&#xA;	ChicagoFoodInspectionInitialLoad.Risk,&#xA;	ChicagoFoodInspectionInitialLoad.Address,&#xA;	ChicagoFoodInspectionInitialLoad.City,&#xA;	ChicagoFoodInspectionInitialLoad.State,&#xA;	ChicagoFoodInspectionInitialLoad.Zip,&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Date],&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Type],&#xA;	ChicagoFoodInspectionInitialLoad.Results,&#xA;	ChicagoFoodInspectionInitialLoad.Violations,&#xA;	ChicagoFoodInspectionInitialLoad.Latitude,&#xA;	ChicagoFoodInspectionInitialLoad.Longitude,&#xA;	ChicagoFoodInspectionInitialLoad.Location,&#xA;	ChicagoFoodInspectionInitialLoad.InspectionDate_Out &#xA;from ChicagoFoodInspectionInitialLoad" type="V_String" />
+                <Field name="State" size="2" source="File: aka:ChicagoFoodInspection|||select ChicagoFoodInspectionInitialLoad.[Inspection ID],&#xA;	ChicagoFoodInspectionInitialLoad.[DBA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[AKA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[License #],&#xA;	ChicagoFoodInspectionInitialLoad.[Facility Type],&#xA;	ChicagoFoodInspectionInitialLoad.Risk,&#xA;	ChicagoFoodInspectionInitialLoad.Address,&#xA;	ChicagoFoodInspectionInitialLoad.City,&#xA;	ChicagoFoodInspectionInitialLoad.State,&#xA;	ChicagoFoodInspectionInitialLoad.Zip,&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Date],&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Type],&#xA;	ChicagoFoodInspectionInitialLoad.Results,&#xA;	ChicagoFoodInspectionInitialLoad.Violations,&#xA;	ChicagoFoodInspectionInitialLoad.Latitude,&#xA;	ChicagoFoodInspectionInitialLoad.Longitude,&#xA;	ChicagoFoodInspectionInitialLoad.Location,&#xA;	ChicagoFoodInspectionInitialLoad.InspectionDate_Out &#xA;from ChicagoFoodInspectionInitialLoad" type="String" />
+                <Field name="Zip" source="File: aka:ChicagoFoodInspection|||select ChicagoFoodInspectionInitialLoad.[Inspection ID],&#xA;	ChicagoFoodInspectionInitialLoad.[DBA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[AKA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[License #],&#xA;	ChicagoFoodInspectionInitialLoad.[Facility Type],&#xA;	ChicagoFoodInspectionInitialLoad.Risk,&#xA;	ChicagoFoodInspectionInitialLoad.Address,&#xA;	ChicagoFoodInspectionInitialLoad.City,&#xA;	ChicagoFoodInspectionInitialLoad.State,&#xA;	ChicagoFoodInspectionInitialLoad.Zip,&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Date],&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Type],&#xA;	ChicagoFoodInspectionInitialLoad.Results,&#xA;	ChicagoFoodInspectionInitialLoad.Violations,&#xA;	ChicagoFoodInspectionInitialLoad.Latitude,&#xA;	ChicagoFoodInspectionInitialLoad.Longitude,&#xA;	ChicagoFoodInspectionInitialLoad.Location,&#xA;	ChicagoFoodInspectionInitialLoad.InspectionDate_Out &#xA;from ChicagoFoodInspectionInitialLoad" type="Int32" />
+                <Field name="Inspection Date" size="10" source="File: aka:ChicagoFoodInspection|||select ChicagoFoodInspectionInitialLoad.[Inspection ID],&#xA;	ChicagoFoodInspectionInitialLoad.[DBA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[AKA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[License #],&#xA;	ChicagoFoodInspectionInitialLoad.[Facility Type],&#xA;	ChicagoFoodInspectionInitialLoad.Risk,&#xA;	ChicagoFoodInspectionInitialLoad.Address,&#xA;	ChicagoFoodInspectionInitialLoad.City,&#xA;	ChicagoFoodInspectionInitialLoad.State,&#xA;	ChicagoFoodInspectionInitialLoad.Zip,&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Date],&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Type],&#xA;	ChicagoFoodInspectionInitialLoad.Results,&#xA;	ChicagoFoodInspectionInitialLoad.Violations,&#xA;	ChicagoFoodInspectionInitialLoad.Latitude,&#xA;	ChicagoFoodInspectionInitialLoad.Longitude,&#xA;	ChicagoFoodInspectionInitialLoad.Location,&#xA;	ChicagoFoodInspectionInitialLoad.InspectionDate_Out &#xA;from ChicagoFoodInspectionInitialLoad" type="String" />
+                <Field name="Inspection Type" size="41" source="File: aka:ChicagoFoodInspection|||select ChicagoFoodInspectionInitialLoad.[Inspection ID],&#xA;	ChicagoFoodInspectionInitialLoad.[DBA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[AKA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[License #],&#xA;	ChicagoFoodInspectionInitialLoad.[Facility Type],&#xA;	ChicagoFoodInspectionInitialLoad.Risk,&#xA;	ChicagoFoodInspectionInitialLoad.Address,&#xA;	ChicagoFoodInspectionInitialLoad.City,&#xA;	ChicagoFoodInspectionInitialLoad.State,&#xA;	ChicagoFoodInspectionInitialLoad.Zip,&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Date],&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Type],&#xA;	ChicagoFoodInspectionInitialLoad.Results,&#xA;	ChicagoFoodInspectionInitialLoad.Violations,&#xA;	ChicagoFoodInspectionInitialLoad.Latitude,&#xA;	ChicagoFoodInspectionInitialLoad.Longitude,&#xA;	ChicagoFoodInspectionInitialLoad.Location,&#xA;	ChicagoFoodInspectionInitialLoad.InspectionDate_Out &#xA;from ChicagoFoodInspectionInitialLoad" type="V_String" />
+                <Field name="Results" size="20" source="File: aka:ChicagoFoodInspection|||select ChicagoFoodInspectionInitialLoad.[Inspection ID],&#xA;	ChicagoFoodInspectionInitialLoad.[DBA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[AKA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[License #],&#xA;	ChicagoFoodInspectionInitialLoad.[Facility Type],&#xA;	ChicagoFoodInspectionInitialLoad.Risk,&#xA;	ChicagoFoodInspectionInitialLoad.Address,&#xA;	ChicagoFoodInspectionInitialLoad.City,&#xA;	ChicagoFoodInspectionInitialLoad.State,&#xA;	ChicagoFoodInspectionInitialLoad.Zip,&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Date],&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Type],&#xA;	ChicagoFoodInspectionInitialLoad.Results,&#xA;	ChicagoFoodInspectionInitialLoad.Violations,&#xA;	ChicagoFoodInspectionInitialLoad.Latitude,&#xA;	ChicagoFoodInspectionInitialLoad.Longitude,&#xA;	ChicagoFoodInspectionInitialLoad.Location,&#xA;	ChicagoFoodInspectionInitialLoad.InspectionDate_Out &#xA;from ChicagoFoodInspectionInitialLoad" type="V_String" />
+                <Field name="Violations" size="16777216" source="File: aka:ChicagoFoodInspection|||select ChicagoFoodInspectionInitialLoad.[Inspection ID],&#xA;	ChicagoFoodInspectionInitialLoad.[DBA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[AKA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[License #],&#xA;	ChicagoFoodInspectionInitialLoad.[Facility Type],&#xA;	ChicagoFoodInspectionInitialLoad.Risk,&#xA;	ChicagoFoodInspectionInitialLoad.Address,&#xA;	ChicagoFoodInspectionInitialLoad.City,&#xA;	ChicagoFoodInspectionInitialLoad.State,&#xA;	ChicagoFoodInspectionInitialLoad.Zip,&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Date],&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Type],&#xA;	ChicagoFoodInspectionInitialLoad.Results,&#xA;	ChicagoFoodInspectionInitialLoad.Violations,&#xA;	ChicagoFoodInspectionInitialLoad.Latitude,&#xA;	ChicagoFoodInspectionInitialLoad.Longitude,&#xA;	ChicagoFoodInspectionInitialLoad.Location,&#xA;	ChicagoFoodInspectionInitialLoad.InspectionDate_Out &#xA;from ChicagoFoodInspectionInitialLoad" type="V_String" />
+                <Field name="Latitude" size="18" source="File: aka:ChicagoFoodInspection|||select ChicagoFoodInspectionInitialLoad.[Inspection ID],&#xA;	ChicagoFoodInspectionInitialLoad.[DBA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[AKA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[License #],&#xA;	ChicagoFoodInspectionInitialLoad.[Facility Type],&#xA;	ChicagoFoodInspectionInitialLoad.Risk,&#xA;	ChicagoFoodInspectionInitialLoad.Address,&#xA;	ChicagoFoodInspectionInitialLoad.City,&#xA;	ChicagoFoodInspectionInitialLoad.State,&#xA;	ChicagoFoodInspectionInitialLoad.Zip,&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Date],&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Type],&#xA;	ChicagoFoodInspectionInitialLoad.Results,&#xA;	ChicagoFoodInspectionInitialLoad.Violations,&#xA;	ChicagoFoodInspectionInitialLoad.Latitude,&#xA;	ChicagoFoodInspectionInitialLoad.Longitude,&#xA;	ChicagoFoodInspectionInitialLoad.Location,&#xA;	ChicagoFoodInspectionInitialLoad.InspectionDate_Out &#xA;from ChicagoFoodInspectionInitialLoad" type="String" />
+                <Field name="Longitude" size="18" source="File: aka:ChicagoFoodInspection|||select ChicagoFoodInspectionInitialLoad.[Inspection ID],&#xA;	ChicagoFoodInspectionInitialLoad.[DBA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[AKA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[License #],&#xA;	ChicagoFoodInspectionInitialLoad.[Facility Type],&#xA;	ChicagoFoodInspectionInitialLoad.Risk,&#xA;	ChicagoFoodInspectionInitialLoad.Address,&#xA;	ChicagoFoodInspectionInitialLoad.City,&#xA;	ChicagoFoodInspectionInitialLoad.State,&#xA;	ChicagoFoodInspectionInitialLoad.Zip,&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Date],&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Type],&#xA;	ChicagoFoodInspectionInitialLoad.Results,&#xA;	ChicagoFoodInspectionInitialLoad.Violations,&#xA;	ChicagoFoodInspectionInitialLoad.Latitude,&#xA;	ChicagoFoodInspectionInitialLoad.Longitude,&#xA;	ChicagoFoodInspectionInitialLoad.Location,&#xA;	ChicagoFoodInspectionInitialLoad.InspectionDate_Out &#xA;from ChicagoFoodInspectionInitialLoad" type="String" />
+                <Field name="Location" size="40" source="File: aka:ChicagoFoodInspection|||select ChicagoFoodInspectionInitialLoad.[Inspection ID],&#xA;	ChicagoFoodInspectionInitialLoad.[DBA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[AKA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[License #],&#xA;	ChicagoFoodInspectionInitialLoad.[Facility Type],&#xA;	ChicagoFoodInspectionInitialLoad.Risk,&#xA;	ChicagoFoodInspectionInitialLoad.Address,&#xA;	ChicagoFoodInspectionInitialLoad.City,&#xA;	ChicagoFoodInspectionInitialLoad.State,&#xA;	ChicagoFoodInspectionInitialLoad.Zip,&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Date],&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Type],&#xA;	ChicagoFoodInspectionInitialLoad.Results,&#xA;	ChicagoFoodInspectionInitialLoad.Violations,&#xA;	ChicagoFoodInspectionInitialLoad.Latitude,&#xA;	ChicagoFoodInspectionInitialLoad.Longitude,&#xA;	ChicagoFoodInspectionInitialLoad.Location,&#xA;	ChicagoFoodInspectionInitialLoad.InspectionDate_Out &#xA;from ChicagoFoodInspectionInitialLoad" type="String" />
+                <Field name="InspectionDate_Out" source="File: aka:ChicagoFoodInspection|||select ChicagoFoodInspectionInitialLoad.[Inspection ID],&#xA;	ChicagoFoodInspectionInitialLoad.[DBA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[AKA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[License #],&#xA;	ChicagoFoodInspectionInitialLoad.[Facility Type],&#xA;	ChicagoFoodInspectionInitialLoad.Risk,&#xA;	ChicagoFoodInspectionInitialLoad.Address,&#xA;	ChicagoFoodInspectionInitialLoad.City,&#xA;	ChicagoFoodInspectionInitialLoad.State,&#xA;	ChicagoFoodInspectionInitialLoad.Zip,&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Date],&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Type],&#xA;	ChicagoFoodInspectionInitialLoad.Results,&#xA;	ChicagoFoodInspectionInitialLoad.Violations,&#xA;	ChicagoFoodInspectionInitialLoad.Latitude,&#xA;	ChicagoFoodInspectionInitialLoad.Longitude,&#xA;	ChicagoFoodInspectionInitialLoad.Location,&#xA;	ChicagoFoodInspectionInitialLoad.InspectionDate_Out &#xA;from ChicagoFoodInspectionInitialLoad" type="Date" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="9">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="270" y="354" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Inspection ID" selected="True" />
+                <SelectField field="Facility Type" selected="True" />
+                <SelectField field="Address" selected="True" />
+                <SelectField field="City" selected="True" />
+                <SelectField field="State" selected="True" />
+                <SelectField field="Zip" selected="True" />
+                <SelectField field="Inspection Date" selected="True" />
+                <SelectField field="Inspection Type" selected="True" />
+                <SelectField field="Results" selected="True" />
+                <SelectField field="Violations" selected="True" />
+                <SelectField field="Latitude" selected="True" />
+                <SelectField field="Longitude" selected="True" />
+                <SelectField field="Location" selected="True" />
+                <SelectField field="InspectionDate_Out" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="10">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+            <Position x="390" y="354" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UniqueFields>
+                <Field field="Inspection ID" />
+              </UniqueFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+        </Node>
+        <Node ToolID="11">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+            <Position x="486" y="342" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldName>RecordID</FieldName>
+              <StartValue>1</StartValue>
+              <FieldType>Int32</FieldType>
+              <FieldSize>6</FieldSize>
+              <Position>0</Position>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+        </Node>
+        <Node ToolID="12">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="618" y="342" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="DateTimeNow()" field="DI_CreateDate" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[DI_CreateDate = DateTimeNow()
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="13">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="762" y="342" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="23">aka:ChicagoFoodInspection|||Dim_FoodEstablishments_v2</File>
+              <Passwords />
+              <CachedCosmeticName />
+              <FormatSpecificOptions>
+                <TransactionSize>10000</TransactionSize>
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <PostSQL />
+                <TableStyle>Quoted</TableStyle>
+                <PreSQL />
+                <TransactionMessages>False</TransactionMessages>
+                <OutputOption>Create</OutputOption>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:ChicagoFoodInspection
+Query=Dim_FoodEstablishments_v2</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="113" y="557" width="779" height="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container - Food Establishments Dimensions with DBA and AKA name</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="15">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="138" y="617" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" FileFormat="23">aka:ChicagoFoodInspection|||select ChicagoFoodInspectionInitialLoad.[Inspection ID],
+	ChicagoFoodInspectionInitialLoad.[DBA Name],
+	ChicagoFoodInspectionInitialLoad.[AKA Name],
+	ChicagoFoodInspectionInitialLoad.[License #],
+	ChicagoFoodInspectionInitialLoad.[Facility Type],
+	ChicagoFoodInspectionInitialLoad.Risk,
+	ChicagoFoodInspectionInitialLoad.Address,
+	ChicagoFoodInspectionInitialLoad.City,
+	ChicagoFoodInspectionInitialLoad.State,
+	ChicagoFoodInspectionInitialLoad.Zip,
+	ChicagoFoodInspectionInitialLoad.[Inspection Date],
+	ChicagoFoodInspectionInitialLoad.[Inspection Type],
+	ChicagoFoodInspectionInitialLoad.Results,
+	ChicagoFoodInspectionInitialLoad.Violations,
+	ChicagoFoodInspectionInitialLoad.Latitude,
+	ChicagoFoodInspectionInitialLoad.Longitude,
+	ChicagoFoodInspectionInitialLoad.Location,
+	ChicagoFoodInspectionInitialLoad.InspectionDate_Out 
+from ChicagoFoodInspectionInitialLoad</File>
+              <FormatSpecificOptions>
+                <PreSQL />
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <NoProgress>True</NoProgress>
+                <CacheData>False</CacheData>
+                <TableStyle>Quoted</TableStyle>
+                <ReadUncommitted>False</ReadUncommitted>
+                <PostSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:ChicagoFoodInspection
+Query=select ChicagoFoodInspection...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Inspection ID" source="File: aka:ChicagoFoodInspection|||select ChicagoFoodInspectionInitialLoad.[Inspection ID],&#xA;	ChicagoFoodInspectionInitialLoad.[DBA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[AKA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[License #],&#xA;	ChicagoFoodInspectionInitialLoad.[Facility Type],&#xA;	ChicagoFoodInspectionInitialLoad.Risk,&#xA;	ChicagoFoodInspectionInitialLoad.Address,&#xA;	ChicagoFoodInspectionInitialLoad.City,&#xA;	ChicagoFoodInspectionInitialLoad.State,&#xA;	ChicagoFoodInspectionInitialLoad.Zip,&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Date],&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Type],&#xA;	ChicagoFoodInspectionInitialLoad.Results,&#xA;	ChicagoFoodInspectionInitialLoad.Violations,&#xA;	ChicagoFoodInspectionInitialLoad.Latitude,&#xA;	ChicagoFoodInspectionInitialLoad.Longitude,&#xA;	ChicagoFoodInspectionInitialLoad.Location,&#xA;	ChicagoFoodInspectionInitialLoad.InspectionDate_Out &#xA;from ChicagoFoodInspectionInitialLoad" type="Int32" />
+                <Field name="DBA Name" size="79" source="File: aka:ChicagoFoodInspection|||select ChicagoFoodInspectionInitialLoad.[Inspection ID],&#xA;	ChicagoFoodInspectionInitialLoad.[DBA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[AKA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[License #],&#xA;	ChicagoFoodInspectionInitialLoad.[Facility Type],&#xA;	ChicagoFoodInspectionInitialLoad.Risk,&#xA;	ChicagoFoodInspectionInitialLoad.Address,&#xA;	ChicagoFoodInspectionInitialLoad.City,&#xA;	ChicagoFoodInspectionInitialLoad.State,&#xA;	ChicagoFoodInspectionInitialLoad.Zip,&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Date],&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Type],&#xA;	ChicagoFoodInspectionInitialLoad.Results,&#xA;	ChicagoFoodInspectionInitialLoad.Violations,&#xA;	ChicagoFoodInspectionInitialLoad.Latitude,&#xA;	ChicagoFoodInspectionInitialLoad.Longitude,&#xA;	ChicagoFoodInspectionInitialLoad.Location,&#xA;	ChicagoFoodInspectionInitialLoad.InspectionDate_Out &#xA;from ChicagoFoodInspectionInitialLoad" type="V_String" />
+                <Field name="AKA Name" size="79" source="File: aka:ChicagoFoodInspection|||select ChicagoFoodInspectionInitialLoad.[Inspection ID],&#xA;	ChicagoFoodInspectionInitialLoad.[DBA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[AKA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[License #],&#xA;	ChicagoFoodInspectionInitialLoad.[Facility Type],&#xA;	ChicagoFoodInspectionInitialLoad.Risk,&#xA;	ChicagoFoodInspectionInitialLoad.Address,&#xA;	ChicagoFoodInspectionInitialLoad.City,&#xA;	ChicagoFoodInspectionInitialLoad.State,&#xA;	ChicagoFoodInspectionInitialLoad.Zip,&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Date],&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Type],&#xA;	ChicagoFoodInspectionInitialLoad.Results,&#xA;	ChicagoFoodInspectionInitialLoad.Violations,&#xA;	ChicagoFoodInspectionInitialLoad.Latitude,&#xA;	ChicagoFoodInspectionInitialLoad.Longitude,&#xA;	ChicagoFoodInspectionInitialLoad.Location,&#xA;	ChicagoFoodInspectionInitialLoad.InspectionDate_Out &#xA;from ChicagoFoodInspectionInitialLoad" type="V_String" />
+                <Field name="License #" source="File: aka:ChicagoFoodInspection|||select ChicagoFoodInspectionInitialLoad.[Inspection ID],&#xA;	ChicagoFoodInspectionInitialLoad.[DBA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[AKA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[License #],&#xA;	ChicagoFoodInspectionInitialLoad.[Facility Type],&#xA;	ChicagoFoodInspectionInitialLoad.Risk,&#xA;	ChicagoFoodInspectionInitialLoad.Address,&#xA;	ChicagoFoodInspectionInitialLoad.City,&#xA;	ChicagoFoodInspectionInitialLoad.State,&#xA;	ChicagoFoodInspectionInitialLoad.Zip,&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Date],&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Type],&#xA;	ChicagoFoodInspectionInitialLoad.Results,&#xA;	ChicagoFoodInspectionInitialLoad.Violations,&#xA;	ChicagoFoodInspectionInitialLoad.Latitude,&#xA;	ChicagoFoodInspectionInitialLoad.Longitude,&#xA;	ChicagoFoodInspectionInitialLoad.Location,&#xA;	ChicagoFoodInspectionInitialLoad.InspectionDate_Out &#xA;from ChicagoFoodInspectionInitialLoad" type="Int32" />
+                <Field name="Facility Type" size="47" source="File: aka:ChicagoFoodInspection|||select ChicagoFoodInspectionInitialLoad.[Inspection ID],&#xA;	ChicagoFoodInspectionInitialLoad.[DBA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[AKA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[License #],&#xA;	ChicagoFoodInspectionInitialLoad.[Facility Type],&#xA;	ChicagoFoodInspectionInitialLoad.Risk,&#xA;	ChicagoFoodInspectionInitialLoad.Address,&#xA;	ChicagoFoodInspectionInitialLoad.City,&#xA;	ChicagoFoodInspectionInitialLoad.State,&#xA;	ChicagoFoodInspectionInitialLoad.Zip,&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Date],&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Type],&#xA;	ChicagoFoodInspectionInitialLoad.Results,&#xA;	ChicagoFoodInspectionInitialLoad.Violations,&#xA;	ChicagoFoodInspectionInitialLoad.Latitude,&#xA;	ChicagoFoodInspectionInitialLoad.Longitude,&#xA;	ChicagoFoodInspectionInitialLoad.Location,&#xA;	ChicagoFoodInspectionInitialLoad.InspectionDate_Out &#xA;from ChicagoFoodInspectionInitialLoad" type="V_String" />
+                <Field name="Risk" size="15" source="File: aka:ChicagoFoodInspection|||select ChicagoFoodInspectionInitialLoad.[Inspection ID],&#xA;	ChicagoFoodInspectionInitialLoad.[DBA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[AKA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[License #],&#xA;	ChicagoFoodInspectionInitialLoad.[Facility Type],&#xA;	ChicagoFoodInspectionInitialLoad.Risk,&#xA;	ChicagoFoodInspectionInitialLoad.Address,&#xA;	ChicagoFoodInspectionInitialLoad.City,&#xA;	ChicagoFoodInspectionInitialLoad.State,&#xA;	ChicagoFoodInspectionInitialLoad.Zip,&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Date],&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Type],&#xA;	ChicagoFoodInspectionInitialLoad.Results,&#xA;	ChicagoFoodInspectionInitialLoad.Violations,&#xA;	ChicagoFoodInspectionInitialLoad.Latitude,&#xA;	ChicagoFoodInspectionInitialLoad.Longitude,&#xA;	ChicagoFoodInspectionInitialLoad.Location,&#xA;	ChicagoFoodInspectionInitialLoad.InspectionDate_Out &#xA;from ChicagoFoodInspectionInitialLoad" type="String" />
+                <Field name="Address" size="39" source="File: aka:ChicagoFoodInspection|||select ChicagoFoodInspectionInitialLoad.[Inspection ID],&#xA;	ChicagoFoodInspectionInitialLoad.[DBA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[AKA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[License #],&#xA;	ChicagoFoodInspectionInitialLoad.[Facility Type],&#xA;	ChicagoFoodInspectionInitialLoad.Risk,&#xA;	ChicagoFoodInspectionInitialLoad.Address,&#xA;	ChicagoFoodInspectionInitialLoad.City,&#xA;	ChicagoFoodInspectionInitialLoad.State,&#xA;	ChicagoFoodInspectionInitialLoad.Zip,&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Date],&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Type],&#xA;	ChicagoFoodInspectionInitialLoad.Results,&#xA;	ChicagoFoodInspectionInitialLoad.Violations,&#xA;	ChicagoFoodInspectionInitialLoad.Latitude,&#xA;	ChicagoFoodInspectionInitialLoad.Longitude,&#xA;	ChicagoFoodInspectionInitialLoad.Location,&#xA;	ChicagoFoodInspectionInitialLoad.InspectionDate_Out &#xA;from ChicagoFoodInspectionInitialLoad" type="V_String" />
+                <Field name="City" size="20" source="File: aka:ChicagoFoodInspection|||select ChicagoFoodInspectionInitialLoad.[Inspection ID],&#xA;	ChicagoFoodInspectionInitialLoad.[DBA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[AKA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[License #],&#xA;	ChicagoFoodInspectionInitialLoad.[Facility Type],&#xA;	ChicagoFoodInspectionInitialLoad.Risk,&#xA;	ChicagoFoodInspectionInitialLoad.Address,&#xA;	ChicagoFoodInspectionInitialLoad.City,&#xA;	ChicagoFoodInspectionInitialLoad.State,&#xA;	ChicagoFoodInspectionInitialLoad.Zip,&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Date],&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Type],&#xA;	ChicagoFoodInspectionInitialLoad.Results,&#xA;	ChicagoFoodInspectionInitialLoad.Violations,&#xA;	ChicagoFoodInspectionInitialLoad.Latitude,&#xA;	ChicagoFoodInspectionInitialLoad.Longitude,&#xA;	ChicagoFoodInspectionInitialLoad.Location,&#xA;	ChicagoFoodInspectionInitialLoad.InspectionDate_Out &#xA;from ChicagoFoodInspectionInitialLoad" type="V_String" />
+                <Field name="State" size="2" source="File: aka:ChicagoFoodInspection|||select ChicagoFoodInspectionInitialLoad.[Inspection ID],&#xA;	ChicagoFoodInspectionInitialLoad.[DBA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[AKA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[License #],&#xA;	ChicagoFoodInspectionInitialLoad.[Facility Type],&#xA;	ChicagoFoodInspectionInitialLoad.Risk,&#xA;	ChicagoFoodInspectionInitialLoad.Address,&#xA;	ChicagoFoodInspectionInitialLoad.City,&#xA;	ChicagoFoodInspectionInitialLoad.State,&#xA;	ChicagoFoodInspectionInitialLoad.Zip,&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Date],&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Type],&#xA;	ChicagoFoodInspectionInitialLoad.Results,&#xA;	ChicagoFoodInspectionInitialLoad.Violations,&#xA;	ChicagoFoodInspectionInitialLoad.Latitude,&#xA;	ChicagoFoodInspectionInitialLoad.Longitude,&#xA;	ChicagoFoodInspectionInitialLoad.Location,&#xA;	ChicagoFoodInspectionInitialLoad.InspectionDate_Out &#xA;from ChicagoFoodInspectionInitialLoad" type="String" />
+                <Field name="Zip" source="File: aka:ChicagoFoodInspection|||select ChicagoFoodInspectionInitialLoad.[Inspection ID],&#xA;	ChicagoFoodInspectionInitialLoad.[DBA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[AKA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[License #],&#xA;	ChicagoFoodInspectionInitialLoad.[Facility Type],&#xA;	ChicagoFoodInspectionInitialLoad.Risk,&#xA;	ChicagoFoodInspectionInitialLoad.Address,&#xA;	ChicagoFoodInspectionInitialLoad.City,&#xA;	ChicagoFoodInspectionInitialLoad.State,&#xA;	ChicagoFoodInspectionInitialLoad.Zip,&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Date],&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Type],&#xA;	ChicagoFoodInspectionInitialLoad.Results,&#xA;	ChicagoFoodInspectionInitialLoad.Violations,&#xA;	ChicagoFoodInspectionInitialLoad.Latitude,&#xA;	ChicagoFoodInspectionInitialLoad.Longitude,&#xA;	ChicagoFoodInspectionInitialLoad.Location,&#xA;	ChicagoFoodInspectionInitialLoad.InspectionDate_Out &#xA;from ChicagoFoodInspectionInitialLoad" type="Int32" />
+                <Field name="Inspection Date" size="10" source="File: aka:ChicagoFoodInspection|||select ChicagoFoodInspectionInitialLoad.[Inspection ID],&#xA;	ChicagoFoodInspectionInitialLoad.[DBA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[AKA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[License #],&#xA;	ChicagoFoodInspectionInitialLoad.[Facility Type],&#xA;	ChicagoFoodInspectionInitialLoad.Risk,&#xA;	ChicagoFoodInspectionInitialLoad.Address,&#xA;	ChicagoFoodInspectionInitialLoad.City,&#xA;	ChicagoFoodInspectionInitialLoad.State,&#xA;	ChicagoFoodInspectionInitialLoad.Zip,&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Date],&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Type],&#xA;	ChicagoFoodInspectionInitialLoad.Results,&#xA;	ChicagoFoodInspectionInitialLoad.Violations,&#xA;	ChicagoFoodInspectionInitialLoad.Latitude,&#xA;	ChicagoFoodInspectionInitialLoad.Longitude,&#xA;	ChicagoFoodInspectionInitialLoad.Location,&#xA;	ChicagoFoodInspectionInitialLoad.InspectionDate_Out &#xA;from ChicagoFoodInspectionInitialLoad" type="String" />
+                <Field name="Inspection Type" size="41" source="File: aka:ChicagoFoodInspection|||select ChicagoFoodInspectionInitialLoad.[Inspection ID],&#xA;	ChicagoFoodInspectionInitialLoad.[DBA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[AKA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[License #],&#xA;	ChicagoFoodInspectionInitialLoad.[Facility Type],&#xA;	ChicagoFoodInspectionInitialLoad.Risk,&#xA;	ChicagoFoodInspectionInitialLoad.Address,&#xA;	ChicagoFoodInspectionInitialLoad.City,&#xA;	ChicagoFoodInspectionInitialLoad.State,&#xA;	ChicagoFoodInspectionInitialLoad.Zip,&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Date],&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Type],&#xA;	ChicagoFoodInspectionInitialLoad.Results,&#xA;	ChicagoFoodInspectionInitialLoad.Violations,&#xA;	ChicagoFoodInspectionInitialLoad.Latitude,&#xA;	ChicagoFoodInspectionInitialLoad.Longitude,&#xA;	ChicagoFoodInspectionInitialLoad.Location,&#xA;	ChicagoFoodInspectionInitialLoad.InspectionDate_Out &#xA;from ChicagoFoodInspectionInitialLoad" type="V_String" />
+                <Field name="Results" size="20" source="File: aka:ChicagoFoodInspection|||select ChicagoFoodInspectionInitialLoad.[Inspection ID],&#xA;	ChicagoFoodInspectionInitialLoad.[DBA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[AKA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[License #],&#xA;	ChicagoFoodInspectionInitialLoad.[Facility Type],&#xA;	ChicagoFoodInspectionInitialLoad.Risk,&#xA;	ChicagoFoodInspectionInitialLoad.Address,&#xA;	ChicagoFoodInspectionInitialLoad.City,&#xA;	ChicagoFoodInspectionInitialLoad.State,&#xA;	ChicagoFoodInspectionInitialLoad.Zip,&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Date],&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Type],&#xA;	ChicagoFoodInspectionInitialLoad.Results,&#xA;	ChicagoFoodInspectionInitialLoad.Violations,&#xA;	ChicagoFoodInspectionInitialLoad.Latitude,&#xA;	ChicagoFoodInspectionInitialLoad.Longitude,&#xA;	ChicagoFoodInspectionInitialLoad.Location,&#xA;	ChicagoFoodInspectionInitialLoad.InspectionDate_Out &#xA;from ChicagoFoodInspectionInitialLoad" type="V_String" />
+                <Field name="Violations" size="16777216" source="File: aka:ChicagoFoodInspection|||select ChicagoFoodInspectionInitialLoad.[Inspection ID],&#xA;	ChicagoFoodInspectionInitialLoad.[DBA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[AKA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[License #],&#xA;	ChicagoFoodInspectionInitialLoad.[Facility Type],&#xA;	ChicagoFoodInspectionInitialLoad.Risk,&#xA;	ChicagoFoodInspectionInitialLoad.Address,&#xA;	ChicagoFoodInspectionInitialLoad.City,&#xA;	ChicagoFoodInspectionInitialLoad.State,&#xA;	ChicagoFoodInspectionInitialLoad.Zip,&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Date],&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Type],&#xA;	ChicagoFoodInspectionInitialLoad.Results,&#xA;	ChicagoFoodInspectionInitialLoad.Violations,&#xA;	ChicagoFoodInspectionInitialLoad.Latitude,&#xA;	ChicagoFoodInspectionInitialLoad.Longitude,&#xA;	ChicagoFoodInspectionInitialLoad.Location,&#xA;	ChicagoFoodInspectionInitialLoad.InspectionDate_Out &#xA;from ChicagoFoodInspectionInitialLoad" type="V_String" />
+                <Field name="Latitude" size="18" source="File: aka:ChicagoFoodInspection|||select ChicagoFoodInspectionInitialLoad.[Inspection ID],&#xA;	ChicagoFoodInspectionInitialLoad.[DBA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[AKA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[License #],&#xA;	ChicagoFoodInspectionInitialLoad.[Facility Type],&#xA;	ChicagoFoodInspectionInitialLoad.Risk,&#xA;	ChicagoFoodInspectionInitialLoad.Address,&#xA;	ChicagoFoodInspectionInitialLoad.City,&#xA;	ChicagoFoodInspectionInitialLoad.State,&#xA;	ChicagoFoodInspectionInitialLoad.Zip,&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Date],&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Type],&#xA;	ChicagoFoodInspectionInitialLoad.Results,&#xA;	ChicagoFoodInspectionInitialLoad.Violations,&#xA;	ChicagoFoodInspectionInitialLoad.Latitude,&#xA;	ChicagoFoodInspectionInitialLoad.Longitude,&#xA;	ChicagoFoodInspectionInitialLoad.Location,&#xA;	ChicagoFoodInspectionInitialLoad.InspectionDate_Out &#xA;from ChicagoFoodInspectionInitialLoad" type="String" />
+                <Field name="Longitude" size="18" source="File: aka:ChicagoFoodInspection|||select ChicagoFoodInspectionInitialLoad.[Inspection ID],&#xA;	ChicagoFoodInspectionInitialLoad.[DBA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[AKA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[License #],&#xA;	ChicagoFoodInspectionInitialLoad.[Facility Type],&#xA;	ChicagoFoodInspectionInitialLoad.Risk,&#xA;	ChicagoFoodInspectionInitialLoad.Address,&#xA;	ChicagoFoodInspectionInitialLoad.City,&#xA;	ChicagoFoodInspectionInitialLoad.State,&#xA;	ChicagoFoodInspectionInitialLoad.Zip,&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Date],&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Type],&#xA;	ChicagoFoodInspectionInitialLoad.Results,&#xA;	ChicagoFoodInspectionInitialLoad.Violations,&#xA;	ChicagoFoodInspectionInitialLoad.Latitude,&#xA;	ChicagoFoodInspectionInitialLoad.Longitude,&#xA;	ChicagoFoodInspectionInitialLoad.Location,&#xA;	ChicagoFoodInspectionInitialLoad.InspectionDate_Out &#xA;from ChicagoFoodInspectionInitialLoad" type="String" />
+                <Field name="Location" size="40" source="File: aka:ChicagoFoodInspection|||select ChicagoFoodInspectionInitialLoad.[Inspection ID],&#xA;	ChicagoFoodInspectionInitialLoad.[DBA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[AKA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[License #],&#xA;	ChicagoFoodInspectionInitialLoad.[Facility Type],&#xA;	ChicagoFoodInspectionInitialLoad.Risk,&#xA;	ChicagoFoodInspectionInitialLoad.Address,&#xA;	ChicagoFoodInspectionInitialLoad.City,&#xA;	ChicagoFoodInspectionInitialLoad.State,&#xA;	ChicagoFoodInspectionInitialLoad.Zip,&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Date],&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Type],&#xA;	ChicagoFoodInspectionInitialLoad.Results,&#xA;	ChicagoFoodInspectionInitialLoad.Violations,&#xA;	ChicagoFoodInspectionInitialLoad.Latitude,&#xA;	ChicagoFoodInspectionInitialLoad.Longitude,&#xA;	ChicagoFoodInspectionInitialLoad.Location,&#xA;	ChicagoFoodInspectionInitialLoad.InspectionDate_Out &#xA;from ChicagoFoodInspectionInitialLoad" type="String" />
+                <Field name="InspectionDate_Out" source="File: aka:ChicagoFoodInspection|||select ChicagoFoodInspectionInitialLoad.[Inspection ID],&#xA;	ChicagoFoodInspectionInitialLoad.[DBA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[AKA Name],&#xA;	ChicagoFoodInspectionInitialLoad.[License #],&#xA;	ChicagoFoodInspectionInitialLoad.[Facility Type],&#xA;	ChicagoFoodInspectionInitialLoad.Risk,&#xA;	ChicagoFoodInspectionInitialLoad.Address,&#xA;	ChicagoFoodInspectionInitialLoad.City,&#xA;	ChicagoFoodInspectionInitialLoad.State,&#xA;	ChicagoFoodInspectionInitialLoad.Zip,&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Date],&#xA;	ChicagoFoodInspectionInitialLoad.[Inspection Type],&#xA;	ChicagoFoodInspectionInitialLoad.Results,&#xA;	ChicagoFoodInspectionInitialLoad.Violations,&#xA;	ChicagoFoodInspectionInitialLoad.Latitude,&#xA;	ChicagoFoodInspectionInitialLoad.Longitude,&#xA;	ChicagoFoodInspectionInitialLoad.Location,&#xA;	ChicagoFoodInspectionInitialLoad.InspectionDate_Out &#xA;from ChicagoFoodInspectionInitialLoad" type="Date" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="16">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="270" y="618" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Inspection ID" selected="True" />
+                <SelectField field="DBA Name" selected="True" />
+                <SelectField field="AKA Name" selected="True" />
+                <SelectField field="Facility Type" selected="True" />
+                <SelectField field="Address" selected="True" />
+                <SelectField field="City" selected="True" />
+                <SelectField field="State" selected="True" />
+                <SelectField field="Zip" selected="True" />
+                <SelectField field="Inspection Date" selected="True" />
+                <SelectField field="Inspection Type" selected="True" />
+                <SelectField field="Results" selected="True" />
+                <SelectField field="Violations" selected="True" />
+                <SelectField field="Latitude" selected="True" />
+                <SelectField field="Longitude" selected="True" />
+                <SelectField field="Location" selected="True" />
+                <SelectField field="InspectionDate_Out" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="17">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+            <Position x="390" y="618" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UniqueFields>
+                <Field field="Inspection ID" />
+              </UniqueFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+        </Node>
+        <Node ToolID="18">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+            <Position x="498" y="606" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldName>RecordID</FieldName>
+              <StartValue>1</StartValue>
+              <FieldType>Int32</FieldType>
+              <FieldSize>6</FieldSize>
+              <Position>0</Position>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+        </Node>
+        <Node ToolID="19">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="618" y="606" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="DateTimeNow()" field="DI_CreateDate" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[DI_CreateDate = DateTimeNow()
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="20">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="762" y="606" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="23">aka:ChicagoFoodInspection|||Dim_FoodEstablishments_v3</File>
+              <Passwords />
+              <FormatSpecificOptions>
+                <TransactionSize>10000</TransactionSize>
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <PostSQL />
+                <TableStyle>Quoted</TableStyle>
+                <PreSQL />
+                <TransactionMessages>False</TransactionMessages>
+                <OutputOption>Create</OutputOption>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:ChicagoFoodInspection
+Query=Dim_FoodEstablishments_v3</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Unique" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Unique" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Unique" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>ChicagoFoodInspection-FoodEstablishments</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
