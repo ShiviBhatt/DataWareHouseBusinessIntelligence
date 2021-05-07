@@ -1,0 +1,354 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.1">
+  <Nodes>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="234" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>TeacherSK</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="906" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="TeacherSK" selected="True" />
+            <SelectField field="TeacherID" selected="True" />
+            <SelectField field="FirstName" selected="True" />
+            <SelectField field="LastName" selected="True" />
+            <SelectField field="BirthDateSK" selected="True" />
+            <SelectField field="Gender" selected="True" />
+            <SelectField field="email" selected="True" />
+            <SelectField field="Phone" selected="True" />
+            <SelectField field="DepartmentName" selected="True" />
+            <SelectField field="Status" selected="True" />
+            <SelectField field="SOR_ID" selected="True" />
+            <SelectField field="SOR_Create_Date" selected="True" />
+            <SelectField field="SOR_Modified_Date" selected="True" />
+            <SelectField field="DI_Create_Date" selected="True" />
+            <SelectField field="DI_Modofied_Date" selected="True" />
+            <SelectField field="DI_Job_ID" selected="True" />
+            <SelectField field="DOB_DateID" selected="False" rename="DOB_FK" type="String" size="19" />
+            <SelectField field="JD_DateID" selected="False" rename="JoiningDate_FK" type="String" size="19" />
+            <SelectField field="DOB_FK" selected="False" rename="DOB" />
+            <SelectField field="JoiningDate_FK" selected="False" rename="JoiningDate" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1050" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">aka:GraduateDataModelSQL|||DimTeacher</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <TransactionSize>10000</TransactionSize>
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <PostSQL />
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL />
+            <TransactionMessages>False</TransactionMessages>
+            <OutputOption>Overwrite</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:GraduateDataModelSQL
+Query=DimTeacher</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="666" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Engine.WorkflowFileName]" field="SOR_ID" size="40" type="V_WString" />
+            <FormulaField expression="DateTimeToday()" field="SOR_Create_Date" size="19" type="DateTime" />
+            <FormulaField expression="DateTimeNow()" field="SOR_Modified_Date" size="19" type="DateTime" />
+            <FormulaField expression="DateTimeToday()" field="DI_Create_Date" size="19" type="DateTime" />
+            <FormulaField expression="DateTimeNow()" field="DI_Modofied_Date" size="19" type="DateTime" />
+            <FormulaField expression="tonumber(replace(replace(replace([DI_Create_Date],'-',''),'',''),':',''))&#xA;&#xA;" field="DI_Job_ID" size="40" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>SOR_ID = [Engine.WorkflowFileName]
+SOR_Create_Date = DateTimeToday()
+SOR_Modifie...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="450" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="True">
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_TeacherSK" selected="True" input="Left_" />
+                <SelectField field="Left_TeacherID" selected="True" input="Left_" />
+                <SelectField field="Left_FirstName" selected="True" input="Left_" />
+                <SelectField field="Left_LastName" selected="True" input="Left_" />
+                <SelectField field="Right_BirthDateSK" selected="True" input="Right_" />
+                <SelectField field="Left_Gender" selected="True" input="Left_" />
+                <SelectField field="Left_email" selected="True" input="Left_" />
+                <SelectField field="Left_Phone" selected="True" input="Left_" />
+                <SelectField field="Left_DepartmentName" selected="True" input="Left_" />
+                <SelectField field="Left_Status" selected="True" input="Left_" />
+                <SelectField field="Left_F9" selected="False" input="Left_" />
+                <SelectField field="Left_F10" selected="False" input="Left_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="90" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\INFO 7370-dwbi-spring2021-cdrive\GroupAssignment\GraduateStudentModel\DataSampleFiles\Graduate Student Attributes_2.0.xlsx|||`DimTeacher$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Graduate Student Attributes_2.0.xlsx
+Query=`DimTeacher$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="TeacherID" source="File: C:\INFO 7370-dwbi-spring2021-cdrive\GroupAssignment\GraduateStudentModel\DataSampleFiles\Graduate Student Attributes_2.0.xlsx|||`DimTeacher$`" type="Double" />
+            <Field name="FirstName" size="255" source="File: C:\INFO 7370-dwbi-spring2021-cdrive\GroupAssignment\GraduateStudentModel\DataSampleFiles\Graduate Student Attributes_2.0.xlsx|||`DimTeacher$`" type="V_String" />
+            <Field name="LastName" size="255" source="File: C:\INFO 7370-dwbi-spring2021-cdrive\GroupAssignment\GraduateStudentModel\DataSampleFiles\Graduate Student Attributes_2.0.xlsx|||`DimTeacher$`" type="V_String" />
+            <Field name="Gender" size="255" source="File: C:\INFO 7370-dwbi-spring2021-cdrive\GroupAssignment\GraduateStudentModel\DataSampleFiles\Graduate Student Attributes_2.0.xlsx|||`DimTeacher$`" type="V_String" />
+            <Field name="email" size="255" source="File: C:\INFO 7370-dwbi-spring2021-cdrive\GroupAssignment\GraduateStudentModel\DataSampleFiles\Graduate Student Attributes_2.0.xlsx|||`DimTeacher$`" type="V_String" />
+            <Field name="Phone" source="File: C:\INFO 7370-dwbi-spring2021-cdrive\GroupAssignment\GraduateStudentModel\DataSampleFiles\Graduate Student Attributes_2.0.xlsx|||`DimTeacher$`" type="Double" />
+            <Field name="DepartmentName" size="255" source="File: C:\INFO 7370-dwbi-spring2021-cdrive\GroupAssignment\GraduateStudentModel\DataSampleFiles\Graduate Student Attributes_2.0.xlsx|||`DimTeacher$`" type="V_String" />
+            <Field name="Status" size="255" source="File: C:\INFO 7370-dwbi-spring2021-cdrive\GroupAssignment\GraduateStudentModel\DataSampleFiles\Graduate Student Attributes_2.0.xlsx|||`DimTeacher$`" type="V_String" />
+            <Field name="F9" source="File: C:\INFO 7370-dwbi-spring2021-cdrive\GroupAssignment\GraduateStudentModel\DataSampleFiles\Graduate Student Attributes_2.0.xlsx|||`DimTeacher$`" type="Double" />
+            <Field name="F10" source="File: C:\INFO 7370-dwbi-spring2021-cdrive\GroupAssignment\GraduateStudentModel\DataSampleFiles\Graduate Student Attributes_2.0.xlsx|||`DimTeacher$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="33">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="126" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="23">aka:GraduateDataModelSQL|||select DimBirthDate.BirthDateSK 
+from DimBirthDate</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:GraduateDataModelSQL
+Query=select DimBirthDate.BirthDat...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="BirthDateSK" source="File: aka:GraduateDataModelSQL|||select DimBirthDate.BirthDateSK &#xA;from DimBirthDate" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="774" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="TeacherSK" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="35">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="546" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="36">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="414" y="66" width="384" height="48" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Teacher Dimension</Text>
+          <Font name="Segoe UI" size="20.25" style="1" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="30" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="Output" />
+      <Destination ToolID="30" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="Join" />
+      <Destination ToolID="35" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="Unique" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="35" Connection="Output" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>DimTeacher</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

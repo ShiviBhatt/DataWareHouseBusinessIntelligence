@@ -1,0 +1,1166 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.1">
+  <Nodes>
+    <Node ToolID="61">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="342" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="StudentSK" selected="True" />
+            <SelectField field="StudentID" selected="True" />
+            <SelectField field="FirstName" selected="True" />
+            <SelectField field="LastName" selected="True" />
+            <SelectField field="SSN" selected="True" />
+            <SelectField field="GradeLevel" selected="True" />
+            <SelectField field="Ethinicity" selected="True" />
+            <SelectField field="Email" selected="True" />
+            <SelectField field="Phone" selected="True" />
+            <SelectField field="Gender" selected="True" />
+            <SelectField field="Status" selected="True" />
+            <SelectField field="Visa Type" selected="True" />
+            <SelectField field="DateSK" selected="False" type="String" size="19" />
+            <SelectField field="StartSK" selected="False" type="String" size="19" />
+            <SelectField field="EndSK" selected="False" type="String" size="19" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="68">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\INFO 7370-dwbi-spring2021-cdrive\GroupAssignment\GraduateStudentModel\DataSampleFiles\Graduate Student Attributes_2.0.xlsx|||`DimStudent$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Graduate Student Attributes_2.0.xlsx
+Query=`DimStudent$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="StudentID" source="File: C:\INFO 7370-dwbi-spring2021-cdrive\GroupAssignment\GraduateStudentModel\DataSampleFiles\Graduate Student Attributes_2.0.xlsx|||`DimStudent$`" type="Double" />
+            <Field name="FirstName" size="255" source="File: C:\INFO 7370-dwbi-spring2021-cdrive\GroupAssignment\GraduateStudentModel\DataSampleFiles\Graduate Student Attributes_2.0.xlsx|||`DimStudent$`" type="V_String" />
+            <Field name="LastName" size="255" source="File: C:\INFO 7370-dwbi-spring2021-cdrive\GroupAssignment\GraduateStudentModel\DataSampleFiles\Graduate Student Attributes_2.0.xlsx|||`DimStudent$`" type="V_String" />
+            <Field name="SSN" size="255" source="File: C:\INFO 7370-dwbi-spring2021-cdrive\GroupAssignment\GraduateStudentModel\DataSampleFiles\Graduate Student Attributes_2.0.xlsx|||`DimStudent$`" type="V_String" />
+            <Field name="GradeLevel" size="255" source="File: C:\INFO 7370-dwbi-spring2021-cdrive\GroupAssignment\GraduateStudentModel\DataSampleFiles\Graduate Student Attributes_2.0.xlsx|||`DimStudent$`" type="V_String" />
+            <Field name="Ethinicity" size="255" source="File: C:\INFO 7370-dwbi-spring2021-cdrive\GroupAssignment\GraduateStudentModel\DataSampleFiles\Graduate Student Attributes_2.0.xlsx|||`DimStudent$`" type="V_String" />
+            <Field name="Email" size="255" source="File: C:\INFO 7370-dwbi-spring2021-cdrive\GroupAssignment\GraduateStudentModel\DataSampleFiles\Graduate Student Attributes_2.0.xlsx|||`DimStudent$`" type="V_String" />
+            <Field name="Phone" source="File: C:\INFO 7370-dwbi-spring2021-cdrive\GroupAssignment\GraduateStudentModel\DataSampleFiles\Graduate Student Attributes_2.0.xlsx|||`DimStudent$`" type="Double" />
+            <Field name="Gender" size="255" source="File: C:\INFO 7370-dwbi-spring2021-cdrive\GroupAssignment\GraduateStudentModel\DataSampleFiles\Graduate Student Attributes_2.0.xlsx|||`DimStudent$`" type="V_String" />
+            <Field name="Status" size="255" source="File: C:\INFO 7370-dwbi-spring2021-cdrive\GroupAssignment\GraduateStudentModel\DataSampleFiles\Graduate Student Attributes_2.0.xlsx|||`DimStudent$`" type="V_String" />
+            <Field name="Visa Type" size="255" source="File: C:\INFO 7370-dwbi-spring2021-cdrive\GroupAssignment\GraduateStudentModel\DataSampleFiles\Graduate Student Attributes_2.0.xlsx|||`DimStudent$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="70">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="174" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>StudentSK</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="90">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="2358" y="1146" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="ToNumber(REPLACE(REPLACE(REPLACE(DateTimeNow(),'-',''),' ',''),':',''))" field="SOR_ID" size="64" type="String" />
+            <FormulaField expression="DateTimeNow()" field="SOR_Load_Date" size="10" type="Date" />
+            <FormulaField expression="DateTimeNow()" field="SOR_Update_Date" size="10" type="Date" />
+            <FormulaField expression="DateTimeNow()" field="DI_Create_Date" size="10" type="Date" />
+            <FormulaField expression="DateTimeNow()" field="DI_Modified_Date" size="10" type="Date" />
+            <FormulaField expression="ToNumber(REPLACE(REPLACE(REPLACE([DI_Create_Date],'-',''),' ',''),':',''))" field="DI_Job_ID" size="64" type="String" />
+            <FormulaField expression="[Engine.WorkflowFileName]" field="DI_Job_Name" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>SOR_ID = ToNumber(REPLACE(REPLACE(REPLACE(DateTimeNow(),'-',''),' ',''),':',''))...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="91">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="2478" y="1146" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="StudentSK" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="92">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="2622" y="1134" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="StudentSK" selected="True" />
+            <SelectField field="StudentID" selected="True" />
+            <SelectField field="FirstName" selected="True" />
+            <SelectField field="LastName" selected="True" />
+            <SelectField field="BirthDateSK" selected="True" />
+            <SelectField field="SSN" selected="True" />
+            <SelectField field="GradeLevel" selected="True" />
+            <SelectField field="Ethinicity" selected="True" />
+            <SelectField field="Email" selected="True" />
+            <SelectField field="Phone" selected="True" />
+            <SelectField field="Gender" selected="True" />
+            <SelectField field="Status" selected="True" />
+            <SelectField field="Visa Type" selected="True" />
+            <SelectField field="StartDateSK" selected="True" />
+            <SelectField field="EndDateSK" selected="True" />
+            <SelectField field="OffCampusAddressSK" selected="True" />
+            <SelectField field="OnCampusAddressSK" selected="True" />
+            <SelectField field="HomeTownAddressSK" selected="True" />
+            <SelectField field="ProgramSK" selected="True" />
+            <SelectField field="SOR_ID" selected="True" />
+            <SelectField field="SOR_Load_Date" selected="True" />
+            <SelectField field="SOR_Update_Date" selected="True" />
+            <SelectField field="DI_Create_Date" selected="True" />
+            <SelectField field="DI_Modified_Date" selected="True" />
+            <SelectField field="DI_Job_ID" selected="True" />
+            <SelectField field="DI_Job_Name" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="93">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="2826" y="1134" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">aka:GraduateDataModelSQL|||DimStudent</File>
+          <Passwords />
+          <CachedCosmeticName />
+          <FormatSpecificOptions>
+            <TransactionSize>10000</TransactionSize>
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <PostSQL />
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL />
+            <TransactionMessages>False</TransactionMessages>
+            <OutputOption>Overwrite</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:GraduateDataModelSQL
+Query=DimStudent</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="97">
+      <GuiSettings>
+        <Position x="2214" y="1146" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Check Box (135)">True</Value>
+          <Value name="Check Box (136)">False</Value>
+          <Value name="List Box (11)">"StudentSK","StudentID","FirstName","LastName","BirthDateSK","SSN","GradeLevel","Ethinicity","Email","Phone","Gender","Status","Visa Type"</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="98">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="486" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="True">
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_StudentSK" selected="True" input="Left_" />
+                <SelectField field="Left_StudentID" selected="True" input="Left_" />
+                <SelectField field="Left_FirstName" selected="True" input="Left_" />
+                <SelectField field="Left_LastName" selected="True" input="Left_" />
+                <SelectField field="Right_BirthDateSK" selected="True" input="Right_" />
+                <SelectField field="Left_SSN" selected="True" input="Left_" />
+                <SelectField field="Left_GradeLevel" selected="True" input="Left_" />
+                <SelectField field="Left_Ethinicity" selected="True" input="Left_" />
+                <SelectField field="Left_Email" selected="True" input="Left_" />
+                <SelectField field="Left_Phone" selected="True" input="Left_" />
+                <SelectField field="Left_Gender" selected="True" input="Left_" />
+                <SelectField field="Left_Status" selected="True" input="Left_" />
+                <SelectField field="Left_Visa Type" selected="True" input="Left_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="99">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="270" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="23">aka:GraduateDataModelSQL|||select DimBirthDate.BirthDateSK 
+from DimBirthDate</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:GraduateDataModelSQL
+Query=select DimBirthDate.BirthDat...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="BirthDateSK" source="File: aka:GraduateDataModelSQL|||select DimBirthDate.BirthDateSK &#xA;from DimBirthDate" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="100">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="270" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="23">aka:GraduateDataModelSQL|||select DimStartDate.StartDateSK 
+from DimStartDate</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:GraduateDataModelSQL
+Query=select DimStartDate.StartDat...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="StartDateSK" source="File: aka:GraduateDataModelSQL|||select DimStartDate.StartDateSK &#xA;from DimStartDate" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="101">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="786" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="True">
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_StudentSK" selected="True" input="Left_" />
+                <SelectField field="Left_StudentID" selected="True" input="Left_" />
+                <SelectField field="Left_FirstName" selected="True" input="Left_" />
+                <SelectField field="Left_LastName" selected="True" input="Left_" />
+                <SelectField field="Left_BirthDateSK" selected="True" input="Left_" />
+                <SelectField field="Left_SSN" selected="True" input="Left_" />
+                <SelectField field="Left_GradeLevel" selected="True" input="Left_" />
+                <SelectField field="Left_Ethinicity" selected="True" input="Left_" />
+                <SelectField field="Left_Email" selected="True" input="Left_" />
+                <SelectField field="Left_Phone" selected="True" input="Left_" />
+                <SelectField field="Left_Gender" selected="True" input="Left_" />
+                <SelectField field="Left_Status" selected="True" input="Left_" />
+                <SelectField field="Left_Visa Type" selected="True" input="Left_" />
+                <SelectField field="Right_StartDateSK" selected="True" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="102">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="594" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="StudentSK" selected="True" />
+            <SelectField field="StudentID" selected="True" />
+            <SelectField field="FirstName" selected="True" />
+            <SelectField field="LastName" selected="True" />
+            <SelectField field="BirthDateSK" selected="True" />
+            <SelectField field="SSN" selected="True" />
+            <SelectField field="GradeLevel" selected="True" />
+            <SelectField field="Ethinicity" selected="True" />
+            <SelectField field="Email" selected="True" />
+            <SelectField field="Phone" selected="True" />
+            <SelectField field="Gender" selected="True" />
+            <SelectField field="Status" selected="True" />
+            <SelectField field="Visa Type" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="103">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="918" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="StudentSK" selected="True" />
+            <SelectField field="StudentID" selected="True" />
+            <SelectField field="FirstName" selected="True" />
+            <SelectField field="LastName" selected="True" />
+            <SelectField field="BirthDateSK" selected="True" />
+            <SelectField field="SSN" selected="True" />
+            <SelectField field="GradeLevel" selected="True" />
+            <SelectField field="Ethinicity" selected="True" />
+            <SelectField field="Email" selected="True" />
+            <SelectField field="Phone" selected="True" />
+            <SelectField field="Gender" selected="True" />
+            <SelectField field="Status" selected="True" />
+            <SelectField field="Visa Type" selected="True" />
+            <SelectField field="StartDateSK" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="104">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="282" y="522" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="23">aka:GraduateDataModelSQL|||select DimEndDate.EndDateSK 
+from DimEndDate</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:GraduateDataModelSQL
+Query=select DimEndDate.EndDateSK ...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="EndDateSK" source="File: aka:GraduateDataModelSQL|||select DimEndDate.EndDateSK &#xA;from DimEndDate" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="105">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1074" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="True">
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_StudentSK" selected="True" input="Left_" />
+                <SelectField field="Left_StudentID" selected="True" input="Left_" />
+                <SelectField field="Left_FirstName" selected="True" input="Left_" />
+                <SelectField field="Left_LastName" selected="True" input="Left_" />
+                <SelectField field="Left_BirthDateSK" selected="True" input="Left_" />
+                <SelectField field="Left_SSN" selected="True" input="Left_" />
+                <SelectField field="Left_GradeLevel" selected="True" input="Left_" />
+                <SelectField field="Left_Ethinicity" selected="True" input="Left_" />
+                <SelectField field="Left_Email" selected="True" input="Left_" />
+                <SelectField field="Left_Phone" selected="True" input="Left_" />
+                <SelectField field="Left_Gender" selected="True" input="Left_" />
+                <SelectField field="Left_Status" selected="True" input="Left_" />
+                <SelectField field="Left_Visa Type" selected="True" input="Left_" />
+                <SelectField field="Left_StartDateSK" selected="True" input="Left_" />
+                <SelectField field="Right_EndDateSK" selected="True" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="106">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1218" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="StudentSK" selected="True" />
+            <SelectField field="StudentID" selected="True" />
+            <SelectField field="FirstName" selected="True" />
+            <SelectField field="LastName" selected="True" />
+            <SelectField field="BirthDateSK" selected="True" />
+            <SelectField field="SSN" selected="True" />
+            <SelectField field="GradeLevel" selected="True" />
+            <SelectField field="Ethinicity" selected="True" />
+            <SelectField field="Email" selected="True" />
+            <SelectField field="Phone" selected="True" />
+            <SelectField field="Gender" selected="True" />
+            <SelectField field="Status" selected="True" />
+            <SelectField field="Visa Type" selected="True" />
+            <SelectField field="StartDateSK" selected="True" />
+            <SelectField field="EndDateSK" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="107">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1134" y="666" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="True">
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_StudentSK" selected="True" input="Left_" />
+                <SelectField field="Left_StudentID" selected="True" input="Left_" />
+                <SelectField field="Left_FirstName" selected="True" input="Left_" />
+                <SelectField field="Left_LastName" selected="True" input="Left_" />
+                <SelectField field="Left_BirthDateSK" selected="True" input="Left_" />
+                <SelectField field="Left_SSN" selected="True" input="Left_" />
+                <SelectField field="Left_GradeLevel" selected="True" input="Left_" />
+                <SelectField field="Left_Ethinicity" selected="True" input="Left_" />
+                <SelectField field="Left_Email" selected="True" input="Left_" />
+                <SelectField field="Left_Phone" selected="True" input="Left_" />
+                <SelectField field="Left_Gender" selected="True" input="Left_" />
+                <SelectField field="Left_Status" selected="True" input="Left_" />
+                <SelectField field="Left_Visa Type" selected="True" input="Left_" />
+                <SelectField field="Left_StartDateSK" selected="True" input="Left_" />
+                <SelectField field="Left_EndDateSK" selected="True" input="Left_" />
+                <SelectField field="Right_OffCampusAddressSK" selected="True" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="108">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="294" y="678" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="23">aka:GraduateDataModelSQL|||select DimOffCampusAddress.OffCampusAddressSK 
+from DimOffCampusAddress</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:GraduateDataModelSQL
+Query=select DimOffCampusAddress.O...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="OffCampusAddressSK" source="File: aka:GraduateDataModelSQL|||select DimOffCampusAddress.OffCampusAddressSK &#xA;from DimOffCampusAddress" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="109">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="294" y="834" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="23">aka:GraduateDataModelSQL|||select DimOnCampusAddress.OnCampusAddressSK 
+from DimOnCampusAddress</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:GraduateDataModelSQL
+Query=select DimOnCampusAddress.On...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="OnCampusAddressSK" source="File: aka:GraduateDataModelSQL|||select DimOnCampusAddress.OnCampusAddressSK &#xA;from DimOnCampusAddress" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="111">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="282" y="990" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="23">aka:GraduateDataModelSQL|||select DimHomeTownAddress.HomeTownAddressSK 
+from DimHomeTownAddress</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:GraduateDataModelSQL
+Query=select DimHomeTownAddress.Ho...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="HomeTownAddressSK" source="File: aka:GraduateDataModelSQL|||select DimHomeTownAddress.HomeTownAddressSK &#xA;from DimHomeTownAddress" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="112">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1422" y="822" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="True">
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_StudentSK" selected="True" input="Left_" />
+                <SelectField field="Left_StudentID" selected="True" input="Left_" />
+                <SelectField field="Left_FirstName" selected="True" input="Left_" />
+                <SelectField field="Left_LastName" selected="True" input="Left_" />
+                <SelectField field="Left_BirthDateSK" selected="True" input="Left_" />
+                <SelectField field="Left_SSN" selected="True" input="Left_" />
+                <SelectField field="Left_GradeLevel" selected="True" input="Left_" />
+                <SelectField field="Left_Ethinicity" selected="True" input="Left_" />
+                <SelectField field="Left_Email" selected="True" input="Left_" />
+                <SelectField field="Left_Phone" selected="True" input="Left_" />
+                <SelectField field="Left_Gender" selected="True" input="Left_" />
+                <SelectField field="Left_Status" selected="True" input="Left_" />
+                <SelectField field="Left_Visa Type" selected="True" input="Left_" />
+                <SelectField field="Left_StartDateSK" selected="True" input="Left_" />
+                <SelectField field="Left_EndDateSK" selected="True" input="Left_" />
+                <SelectField field="Left_OffCampusAddressSK" selected="True" input="Left_" />
+                <SelectField field="Right_OnCampusAddressSK" selected="True" input="Right_" />
+                <SelectField field="Right_OffCampusAddressSK" selected="False" rename="Right_OffCampusAddressSK" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="114">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1818" y="978" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="True">
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_StudentSK" selected="True" input="Left_" />
+                <SelectField field="Left_StudentID" selected="True" input="Left_" />
+                <SelectField field="Left_FirstName" selected="True" input="Left_" />
+                <SelectField field="Left_LastName" selected="True" input="Left_" />
+                <SelectField field="Left_BirthDateSK" selected="True" input="Left_" />
+                <SelectField field="Left_SSN" selected="True" input="Left_" />
+                <SelectField field="Left_GradeLevel" selected="True" input="Left_" />
+                <SelectField field="Left_Ethinicity" selected="True" input="Left_" />
+                <SelectField field="Left_Email" selected="True" input="Left_" />
+                <SelectField field="Left_Phone" selected="True" input="Left_" />
+                <SelectField field="Left_Gender" selected="True" input="Left_" />
+                <SelectField field="Left_Status" selected="True" input="Left_" />
+                <SelectField field="Left_Visa Type" selected="True" input="Left_" />
+                <SelectField field="Left_StartDateSK" selected="True" input="Left_" />
+                <SelectField field="Left_EndDateSK" selected="True" input="Left_" />
+                <SelectField field="Left_OffCampusAddressSK" selected="True" input="Left_" />
+                <SelectField field="Left_OnCampusAddressSK" selected="True" input="Left_" />
+                <SelectField field="Right_HomeTownAddressSK" selected="True" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="115">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1278" y="666" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="StudentSK" selected="True" />
+            <SelectField field="StudentID" selected="True" />
+            <SelectField field="FirstName" selected="True" />
+            <SelectField field="LastName" selected="True" />
+            <SelectField field="BirthDateSK" selected="True" />
+            <SelectField field="SSN" selected="True" />
+            <SelectField field="GradeLevel" selected="True" />
+            <SelectField field="Ethinicity" selected="True" />
+            <SelectField field="Email" selected="True" />
+            <SelectField field="Phone" selected="True" />
+            <SelectField field="Gender" selected="True" />
+            <SelectField field="Status" selected="True" />
+            <SelectField field="Visa Type" selected="True" />
+            <SelectField field="StartDateSK" selected="True" />
+            <SelectField field="EndDateSK" selected="True" />
+            <SelectField field="OffCampusAddressSK" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="116">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1578" y="822" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="StudentSK" selected="True" />
+            <SelectField field="StudentID" selected="True" />
+            <SelectField field="FirstName" selected="True" />
+            <SelectField field="LastName" selected="True" />
+            <SelectField field="BirthDateSK" selected="True" />
+            <SelectField field="SSN" selected="True" />
+            <SelectField field="GradeLevel" selected="True" />
+            <SelectField field="Ethinicity" selected="True" />
+            <SelectField field="Email" selected="True" />
+            <SelectField field="Phone" selected="True" />
+            <SelectField field="Gender" selected="True" />
+            <SelectField field="Status" selected="True" />
+            <SelectField field="Visa Type" selected="True" />
+            <SelectField field="StartDateSK" selected="True" />
+            <SelectField field="EndDateSK" selected="True" />
+            <SelectField field="OffCampusAddressSK" selected="True" />
+            <SelectField field="OnCampusAddressSK" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="118">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="2070" y="1146" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="StudentSK" selected="True" />
+            <SelectField field="StudentID" selected="True" />
+            <SelectField field="FirstName" selected="True" />
+            <SelectField field="LastName" selected="True" />
+            <SelectField field="BirthDateSK" selected="True" />
+            <SelectField field="SSN" selected="True" />
+            <SelectField field="GradeLevel" selected="True" />
+            <SelectField field="Ethinicity" selected="True" />
+            <SelectField field="Email" selected="True" />
+            <SelectField field="Phone" selected="True" />
+            <SelectField field="Gender" selected="True" />
+            <SelectField field="Status" selected="True" />
+            <SelectField field="Visa Type" selected="True" />
+            <SelectField field="StartDateSK" selected="True" />
+            <SelectField field="EndDateSK" selected="True" />
+            <SelectField field="OffCampusAddressSK" selected="True" />
+            <SelectField field="OnCampusAddressSK" selected="True" />
+            <SelectField field="HomeTownAddressSK" selected="True" />
+            <SelectField field="ProgramSK" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="119">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="294" y="1146" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" FileFormat="23">aka:GraduateDataModelSQL|||select DimProgram.ProgramSK 
+from DimProgram</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:GraduateDataModelSQL
+Query=select DimProgram.ProgramSK ...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ProgramSK" source="File: aka:GraduateDataModelSQL|||select DimProgram.ProgramSK &#xA;from DimProgram" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="120">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1914" y="978" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="121">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1890" y="1146" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="True">
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_StudentSK" selected="True" input="Left_" />
+                <SelectField field="Left_StudentID" selected="True" input="Left_" />
+                <SelectField field="Left_FirstName" selected="True" input="Left_" />
+                <SelectField field="Left_LastName" selected="True" input="Left_" />
+                <SelectField field="Left_BirthDateSK" selected="True" input="Left_" />
+                <SelectField field="Left_SSN" selected="True" input="Left_" />
+                <SelectField field="Left_GradeLevel" selected="True" input="Left_" />
+                <SelectField field="Left_Ethinicity" selected="True" input="Left_" />
+                <SelectField field="Left_Email" selected="True" input="Left_" />
+                <SelectField field="Left_Phone" selected="True" input="Left_" />
+                <SelectField field="Left_Gender" selected="True" input="Left_" />
+                <SelectField field="Left_Status" selected="True" input="Left_" />
+                <SelectField field="Left_Visa Type" selected="True" input="Left_" />
+                <SelectField field="Left_StartDateSK" selected="True" input="Left_" />
+                <SelectField field="Left_EndDateSK" selected="True" input="Left_" />
+                <SelectField field="Left_OffCampusAddressSK" selected="True" input="Left_" />
+                <SelectField field="Left_OnCampusAddressSK" selected="True" input="Left_" />
+                <SelectField field="Left_HomeTownAddressSK" selected="True" input="Left_" />
+                <SelectField field="Right_ProgramSK" selected="True" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="122">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1410" y="54" width="384" height="48" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Student Dimension</Text>
+          <Font name="Segoe UI" size="20.25" style="1" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="61" Connection="Output" />
+      <Destination ToolID="98" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="99" Connection="Output" />
+      <Destination ToolID="98" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="68" Connection="Output" />
+      <Destination ToolID="70" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="70" Connection="Output" />
+      <Destination ToolID="61" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="90" Connection="Output" />
+      <Destination ToolID="91" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="91" Connection="Unique" />
+      <Destination ToolID="92" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="92" Connection="Output" />
+      <Destination ToolID="93" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="97" Connection="Output26" />
+      <Destination ToolID="90" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="98" Connection="Join" />
+      <Destination ToolID="102" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="100" Connection="Output" />
+      <Destination ToolID="101" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="102" Connection="Output" />
+      <Destination ToolID="101" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="101" Connection="Join" />
+      <Destination ToolID="103" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="103" Connection="Output" />
+      <Destination ToolID="105" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="104" Connection="Output" />
+      <Destination ToolID="105" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="105" Connection="Join" />
+      <Destination ToolID="106" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="106" Connection="Output" />
+      <Destination ToolID="107" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="108" Connection="Output" />
+      <Destination ToolID="107" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="107" Connection="Join" />
+      <Destination ToolID="115" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="109" Connection="Output" />
+      <Destination ToolID="112" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="115" Connection="Output" />
+      <Destination ToolID="112" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="111" Connection="Output" />
+      <Destination ToolID="114" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="116" Connection="Output" />
+      <Destination ToolID="114" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="112" Connection="Join" />
+      <Destination ToolID="116" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="114" Connection="Join" />
+      <Destination ToolID="120" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="118" Connection="Output" />
+      <Destination ToolID="97" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="119" Connection="Output" />
+      <Destination ToolID="121" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="120" Connection="Output" />
+      <Destination ToolID="121" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="121" Connection="Join" />
+      <Destination ToolID="118" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>DimStudent</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
