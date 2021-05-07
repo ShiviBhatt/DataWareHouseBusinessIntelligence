@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Project xmi:id="_YSVEQIpuEeup8Lr_iZ1hhA" label="DataIntegrationPart1-2" description="" language="java" technicalLabel="DATAINTEGRATIONPART1_2" local="true" author="_YSVEQYpuEeup8Lr_iZ1hhA" productVersion="Talend Real-time Big Data Platform-7.3.1.20200219_1130" itemsRelationVersion="1.3">
+    <migrationTask xmi:id="_YfcTMIpuEeup8Lr_iZ1hhA" id="org.talend.repository.model.migration.CheckProductVersionMigrationTask" breaks="7.1.0" version="7.1.1"/>
+  </TalendProperties:Project>
+  <TalendProperties:User xmi:id="_YSVEQYpuEeup8Lr_iZ1hhA" login="user@talend.com" password="D41D8CD98F00B204E9800998ECF8427E"/>
+</xmi:XMI>

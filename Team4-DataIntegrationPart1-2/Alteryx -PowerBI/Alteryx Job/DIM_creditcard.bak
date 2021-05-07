@@ -1,0 +1,533 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.1">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="42" y="30" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" FileFormat="23">odbc:DSN=Team_Assignment_AdvntureWorks|||select Sales.CreditCard.* 
+from Sales.CreditCard</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <ReadCentroids>False</ReadCentroids>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=Team_Assignment_AdvntureWorks
+Query=select Sales.CreditCard.* ...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="CreditCardID" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select Sales.CreditCard.* &#xA;from Sales.CreditCard" type="Int32" />
+            <Field name="CardType" size="50" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select Sales.CreditCard.* &#xA;from Sales.CreditCard" type="V_WString" />
+            <Field name="CardNumber" size="25" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select Sales.CreditCard.* &#xA;from Sales.CreditCard" type="V_WString" />
+            <Field name="ExpMonth" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select Sales.CreditCard.* &#xA;from Sales.CreditCard" type="Int16" />
+            <Field name="ExpYear" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select Sales.CreditCard.* &#xA;from Sales.CreditCard" type="Int16" />
+            <Field name="ModifiedDate" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select Sales.CreditCard.* &#xA;from Sales.CreditCard" type="DateTime" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="282" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="CreditCardSK" selected="True" />
+            <SelectField field="CreditCardID" selected="True" />
+            <SelectField field="CardType" selected="True" />
+            <SelectField field="CardNumber" selected="True" />
+            <SelectField field="ExpMonth" selected="True" />
+            <SelectField field="ExpYear" selected="True" />
+            <SelectField field="ModifiedDate" selected="True" rename="CreditCardModifiedDate" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="42" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" FileFormat="23">odbc:DSN=Team_Assignment_AdvntureWorks|||select Sales.PersonCreditCard.* 
+from Sales.PersonCreditCard</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <ReadCentroids>False</ReadCentroids>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=Team_Assignment_AdvntureWorks
+Query=select Sales.PersonCreditCar...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="BusinessEntityID" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select Sales.PersonCreditCard.* &#xA;from Sales.PersonCreditCard" type="Int32" />
+            <Field name="CreditCardID" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select Sales.PersonCreditCard.* &#xA;from Sales.PersonCreditCard" type="Int32" />
+            <Field name="ModifiedDate" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select Sales.PersonCreditCard.* &#xA;from Sales.PersonCreditCard" type="DateTime" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="174" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="ModifiedDate" selected="True" rename="PersonCardModifiedDate" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="42" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" FileFormat="23">odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW.dbo.DIM_customer.* 
+from AdventureWorksDW.dbo.DIM_customer</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <ReadCentroids>False</ReadCentroids>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=Team_Assignment_AdvntureWorks
+Query=select AdventureWorksDW.dbo....</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="CustomerSK" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW.dbo.DIM_customer.* &#xA;from AdventureWorksDW.dbo.DIM_customer" type="Int32" />
+            <Field name="CustomerID" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW.dbo.DIM_customer.* &#xA;from AdventureWorksDW.dbo.DIM_customer" type="Int32" />
+            <Field name="PersonID" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW.dbo.DIM_customer.* &#xA;from AdventureWorksDW.dbo.DIM_customer" type="Int32" />
+            <Field name="BusinessEntityID" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW.dbo.DIM_customer.* &#xA;from AdventureWorksDW.dbo.DIM_customer" type="Int32" />
+            <Field name="Title" size="8" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW.dbo.DIM_customer.* &#xA;from AdventureWorksDW.dbo.DIM_customer" type="V_WString" />
+            <Field name="FirstName" size="50" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW.dbo.DIM_customer.* &#xA;from AdventureWorksDW.dbo.DIM_customer" type="V_WString" />
+            <Field name="MiddleName" size="50" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW.dbo.DIM_customer.* &#xA;from AdventureWorksDW.dbo.DIM_customer" type="V_WString" />
+            <Field name="LastName" size="50" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW.dbo.DIM_customer.* &#xA;from AdventureWorksDW.dbo.DIM_customer" type="V_WString" />
+            <Field name="Suffix" size="10" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW.dbo.DIM_customer.* &#xA;from AdventureWorksDW.dbo.DIM_customer" type="V_WString" />
+            <Field name="EmailPromotion" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW.dbo.DIM_customer.* &#xA;from AdventureWorksDW.dbo.DIM_customer" type="Int32" />
+            <Field name="AddressType" size="50" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW.dbo.DIM_customer.* &#xA;from AdventureWorksDW.dbo.DIM_customer" type="V_WString" />
+            <Field name="AddressSK" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW.dbo.DIM_customer.* &#xA;from AdventureWorksDW.dbo.DIM_customer" type="Int32" />
+            <Field name="TotalPurchaseYTD" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW.dbo.DIM_customer.* &#xA;from AdventureWorksDW.dbo.DIM_customer" type="Double" />
+            <Field name="DateFirstPurchase" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW.dbo.DIM_customer.* &#xA;from AdventureWorksDW.dbo.DIM_customer" type="DateTime" />
+            <Field name="BirthDate" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW.dbo.DIM_customer.* &#xA;from AdventureWorksDW.dbo.DIM_customer" type="DateTime" />
+            <Field name="MaritalStatus" size="10" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW.dbo.DIM_customer.* &#xA;from AdventureWorksDW.dbo.DIM_customer" type="WString" />
+            <Field name="YearlyIncome" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW.dbo.DIM_customer.* &#xA;from AdventureWorksDW.dbo.DIM_customer" type="Double" />
+            <Field name="Gender" size="10" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW.dbo.DIM_customer.* &#xA;from AdventureWorksDW.dbo.DIM_customer" type="WString" />
+            <Field name="TotalChildren" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW.dbo.DIM_customer.* &#xA;from AdventureWorksDW.dbo.DIM_customer" type="Int16" />
+            <Field name="NumberChildrenAtHome" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW.dbo.DIM_customer.* &#xA;from AdventureWorksDW.dbo.DIM_customer" type="Int16" />
+            <Field name="Education" size="254" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW.dbo.DIM_customer.* &#xA;from AdventureWorksDW.dbo.DIM_customer" type="V_WString" />
+            <Field name="Occupation" size="254" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW.dbo.DIM_customer.* &#xA;from AdventureWorksDW.dbo.DIM_customer" type="V_WString" />
+            <Field name="HomeOwnerFlag" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW.dbo.DIM_customer.* &#xA;from AdventureWorksDW.dbo.DIM_customer" type="Bool" />
+            <Field name="NumberCarsOwned" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW.dbo.DIM_customer.* &#xA;from AdventureWorksDW.dbo.DIM_customer" type="Int16" />
+            <Field name="DI_JobID" size="40" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW.dbo.DIM_customer.* &#xA;from AdventureWorksDW.dbo.DIM_customer" type="V_WString" />
+            <Field name="DI_Create_Date" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW.dbo.DIM_customer.* &#xA;from AdventureWorksDW.dbo.DIM_customer" type="DateTime" />
+            <Field name="DI_Modified_Date" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW.dbo.DIM_customer.* &#xA;from AdventureWorksDW.dbo.DIM_customer" type="DateTime" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="162" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="CustomerSK" selected="True" />
+            <SelectField field="PersonID" selected="True" />
+            <SelectField field="BusinessEntityID" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="378" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="CreditCardID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="CreditCardID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_CreditCardID" selected="True" rename="Right_CreditCardID" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="510" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="CreditCardSK" selected="True" />
+            <SelectField field="CreditCardID" selected="True" />
+            <SelectField field="CardType" selected="True" />
+            <SelectField field="CardNumber" selected="True" />
+            <SelectField field="ExpMonth" selected="True" />
+            <SelectField field="ExpYear" selected="True" />
+            <SelectField field="CreditCardModifiedDate" selected="True" />
+            <SelectField field="BusinessEntityID" selected="True" />
+            <SelectField field="PersonCardModifiedDate" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="522" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="BusinessEntityID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="BusinessEntityID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_BusinessEntityID" selected="True" rename="Right_BusinessEntityID" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="642" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="CreditCardSK" selected="True" />
+            <SelectField field="CreditCardID" selected="True" />
+            <SelectField field="CustomerSK" selected="True" />
+            <SelectField field="BusinessEntityID" selected="True" />
+            <SelectField field="PersonID" selected="True" />
+            <SelectField field="PersonCardModifiedDate" selected="True" />
+            <SelectField field="CardType" selected="True" />
+            <SelectField field="CardNumber" selected="True" />
+            <SelectField field="ExpMonth" selected="True" />
+            <SelectField field="ExpYear" selected="True" />
+            <SelectField field="CreditCardModifiedDate" selected="True" />
+            <SelectField field="Right_BusinessEntityID" selected="False" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="150" y="30" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>CreditCardSK</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="762" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="DateTimeNow()" field="DI_Create_Date" size="19" type="DateTime" />
+            <FormulaField expression="DateTimeNow()" field="DI_Modified_Date" size="19" type="DateTime" />
+            <FormulaField expression="ToNumber(REPLACE(REPLACE(REPLACE([DI_Create_Date],'-',''),' ',''),':',''))" field="DI_JobID" size="40" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DI_Create_Date = DateTimeNow()
+DI_Modified_Date = DateTimeNow()
+DI_JobID = ToNum...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="906" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="CreditCardSK" selected="True" />
+            <SelectField field="CreditCardID" selected="True" />
+            <SelectField field="CustomerSK" selected="True" />
+            <SelectField field="BusinessEntityID" selected="True" />
+            <SelectField field="PersonID" selected="True" />
+            <SelectField field="PersonCardModifiedDate" selected="True" />
+            <SelectField field="CardType" selected="True" />
+            <SelectField field="CardNumber" selected="True" />
+            <SelectField field="ExpMonth" selected="True" />
+            <SelectField field="ExpYear" selected="True" />
+            <SelectField field="CreditCardModifiedDate" selected="True" />
+            <SelectField field="DI_JobID" selected="True" />
+            <SelectField field="DI_Create_Date" selected="True" />
+            <SelectField field="DI_Modified_Date" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1014" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">odbc:DSN=Team_Assignment_Output|||DIM_creditcard</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <TransactionMessages>False</TransactionMessages>
+            <Geometry>False</Geometry>
+            <Projection />
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <SpatialObjSize>8000</SpatialObjSize>
+            <OutputOption>Overwrite</OutputOption>
+            <PostSQL />
+            <TransactionSize>10000</TransactionSize>
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL />
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=Team_Assignment_Output
+Query=DIM_creditcard</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="9" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="9" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="11" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="11" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Join" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Join" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>DIM_creditcard</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

@@ -1,0 +1,256 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.1">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="18" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">D:\Study\DWBI\Talend\Adventureworks_Project_Team\OneDrive_2021-03-19\Homework - AdventureWorksDW\CustomerDemographics.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>CustomerDemographics.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="BusinessEntityID" size="254" source="File: D:\Study\DWBI\Talend\Adventureworks_Project_Team\OneDrive_2021-03-19\Homework - AdventureWorksDW\CustomerDemographics.csv" type="V_WString" />
+            <Field name="TotalPurchaseYTD" size="254" source="File: D:\Study\DWBI\Talend\Adventureworks_Project_Team\OneDrive_2021-03-19\Homework - AdventureWorksDW\CustomerDemographics.csv" type="V_WString" />
+            <Field name="DateFirstPurchase" size="254" source="File: D:\Study\DWBI\Talend\Adventureworks_Project_Team\OneDrive_2021-03-19\Homework - AdventureWorksDW\CustomerDemographics.csv" type="V_WString" />
+            <Field name="BirthDate" size="254" source="File: D:\Study\DWBI\Talend\Adventureworks_Project_Team\OneDrive_2021-03-19\Homework - AdventureWorksDW\CustomerDemographics.csv" type="V_WString" />
+            <Field name="MaritalStatus" size="254" source="File: D:\Study\DWBI\Talend\Adventureworks_Project_Team\OneDrive_2021-03-19\Homework - AdventureWorksDW\CustomerDemographics.csv" type="V_WString" />
+            <Field name="YearlyIncome" size="254" source="File: D:\Study\DWBI\Talend\Adventureworks_Project_Team\OneDrive_2021-03-19\Homework - AdventureWorksDW\CustomerDemographics.csv" type="V_WString" />
+            <Field name="Gender" size="254" source="File: D:\Study\DWBI\Talend\Adventureworks_Project_Team\OneDrive_2021-03-19\Homework - AdventureWorksDW\CustomerDemographics.csv" type="V_WString" />
+            <Field name="TotalChildren" size="254" source="File: D:\Study\DWBI\Talend\Adventureworks_Project_Team\OneDrive_2021-03-19\Homework - AdventureWorksDW\CustomerDemographics.csv" type="V_WString" />
+            <Field name="NumberChildrenAtHome" size="254" source="File: D:\Study\DWBI\Talend\Adventureworks_Project_Team\OneDrive_2021-03-19\Homework - AdventureWorksDW\CustomerDemographics.csv" type="V_WString" />
+            <Field name="Education" size="254" source="File: D:\Study\DWBI\Talend\Adventureworks_Project_Team\OneDrive_2021-03-19\Homework - AdventureWorksDW\CustomerDemographics.csv" type="V_WString" />
+            <Field name="Occupation" size="254" source="File: D:\Study\DWBI\Talend\Adventureworks_Project_Team\OneDrive_2021-03-19\Homework - AdventureWorksDW\CustomerDemographics.csv" type="V_WString" />
+            <Field name="HomeOwnerFlag" size="254" source="File: D:\Study\DWBI\Talend\Adventureworks_Project_Team\OneDrive_2021-03-19\Homework - AdventureWorksDW\CustomerDemographics.csv" type="V_WString" />
+            <Field name="NumberCarsOwned" size="254" source="File: D:\Study\DWBI\Talend\Adventureworks_Project_Team\OneDrive_2021-03-19\Homework - AdventureWorksDW\CustomerDemographics.csv" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="18" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords>47153B24A25FF4E3F4A5F33E03FA86248434FD962</Passwords>
+          <File RecordLimit="" FileFormat="23">odbc:DSN=Team_Assignment_AdvntureWorks;UID=info7370;PWD=__EncPwd1__|||select Sales.Customer.* 
+from Sales.Customer</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <ReadCentroids>False</ReadCentroids>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=Team_Assignment_AdvntureWorks
+Query=select Sales.Customer.* 
+fro...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="CustomerID" source="File: odbc:DSN=Team_Assignment_AdvntureWorks;UID=info7370;PWD=__EncPwd1__" type="Int32" />
+            <Field name="PersonID" source="File: odbc:DSN=Team_Assignment_AdvntureWorks;UID=info7370;PWD=__EncPwd1__" type="Int32" />
+            <Field name="StoreID" source="File: odbc:DSN=Team_Assignment_AdvntureWorks;UID=info7370;PWD=__EncPwd1__" type="Int32" />
+            <Field name="TerritoryID" source="File: odbc:DSN=Team_Assignment_AdvntureWorks;UID=info7370;PWD=__EncPwd1__" type="Int32" />
+            <Field name="AccountNumber" size="10" source="File: odbc:DSN=Team_Assignment_AdvntureWorks;UID=info7370;PWD=__EncPwd1__" type="V_String" />
+            <Field name="rowguid" size="36" source="File: odbc:DSN=Team_Assignment_AdvntureWorks;UID=info7370;PWD=__EncPwd1__" type="V_String" />
+            <Field name="ModifiedDate" source="File: odbc:DSN=Team_Assignment_AdvntureWorks;UID=info7370;PWD=__EncPwd1__" type="DateTime" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="18" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords>47153B24A25FF4E3F4A5F33E03FA86248434FD962</Passwords>
+          <File RecordLimit="" FileFormat="23">odbc:DSN=Team_Assignment_AdvntureWorks;UID=info7370;PWD=__EncPwd1__|||select Person.Person.* 
+from Person.Person</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <ReadCentroids>False</ReadCentroids>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=Team_Assignment_AdvntureWorks
+Query=select Person.Person.* 
+fro...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="BusinessEntityID" source="File: odbc:DSN=Team_Assignment_AdvntureWorks;UID=info7370;PWD=__EncPwd1__" type="Int32" />
+            <Field name="PersonType" size="2" source="File: odbc:DSN=Team_Assignment_AdvntureWorks;UID=info7370;PWD=__EncPwd1__" type="WString" />
+            <Field name="NameStyle" source="File: odbc:DSN=Team_Assignment_AdvntureWorks;UID=info7370;PWD=__EncPwd1__" type="Bool" />
+            <Field name="Title" size="8" source="File: odbc:DSN=Team_Assignment_AdvntureWorks;UID=info7370;PWD=__EncPwd1__" type="V_WString" />
+            <Field name="FirstName" size="50" source="File: odbc:DSN=Team_Assignment_AdvntureWorks;UID=info7370;PWD=__EncPwd1__" type="V_WString" />
+            <Field name="MiddleName" size="50" source="File: odbc:DSN=Team_Assignment_AdvntureWorks;UID=info7370;PWD=__EncPwd1__" type="V_WString" />
+            <Field name="LastName" size="50" source="File: odbc:DSN=Team_Assignment_AdvntureWorks;UID=info7370;PWD=__EncPwd1__" type="V_WString" />
+            <Field name="Suffix" size="10" source="File: odbc:DSN=Team_Assignment_AdvntureWorks;UID=info7370;PWD=__EncPwd1__" type="V_WString" />
+            <Field name="EmailPromotion" source="File: odbc:DSN=Team_Assignment_AdvntureWorks;UID=info7370;PWD=__EncPwd1__" type="Int32" />
+            <Field name="AdditionalContactInfo" size="16777216" source="File: odbc:DSN=Team_Assignment_AdvntureWorks;UID=info7370;PWD=__EncPwd1__" type="V_String" />
+            <Field name="Demographics" size="16777216" source="File: odbc:DSN=Team_Assignment_AdvntureWorks;UID=info7370;PWD=__EncPwd1__" type="V_String" />
+            <Field name="rowguid" size="36" source="File: odbc:DSN=Team_Assignment_AdvntureWorks;UID=info7370;PWD=__EncPwd1__" type="V_String" />
+            <Field name="ModifiedDate" source="File: odbc:DSN=Team_Assignment_AdvntureWorks;UID=info7370;PWD=__EncPwd1__" type="DateTime" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="30" y="486" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords>47153B24A25FF4E3F4A5F33E03FA86248434FD962</Passwords>
+          <File RecordLimit="" FileFormat="23">odbc:DSN=Team_Assignment_AdvntureWorks;UID=info7370;PWD=__EncPwd1__|||select Person.PersonPhone.* 
+from Person.PersonPhone</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <ReadCentroids>False</ReadCentroids>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=Team_Assignment_AdvntureWorks
+Query=select Person.PersonPhone.* ...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="BusinessEntityID" source="File: odbc:DSN=Team_Assignment_AdvntureWorks;UID=info7370;PWD=__EncPwd1__" type="Int32" />
+            <Field name="PhoneNumber" size="25" source="File: odbc:DSN=Team_Assignment_AdvntureWorks;UID=info7370;PWD=__EncPwd1__" type="V_WString" />
+            <Field name="PhoneNumberTypeID" source="File: odbc:DSN=Team_Assignment_AdvntureWorks;UID=info7370;PWD=__EncPwd1__" type="Int32" />
+            <Field name="ModifiedDate" source="File: odbc:DSN=Team_Assignment_AdvntureWorks;UID=info7370;PWD=__EncPwd1__" type="DateTime" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="150" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="BusinessEntityID" selected="True" type="Int32" size="4" />
+            <SelectField field="TotalPurchaseYTD" selected="True" type="Double" size="8" />
+            <SelectField field="DateFirstPurchase" selected="True" type="DateTime" size="19" />
+            <SelectField field="BirthDate" selected="True" type="DateTime" size="19" />
+            <SelectField field="MaritalStatus" selected="True" size="10" />
+            <SelectField field="YearlyIncome" selected="True" type="String" size="254" />
+            <SelectField field="Gender" selected="True" size="10" />
+            <SelectField field="TotalChildren" selected="True" type="Int16" size="2" />
+            <SelectField field="NumberChildrenAtHome" selected="True" type="Int16" size="2" />
+            <SelectField field="Education" selected="True" />
+            <SelectField field="Occupation" selected="True" />
+            <SelectField field="HomeOwnerFlag" selected="True" type="Bool" size="1" />
+            <SelectField field="NumberCarsOwned" selected="True" type="Int16" size="2" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Dim_customer</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

@@ -1,0 +1,188 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.1">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="78" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" FileFormat="23">odbc:DSN=Team_Assignment_AdvntureWorks|||select Sales.SpecialOffer.* 
+from Sales.SpecialOffer</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <ReadCentroids>False</ReadCentroids>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=Team_Assignment_AdvntureWorks
+Query=select Sales.SpecialOffer.* ...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="SpecialOfferID" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select Sales.SpecialOffer.* &#xA;from Sales.SpecialOffer" type="Int32" />
+            <Field name="Description" size="255" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select Sales.SpecialOffer.* &#xA;from Sales.SpecialOffer" type="V_WString" />
+            <Field name="DiscountPct" scale="4" size="12" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select Sales.SpecialOffer.* &#xA;from Sales.SpecialOffer" type="FixedDecimal" />
+            <Field name="Type" size="50" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select Sales.SpecialOffer.* &#xA;from Sales.SpecialOffer" type="V_WString" />
+            <Field name="Category" size="50" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select Sales.SpecialOffer.* &#xA;from Sales.SpecialOffer" type="V_WString" />
+            <Field name="StartDate" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select Sales.SpecialOffer.* &#xA;from Sales.SpecialOffer" type="DateTime" />
+            <Field name="EndDate" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select Sales.SpecialOffer.* &#xA;from Sales.SpecialOffer" type="DateTime" />
+            <Field name="MinQty" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select Sales.SpecialOffer.* &#xA;from Sales.SpecialOffer" type="Int32" />
+            <Field name="MaxQty" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select Sales.SpecialOffer.* &#xA;from Sales.SpecialOffer" type="Int32" />
+            <Field name="rowguid" size="36" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select Sales.SpecialOffer.* &#xA;from Sales.SpecialOffer" type="V_String" />
+            <Field name="ModifiedDate" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select Sales.SpecialOffer.* &#xA;from Sales.SpecialOffer" type="DateTime" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="234" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="DateTimeNow()" field="DI_Create_Date" size="19" type="DateTime" />
+            <FormulaField expression="DateTimeNow()" field="DI_Modified_Date" size="19" type="DateTime" />
+            <FormulaField expression=" ToNumber(REPLACE(REPLACE(REPLACE([DI_Create_Date],'-',''),' ',''),':',''))&#xA;" field="DI_JobID" size="40" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DI_Create_Date = DateTimeNow()
+DI_Modified_Date = DateTimeNow()
+DI_JobID =  ToNu...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="378" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="SpecialOfferID" selected="True" />
+            <SelectField field="Description" selected="True" />
+            <SelectField field="DiscountPct" selected="True" />
+            <SelectField field="Type" selected="True" />
+            <SelectField field="Category" selected="True" />
+            <SelectField field="StartDate" selected="True" />
+            <SelectField field="EndDate" selected="True" />
+            <SelectField field="MinQty" selected="True" />
+            <SelectField field="MaxQty" selected="True" />
+            <SelectField field="rowguid" selected="False" />
+            <SelectField field="ModifiedDate" selected="True" />
+            <SelectField field="DI_JobID" selected="True" />
+            <SelectField field="DI_Create_Date" selected="True" />
+            <SelectField field="DI_Modified_Date" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="534" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">odbc:DSN=Team_Assignment_Output|||DIM_promotions</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <TransactionMessages>False</TransactionMessages>
+            <Geometry>False</Geometry>
+            <Projection />
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <SpatialObjSize>8000</SpatialObjSize>
+            <OutputOption>Delete</OutputOption>
+            <PostSQL />
+            <TransactionSize>10000</TransactionSize>
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL />
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=Team_Assignment_Output
+Query=DIM_promotions</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>DIM_promotions</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
