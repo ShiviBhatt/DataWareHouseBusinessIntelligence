@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" name="Default" xmi:id="_aGchEKM3EeuAH-H7Rc2XAQ">
+    <contextParameter comment="" name="imdb_DI_sql_server_Server" prompt="imdb_DI_sql_server_Server?" promptNeeded="false" type="id_String" value="localhost" xmi:id="_aGchEaM3EeuAH-H7Rc2XAQ"/>
+    <contextParameter comment="" name="imdb_DI_sql_server_Port" prompt="imdb_DI_sql_server_Port?" promptNeeded="false" type="id_String" value="1433" xmi:id="_aGchEqM3EeuAH-H7Rc2XAQ"/>
+    <contextParameter comment="" name="imdb_DI_sql_server_AdditionalParams" prompt="imdb_DI_sql_server_AdditionalParams?" promptNeeded="false" type="id_String" value="&quot;allowMultiQueries=true&quot;" xmi:id="_aGchE6M3EeuAH-H7Rc2XAQ"/>
+    <contextParameter comment="" name="imdb_DI_sql_server_Database" prompt="imdb_DI_sql_server_Database?" promptNeeded="false" type="id_String" value="imdb_DI" xmi:id="_aGchFKM3EeuAH-H7Rc2XAQ"/>
+    <contextParameter comment="" name="imdb_DI_sql_server_Schema" prompt="imdb_DI_sql_server_Schema?" promptNeeded="false" type="id_String" value="" xmi:id="_aGchFaM3EeuAH-H7Rc2XAQ"/>
+    <contextParameter comment="" name="imdb_DI_sql_server_Login" prompt="imdb_DI_sql_server_Login?" promptNeeded="false" type="id_String" value="info7370" xmi:id="_aGchFqM3EeuAH-H7Rc2XAQ"/>
+    <contextParameter comment="" name="imdb_DI_sql_server_Password" prompt="imdb_DI_sql_server_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:uQtd1DiDO9+3O0GF3iKhiiMRmQZRLHSAfemNEt1gAPkNTQdf" xmi:id="_aGchF6M3EeuAH-H7Rc2XAQ"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="DEV" xmi:id="_aGchGKM3EeuAH-H7Rc2XAQ">
+    <contextParameter comment="" name="imdb_DI_sql_server_Server" prompt="imdb_DI_sql_server_Server?" promptNeeded="false" type="id_String" value="localhost" xmi:id="_aGchGaM3EeuAH-H7Rc2XAQ"/>
+    <contextParameter comment="" name="imdb_DI_sql_server_Port" prompt="imdb_DI_sql_server_Port?" promptNeeded="false" type="id_String" value="1433" xmi:id="_aGchGqM3EeuAH-H7Rc2XAQ"/>
+    <contextParameter comment="" name="imdb_DI_sql_server_AdditionalParams" prompt="imdb_DI_sql_server_AdditionalParams?" promptNeeded="false" type="id_String" value="&quot;allowMultiQueries=true&quot;" xmi:id="_aGchG6M3EeuAH-H7Rc2XAQ"/>
+    <contextParameter comment="" name="imdb_DI_sql_server_Database" prompt="imdb_DI_sql_server_Database?" promptNeeded="false" type="id_String" value="imdb_DI" xmi:id="_aGchHKM3EeuAH-H7Rc2XAQ"/>
+    <contextParameter comment="" name="imdb_DI_sql_server_Schema" prompt="imdb_DI_sql_server_Schema?" promptNeeded="false" type="id_String" value="" xmi:id="_aGchHaM3EeuAH-H7Rc2XAQ"/>
+    <contextParameter comment="" name="imdb_DI_sql_server_Login" prompt="imdb_DI_sql_server_Login?" promptNeeded="false" type="id_String" value="info7370" xmi:id="_aGchHqM3EeuAH-H7Rc2XAQ"/>
+    <contextParameter comment="" name="imdb_DI_sql_server_Password" prompt="imdb_DI_sql_server_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:Q/3Nr7VvrJtLFRvkOknqMSf4yAiJg1KSy5KeZW1OSir9IOyH" xmi:id="_aGchH6M3EeuAH-H7Rc2XAQ"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="TST" xmi:id="_aGchIKM3EeuAH-H7Rc2XAQ">
+    <contextParameter comment="" name="imdb_DI_sql_server_Server" prompt="imdb_DI_sql_server_Server?" promptNeeded="false" type="id_String" value="localhost" xmi:id="_aGchIaM3EeuAH-H7Rc2XAQ"/>
+    <contextParameter comment="" name="imdb_DI_sql_server_Port" prompt="imdb_DI_sql_server_Port?" promptNeeded="false" type="id_String" value="1433" xmi:id="_aGchIqM3EeuAH-H7Rc2XAQ"/>
+    <contextParameter comment="" name="imdb_DI_sql_server_AdditionalParams" prompt="imdb_DI_sql_server_AdditionalParams?" promptNeeded="false" type="id_String" value="" xmi:id="_aGchI6M3EeuAH-H7Rc2XAQ"/>
+    <contextParameter comment="" name="imdb_DI_sql_server_Database" prompt="imdb_DI_sql_server_Database?" promptNeeded="false" type="id_String" value="imdb_DI" xmi:id="_aGchJKM3EeuAH-H7Rc2XAQ"/>
+    <contextParameter comment="" name="imdb_DI_sql_server_Schema" prompt="imdb_DI_sql_server_Schema?" promptNeeded="false" type="id_String" value="" xmi:id="_aGchJaM3EeuAH-H7Rc2XAQ"/>
+    <contextParameter comment="" name="imdb_DI_sql_server_Login" prompt="imdb_DI_sql_server_Login?" promptNeeded="false" type="id_String" value="info7370" xmi:id="_aGchJqM3EeuAH-H7Rc2XAQ"/>
+    <contextParameter comment="" name="imdb_DI_sql_server_Password" prompt="imdb_DI_sql_server_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:Zl4JHGG7aeADa0nt/hc3b5HOl0qeZBoXXytevleenE8rQX+5" xmi:id="_aGchJ6M3EeuAH-H7Rc2XAQ"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_8c064cda-308a-4c80-b558-cf28bf73aaf6"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>rJRp4zDn2bCjTlgyd2yI+JDInQiAnK7umDqZ7HoN9wQxhiFpIl5TkEnXe06yvL6f3afBO5oStk15
+ahjPLGbZKA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_e00737a3-79e0-41de-8c86-e271aaf241a3"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>cqFW+SUtPQxOCb2qKSbAMBjsZfM9p3w9V53Rg7G/Q7Kz3gDLzivNnc6AmR4QCKsPC3XU/XEkO+FJ
+Z1k0xpGdhw==</DigestValue></Reference></SignedInfo><SignatureValue>lqOP5FedvCg74pjgNzp/uqnO8dL8lkAGs7kBoazeA1xsA4zR+TxO0LkU0aG02mx+tOygm9eDGJjM
+hxH8yM5HWr/MkGVctPXZWvRJF2aQuH0oY2HyCEXYtJfbal1K02U0hsspMi3IA3N2s452stCGHbO3
+7UkNPs1jab9285nAhyqAqM0CGk/ih9/gz5+hl+hxEjW0OF0zadcxMTXkKZHMKVlXgMrRWcNaxk99
++UJv03a7Y7NFUddzTAU45oJCMhvOOvyauOt1oH5mFguASEdoKouC4x9WsWFbburY9MD/EumbKANA
+EWJ9hE7TpA+qz40Dcid8NmHI2fTuB8gp1yQRaQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_e00737a3-79e0-41de-8c86-e271aaf241a3" Target="#_8c064cda-308a-4c80-b558-cf28bf73aaf6"><Timestamp>2021-04-28 07:53:06</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
