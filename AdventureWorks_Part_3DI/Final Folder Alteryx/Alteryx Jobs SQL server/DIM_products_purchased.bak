@@ -1,0 +1,374 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.1">
+  <Nodes>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" FileFormat="23">odbc:DSN=Team_Assignment_AdvntureWorks|||select Purchasing.PurchaseOrderDetail.ProductID 
+from Purchasing.PurchaseOrderDetail</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <ReadCentroids>False</ReadCentroids>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=Team_Assignment_AdvntureWorks
+Query=select Purchasing.PurchaseOr...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ProductID" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select Purchasing.PurchaseOrderDetail.ProductID &#xA;from Purchasing.PurchaseOrderDetail" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="234" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="ProductID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="ProductID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_ProductID" selected="True" rename="Right_ProductID" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="390" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="ProductID" selected="True" />
+            <SelectField field="ProductSubcategoryID" selected="True" />
+            <SelectField field="ProductSubcategoryName" selected="True" />
+            <SelectField field="ProductCategoryID" selected="True" />
+            <SelectField field="ProductCategoryName" selected="True" />
+            <SelectField field="ProductName" selected="True" />
+            <SelectField field="ProductNumber" selected="True" />
+            <SelectField field="MakeFlag" selected="True" />
+            <SelectField field="FinishedGoodsFlag" selected="True" />
+            <SelectField field="Color" selected="True" />
+            <SelectField field="SafetyStockLevel" selected="True" />
+            <SelectField field="ReorderPoint" selected="True" />
+            <SelectField field="Size" selected="True" />
+            <SelectField field="SizeUnitMeasureCode" selected="True" />
+            <SelectField field="WeightUnitMeasureCode" selected="True" />
+            <SelectField field="Weight" selected="True" />
+            <SelectField field="DaysToManufacture" selected="True" />
+            <SelectField field="ProductLine" selected="True" />
+            <SelectField field="Class" selected="True" />
+            <SelectField field="Style" selected="True" />
+            <SelectField field="SellStartDate" selected="True" />
+            <SelectField field="SellEndDate" selected="True" />
+            <SelectField field="DiscontinuedDate" selected="True" />
+            <SelectField field="StandardCost" selected="True" />
+            <SelectField field="ListPrice" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" FileFormat="23">odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_product.* 
+from AdventureWorksDW_Part_3.dbo.DIM_product</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <ReadCentroids>False</ReadCentroids>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=Team_Assignment_AdvntureWorks
+Query=select AdventureWorksDW_Part...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ProductSK" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_product.* &#xA;from AdventureWorksDW_Part_3.dbo.DIM_product" type="Int32" />
+            <Field name="ProductID" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_product.* &#xA;from AdventureWorksDW_Part_3.dbo.DIM_product" type="Int32" />
+            <Field name="ProductSubcategoryID" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_product.* &#xA;from AdventureWorksDW_Part_3.dbo.DIM_product" type="Int32" />
+            <Field name="ProductSubcategoryName" size="50" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_product.* &#xA;from AdventureWorksDW_Part_3.dbo.DIM_product" type="V_String" />
+            <Field name="ProductCategoryID" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_product.* &#xA;from AdventureWorksDW_Part_3.dbo.DIM_product" type="Int32" />
+            <Field name="ProductCategoryName" size="50" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_product.* &#xA;from AdventureWorksDW_Part_3.dbo.DIM_product" type="V_String" />
+            <Field name="ProductName" size="50" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_product.* &#xA;from AdventureWorksDW_Part_3.dbo.DIM_product" type="V_String" />
+            <Field name="ProductNumber" size="25" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_product.* &#xA;from AdventureWorksDW_Part_3.dbo.DIM_product" type="V_String" />
+            <Field name="MakeFlag" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_product.* &#xA;from AdventureWorksDW_Part_3.dbo.DIM_product" type="Int32" />
+            <Field name="FinishedGoodsFlag" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_product.* &#xA;from AdventureWorksDW_Part_3.dbo.DIM_product" type="Int32" />
+            <Field name="Color" size="15" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_product.* &#xA;from AdventureWorksDW_Part_3.dbo.DIM_product" type="V_String" />
+            <Field name="SafetyStockLevel" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_product.* &#xA;from AdventureWorksDW_Part_3.dbo.DIM_product" type="Int32" />
+            <Field name="ReorderPoint" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_product.* &#xA;from AdventureWorksDW_Part_3.dbo.DIM_product" type="Int32" />
+            <Field name="Size" size="5" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_product.* &#xA;from AdventureWorksDW_Part_3.dbo.DIM_product" type="V_String" />
+            <Field name="SizeUnitMeasureCode" size="3" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_product.* &#xA;from AdventureWorksDW_Part_3.dbo.DIM_product" type="String" />
+            <Field name="WeightUnitMeasureCode" size="3" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_product.* &#xA;from AdventureWorksDW_Part_3.dbo.DIM_product" type="String" />
+            <Field name="Weight" scale="2" size="10" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_product.* &#xA;from AdventureWorksDW_Part_3.dbo.DIM_product" type="FixedDecimal" />
+            <Field name="DaysToManufacture" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_product.* &#xA;from AdventureWorksDW_Part_3.dbo.DIM_product" type="Int32" />
+            <Field name="ProductLine" size="2" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_product.* &#xA;from AdventureWorksDW_Part_3.dbo.DIM_product" type="String" />
+            <Field name="Class" size="2" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_product.* &#xA;from AdventureWorksDW_Part_3.dbo.DIM_product" type="String" />
+            <Field name="Style" size="2" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_product.* &#xA;from AdventureWorksDW_Part_3.dbo.DIM_product" type="String" />
+            <Field name="SellStartDate" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_product.* &#xA;from AdventureWorksDW_Part_3.dbo.DIM_product" type="DateTime" />
+            <Field name="SellEndDate" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_product.* &#xA;from AdventureWorksDW_Part_3.dbo.DIM_product" type="DateTime" />
+            <Field name="DiscontinuedDate" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_product.* &#xA;from AdventureWorksDW_Part_3.dbo.DIM_product" type="DateTime" />
+            <Field name="StandardCost" scale="2" size="17" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_product.* &#xA;from AdventureWorksDW_Part_3.dbo.DIM_product" type="FixedDecimal" />
+            <Field name="ListPrice" scale="2" size="17" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_product.* &#xA;from AdventureWorksDW_Part_3.dbo.DIM_product" type="FixedDecimal" />
+            <Field name="Product_ModifiedDate" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_product.* &#xA;from AdventureWorksDW_Part_3.dbo.DIM_product" type="DateTime" />
+            <Field name="Subcategory_ModifiedDate" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_product.* &#xA;from AdventureWorksDW_Part_3.dbo.DIM_product" type="DateTime" />
+            <Field name="Category_ModifiedDate" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_product.* &#xA;from AdventureWorksDW_Part_3.dbo.DIM_product" type="DateTime" />
+            <Field name="DI_JobID" size="20" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_product.* &#xA;from AdventureWorksDW_Part_3.dbo.DIM_product" type="V_String" />
+            <Field name="DI_Create_Date" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_product.* &#xA;from AdventureWorksDW_Part_3.dbo.DIM_product" type="DateTime" />
+            <Field name="DI_Modified_Date" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_product.* &#xA;from AdventureWorksDW_Part_3.dbo.DIM_product" type="DateTime" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="534" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="ProductID" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="678" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="DateTimeNow()" field="DI_Create_Date" size="19" type="DateTime" />
+            <FormulaField expression="DateTimeNow()" field="DI_Modified_Date" size="19" type="DateTime" />
+            <FormulaField expression="ToNumber(REPLACE(REPLACE(REPLACE([DI_Create_Date],'-',''),' ',''),':',''))" field="DI_JobID" size="40" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DI_Create_Date = DateTimeNow()
+DI_Modified_Date = DateTimeNow()
+DI_JobID = ToNum...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="894" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="18">odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=AdventureWorksDW_Part_3;Data Source=localhost;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-5TJH5F4;Use Encryption for Data=False;Tag with column collation when possible=False|||DIM_products_purchased</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <TransactionSize>10000</TransactionSize>
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <PostSQL />
+            <TableStyle>Quoted</TableStyle>
+            <AppendMap>
+              <AppendMapping mode="Custom">
+                <Field Source="ProductID" Dest="ProductID" />
+                <Field Source="ProductSubcategoryID" Dest="ProductSubcategoryID" />
+                <Field Source="ProductSubcategoryName" Dest="ProductSubcategoryName" />
+                <Field Source="ProductCategoryID" Dest="ProductCategoryID" />
+                <Field Source="ProductCategoryName" Dest="ProductCategoryName" />
+                <Field Source="ProductName" Dest="ProductName" />
+                <Field Source="ProductNumber" Dest="ProductNumber" />
+                <Field Source="MakeFlag" Dest="MakeFlag" />
+                <Field Source="FinishedGoodsFlag" Dest="FinishedGoodsFlag" />
+                <Field Source="ProductColor" Dest="ProductColor" />
+                <Field Source="SafetyStockLevel" Dest="SafetyStockLevel" />
+                <Field Source="ReorderPoint" Dest="ReorderPoint" />
+                <Field Source="ProductSize" Dest="ProductSize" />
+                <Field Source="SizeUnitMeasureCode" Dest="SizeUnitMeasureCode" />
+                <Field Source="WeightUnitMeasureCode" Dest="WeightUnitMeasureCode" />
+                <Field Source="ProductWeight" Dest="ProductWeight" />
+                <Field Source="DaysToManufacture" Dest="DaysToManufacture" />
+                <Field Source="ProductLine" Dest="ProductLine" />
+                <Field Source="ProductClass" Dest="ProductClass" />
+                <Field Source="ProductStyle" Dest="ProductStyle" />
+                <Field Source="SellStartDate" Dest="SellStartDate" />
+                <Field Source="SellEndDate" Dest="SellEndDate" />
+                <Field Source="DiscontinuedDate" Dest="DiscontinuedDate" />
+                <Field Source="StandardCost" Dest="StandardCost" />
+                <Field Source="ListPrice" Dest="ListPrice" />
+                <Field Source="DI_Create_Date" Dest="DI_Create_Date" />
+                <Field Source="DI_Modified_Date" Dest="DI_Modified_Date" />
+                <Field Source="DI_JobID" Dest="DI_JobID" />
+              </AppendMapping>
+            </AppendMap>
+            <PreSQL />
+            <TransactionMessages>False</TransactionMessages>
+            <OutputOption>Delete</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Source=localhost
+Catalog=AdventureWorksDW_Part_3
+Query=DIM_products_purchased</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="786" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Color" selected="True" rename="ProductColor" />
+            <SelectField field="Size" selected="True" rename="ProductSize" />
+            <SelectField field="Weight" selected="True" rename="ProductWeight" />
+            <SelectField field="Class" selected="True" rename="ProductClass" />
+            <SelectField field="Style" selected="True" rename="ProductStyle" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="3" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Join" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Unique" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>DIM_products_purchased</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

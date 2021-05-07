@@ -1,0 +1,342 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.1">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DimDate.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="DateSK" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="V_WString" />
+            <Field name="Date" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="V_WString" />
+            <Field name="FullDateUK" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="V_WString" />
+            <Field name="FullDateUSA" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="V_WString" />
+            <Field name="DayOfMonth" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="V_WString" />
+            <Field name="DaySuffix" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="V_WString" />
+            <Field name="DayName" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="V_WString" />
+            <Field name="DayOfWeekUSA" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="V_WString" />
+            <Field name="DayOfWeekUK" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="V_WString" />
+            <Field name="DayOfWeekInMonth" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="V_WString" />
+            <Field name="DayOfWeekInYear" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="V_WString" />
+            <Field name="DayOfQuarter" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="V_WString" />
+            <Field name="DayOfYear" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="V_WString" />
+            <Field name="WeekOfMonth" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="V_WString" />
+            <Field name="WeekOfQuarter" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="V_WString" />
+            <Field name="WeekOfYear" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="V_WString" />
+            <Field name="Month" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="V_WString" />
+            <Field name="MonthName" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="V_WString" />
+            <Field name="MonthOfQuarter" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="V_WString" />
+            <Field name="Quarter" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="V_WString" />
+            <Field name="QuarterName" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="V_WString" />
+            <Field name="Year" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="V_WString" />
+            <Field name="YearName" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="V_WString" />
+            <Field name="MonthYear" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="V_WString" />
+            <Field name="MMYYYY" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="V_WString" />
+            <Field name="FirstDayOfMonth" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="V_WString" />
+            <Field name="LastDayOfMonth" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="V_WString" />
+            <Field name="FirstDayOfQuarter" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="V_WString" />
+            <Field name="LastDayOfQuarter" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="V_WString" />
+            <Field name="FirstDayOfYear" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="V_WString" />
+            <Field name="LastDayOfYear" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="V_WString" />
+            <Field name="IsHolidayUSA" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="V_WString" />
+            <Field name="IsWeekday" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="V_WString" />
+            <Field name="HolidayUSA" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="V_WString" />
+            <Field name="IsHolidayUK" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="V_WString" />
+            <Field name="HolidayUK" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="V_WString" />
+            <Field name="FiscalDayOfYear" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="V_WString" />
+            <Field name="FiscalWeekOfYear" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="V_WString" />
+            <Field name="FiscalMonth" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="V_WString" />
+            <Field name="FiscalQuarter" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="V_WString" />
+            <Field name="FiscalQuarterName" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="V_WString" />
+            <Field name="FiscalYear" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="V_WString" />
+            <Field name="FiscalYearName" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="V_WString" />
+            <Field name="FiscalMonthYear" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="V_WString" />
+            <Field name="FiscalMMYYYY" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="V_WString" />
+            <Field name="FiscalFirstDayOfMonth" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="V_WString" />
+            <Field name="FiscalLastDayOfMonth" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="V_WString" />
+            <Field name="FiscalFirstDayOfQuarter" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="V_WString" />
+            <Field name="FiscalLastDayOfQuarter" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="V_WString" />
+            <Field name="FiscalFirstDayOfYear" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="V_WString" />
+            <Field name="FiscalLastDayOfYear" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="474" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="DateTimeNow()" field="DI_Create_Date" size="19" type="DateTime" />
+            <FormulaField expression="DateTimeNow()" field="DI_Modified_Date" size="19" type="DateTime" />
+            <FormulaField expression="ToNumber(REPLACE(REPLACE(REPLACE([DI_Create_Date],'-',''),' ',''),':',''))" field="DI_JobID" size="40" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DI_Create_Date = DateTimeNow()
+DI_Modified_Date = DateTimeNow()
+DI_JobID = ToNum...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="342" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="DateSK" selected="True" type="Int32" size="4" />
+            <SelectField field="Date" selected="True" type="DateTime" size="19" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="198" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="DateSK" selected="True" />
+            <Field field="Date" selected="True" />
+            <Field field="FullDateUK" selected="True" />
+            <Field field="FullDateUSA" selected="True" />
+            <Field field="DayOfMonth" selected="True" />
+            <Field field="DaySuffix" selected="True" />
+            <Field field="DayName" selected="True" />
+            <Field field="DayOfWeekUSA" selected="True" />
+            <Field field="DayOfWeekUK" selected="True" />
+            <Field field="DayOfWeekInMonth" selected="True" />
+            <Field field="DayOfWeekInYear" selected="True" />
+            <Field field="DayOfQuarter" selected="True" />
+            <Field field="DayOfYear" selected="True" />
+            <Field field="WeekOfMonth" selected="True" />
+            <Field field="WeekOfQuarter" selected="True" />
+            <Field field="WeekOfYear" selected="True" />
+            <Field field="Month" selected="True" />
+            <Field field="MonthName" selected="True" />
+            <Field field="MonthOfQuarter" selected="True" />
+            <Field field="Quarter" selected="True" />
+            <Field field="QuarterName" selected="True" />
+            <Field field="Year" selected="True" />
+            <Field field="YearName" selected="True" />
+            <Field field="MonthYear" selected="True" />
+            <Field field="MMYYYY" selected="True" />
+            <Field field="FirstDayOfMonth" selected="True" />
+            <Field field="LastDayOfMonth" selected="True" />
+            <Field field="FirstDayOfQuarter" selected="True" />
+            <Field field="LastDayOfQuarter" selected="True" />
+            <Field field="FirstDayOfYear" selected="True" />
+            <Field field="LastDayOfYear" selected="True" />
+            <Field field="IsHolidayUSA" selected="True" />
+            <Field field="IsWeekday" selected="True" />
+            <Field field="HolidayUSA" selected="True" />
+            <Field field="IsHolidayUK" selected="True" />
+            <Field field="HolidayUK" selected="True" />
+            <Field field="FiscalDayOfYear" selected="True" />
+            <Field field="FiscalWeekOfYear" selected="True" />
+            <Field field="FiscalMonth" selected="True" />
+            <Field field="FiscalQuarter" selected="True" />
+            <Field field="FiscalQuarterName" selected="True" />
+            <Field field="FiscalYear" selected="True" />
+            <Field field="FiscalYearName" selected="True" />
+            <Field field="FiscalMonthYear" selected="True" />
+            <Field field="FiscalMMYYYY" selected="True" />
+            <Field field="FiscalFirstDayOfMonth" selected="True" />
+            <Field field="FiscalLastDayOfMonth" selected="True" />
+            <Field field="FiscalFirstDayOfQuarter" selected="True" />
+            <Field field="FiscalLastDayOfQuarter" selected="True" />
+            <Field field="FiscalFirstDayOfYear" selected="True" />
+            <Field field="FiscalLastDayOfYear" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="DateSK" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="Int32" />
+            <Field name="Date" size="23" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="String" />
+            <Field name="FullDateUK" size="10" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="String" />
+            <Field name="FullDateUSA" size="10" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="String" />
+            <Field name="DayOfMonth" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="Byte" />
+            <Field name="DaySuffix" size="4" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="String" />
+            <Field name="DayName" size="9" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="String" />
+            <Field name="DayOfWeekUSA" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="Byte" />
+            <Field name="DayOfWeekUK" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="Byte" />
+            <Field name="DayOfWeekInMonth" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="Byte" />
+            <Field name="DayOfWeekInYear" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="Byte" />
+            <Field name="DayOfQuarter" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="Byte" />
+            <Field name="DayOfYear" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="Int16" />
+            <Field name="WeekOfMonth" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="Byte" />
+            <Field name="WeekOfQuarter" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="Byte" />
+            <Field name="WeekOfYear" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="Byte" />
+            <Field name="Month" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="Byte" />
+            <Field name="MonthName" size="9" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="String" />
+            <Field name="MonthOfQuarter" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="Byte" />
+            <Field name="Quarter" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="Byte" />
+            <Field name="QuarterName" size="6" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="String" />
+            <Field name="Year" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="Int16" />
+            <Field name="YearName" size="7" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="String" />
+            <Field name="MonthYear" size="10" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="String" />
+            <Field name="MMYYYY" size="6" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="String" />
+            <Field name="FirstDayOfMonth" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="Date" />
+            <Field name="LastDayOfMonth" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="Date" />
+            <Field name="FirstDayOfQuarter" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="Date" />
+            <Field name="LastDayOfQuarter" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="Date" />
+            <Field name="FirstDayOfYear" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="Date" />
+            <Field name="LastDayOfYear" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="Date" />
+            <Field name="IsHolidayUSA" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="Byte" />
+            <Field name="IsWeekday" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="Byte" />
+            <Field name="HolidayUSA" size="19" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="V_String" />
+            <Field name="IsHolidayUK" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="Byte" />
+            <Field name="HolidayUK" size="22" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="V_String" />
+            <Field name="FiscalDayOfYear" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="Int16" />
+            <Field name="FiscalWeekOfYear" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="Byte" />
+            <Field name="FiscalMonth" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="Byte" />
+            <Field name="FiscalQuarter" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="Byte" />
+            <Field name="FiscalQuarterName" size="6" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="String" />
+            <Field name="FiscalYear" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="Int16" />
+            <Field name="FiscalYearName" size="7" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="String" />
+            <Field name="FiscalMonthYear" size="10" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="String" />
+            <Field name="FiscalMMYYYY" size="6" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="String" />
+            <Field name="FiscalFirstDayOfMonth" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="Date" />
+            <Field name="FiscalLastDayOfMonth" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="Date" />
+            <Field name="FiscalFirstDayOfQuarter" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="Date" />
+            <Field name="FiscalLastDayOfQuarter" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="Date" />
+            <Field name="FiscalFirstDayOfYear" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="Date" />
+            <Field name="FiscalLastDayOfYear" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\DimDate.csv" type="Date" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="630" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="18">odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=AdventureWorksDW_Part_3;Data Source=localhost;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-5TJH5F4;Use Encryption for Data=False;Tag with column collation when possible=False|||DIM_date</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <TransactionSize>10000</TransactionSize>
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <PostSQL />
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL />
+            <TransactionMessages>False</TransactionMessages>
+            <OutputOption>Create</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Source=localhost
+Catalog=AdventureWorksDW_Part_3
+Query=DIM_date</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>DIM_date</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

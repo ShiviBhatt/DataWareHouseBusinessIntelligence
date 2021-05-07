@@ -1,0 +1,671 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.1">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="222" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\VendorContacts_202103261435.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>VendorContacts_202103261435.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="BusinessEntityID" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\VendorContacts_202103261435.csv" type="V_String" />
+            <Field name="Name" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\VendorContacts_202103261435.csv" type="V_String" />
+            <Field name="ContactType" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\VendorContacts_202103261435.csv" type="V_String" />
+            <Field name="Title" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\VendorContacts_202103261435.csv" type="V_String" />
+            <Field name="FirstName" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\VendorContacts_202103261435.csv" type="V_String" />
+            <Field name="MiddleName" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\VendorContacts_202103261435.csv" type="V_String" />
+            <Field name="LastName" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\VendorContacts_202103261435.csv" type="V_String" />
+            <Field name="Suffix" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\VendorContacts_202103261435.csv" type="V_String" />
+            <Field name="PhoneNumber" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\VendorContacts_202103261435.csv" type="V_String" />
+            <Field name="PhoneNumberType" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\VendorContacts_202103261435.csv" type="V_String" />
+            <Field name="EmailAddress" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\VendorContacts_202103261435.csv" type="V_String" />
+            <Field name="EmailPromotion" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\VendorContacts_202103261435.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="222" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" FileFormat="23">odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_vendors.* 
+from AdventureWorksDW_Part_3.dbo.DIM_vendors</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <ReadCentroids>False</ReadCentroids>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=Team_Assignment_AdvntureWorks
+Query=select AdventureWorksDW_Part...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="VendorSK" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_vendors.* &#xA;from AdventureWorksDW_Part_3.dbo.DIM_vendors" type="Int32" />
+            <Field name="BusinessEntityID" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_vendors.* &#xA;from AdventureWorksDW_Part_3.dbo.DIM_vendors" type="Int32" />
+            <Field name="AccountNumber" size="15" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_vendors.* &#xA;from AdventureWorksDW_Part_3.dbo.DIM_vendors" type="V_String" />
+            <Field name="VendorName" size="50" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_vendors.* &#xA;from AdventureWorksDW_Part_3.dbo.DIM_vendors" type="V_String" />
+            <Field name="CreditRating" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_vendors.* &#xA;from AdventureWorksDW_Part_3.dbo.DIM_vendors" type="Int32" />
+            <Field name="PreferredVendorStatus" size="1" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_vendors.* &#xA;from AdventureWorksDW_Part_3.dbo.DIM_vendors" type="V_String" />
+            <Field name="ActiveFlag" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_vendors.* &#xA;from AdventureWorksDW_Part_3.dbo.DIM_vendors" type="Int32" />
+            <Field name="PurchasingWebServiceURL" size="1024" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_vendors.* &#xA;from AdventureWorksDW_Part_3.dbo.DIM_vendors" type="V_String" />
+            <Field name="AddressTypeName" size="50" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_vendors.* &#xA;from AdventureWorksDW_Part_3.dbo.DIM_vendors" type="V_String" />
+            <Field name="AddressLine1" size="60" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_vendors.* &#xA;from AdventureWorksDW_Part_3.dbo.DIM_vendors" type="V_String" />
+            <Field name="AddressLine2" size="60" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_vendors.* &#xA;from AdventureWorksDW_Part_3.dbo.DIM_vendors" type="V_String" />
+            <Field name="GeoSK" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_vendors.* &#xA;from AdventureWorksDW_Part_3.dbo.DIM_vendors" type="Int32" />
+            <Field name="DI_JobID" size="20" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_vendors.* &#xA;from AdventureWorksDW_Part_3.dbo.DIM_vendors" type="V_String" />
+            <Field name="DI_Create_Date" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_vendors.* &#xA;from AdventureWorksDW_Part_3.dbo.DIM_vendors" type="DateTime" />
+            <Field name="DI_Modified_Date" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_vendors.* &#xA;from AdventureWorksDW_Part_3.dbo.DIM_vendors" type="DateTime" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="378" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="BusinessEntityID" selected="True" />
+            <Field field="Name" selected="True" />
+            <Field field="ContactType" selected="True" />
+            <Field field="Title" selected="True" />
+            <Field field="FirstName" selected="True" />
+            <Field field="MiddleName" selected="True" />
+            <Field field="LastName" selected="True" />
+            <Field field="Suffix" selected="True" />
+            <Field field="PhoneNumber" selected="True" />
+            <Field field="PhoneNumberType" selected="True" />
+            <Field field="EmailAddress" selected="True" />
+            <Field field="EmailPromotion" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="BusinessEntityID" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\VendorContacts_202103261435.csv" type="Int16" />
+            <Field name="Name" size="33" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\VendorContacts_202103261435.csv" type="V_String" />
+            <Field name="ContactType" size="21" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\VendorContacts_202103261435.csv" type="V_String" />
+            <Field name="Title" size="3" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\VendorContacts_202103261435.csv" type="String" />
+            <Field name="FirstName" size="9" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\VendorContacts_202103261435.csv" type="String" />
+            <Field name="MiddleName" size="15" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\VendorContacts_202103261435.csv" type="V_String" />
+            <Field name="LastName" size="11" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\VendorContacts_202103261435.csv" type="String" />
+            <Field name="Suffix" size="3" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\VendorContacts_202103261435.csv" type="String" />
+            <Field name="PhoneNumber" size="12" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\VendorContacts_202103261435.csv" type="String" />
+            <Field name="PhoneNumberType" size="4" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\VendorContacts_202103261435.csv" type="String" />
+            <Field name="EmailAddress" size="30" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\VendorContacts_202103261435.csv" type="String" />
+            <Field name="EmailPromotion" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\VendorContacts_202103261435.csv" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="534" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="BusinessEntityID" selected="True" rename="Vendor_BusinessEntityID" type="Int32" size="4" />
+            <SelectField field="Name" selected="True" />
+            <SelectField field="ContactType" selected="True" size="50" />
+            <SelectField field="Title" selected="True" size="8" />
+            <SelectField field="FirstName" selected="True" size="50" />
+            <SelectField field="MiddleName" selected="True" size="50" />
+            <SelectField field="LastName" selected="True" size="50" />
+            <SelectField field="Suffix" selected="True" size="10" />
+            <SelectField field="PhoneNumber" selected="True" size="25" />
+            <SelectField field="PhoneNumberType" selected="True" size="50" />
+            <SelectField field="EmailAddress" selected="True" size="50" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="534" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Vendor_BusinessEntityID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="BusinessEntityID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_Vendor_BusinessEntityID" selected="True" input="Left_" />
+                <SelectField field="Left_Name" selected="True" input="Left_" />
+                <SelectField field="Left_ContactType" selected="True" input="Left_" />
+                <SelectField field="Left_Title" selected="True" input="Left_" />
+                <SelectField field="Left_FirstName" selected="True" input="Left_" />
+                <SelectField field="Left_MiddleName" selected="True" input="Left_" />
+                <SelectField field="Left_LastName" selected="True" input="Left_" />
+                <SelectField field="Left_Suffix" selected="True" input="Left_" />
+                <SelectField field="Left_PhoneNumber" selected="True" input="Left_" />
+                <SelectField field="Left_PhoneNumberType" selected="True" input="Left_" />
+                <SelectField field="Left_EmailAddress" selected="True" input="Left_" />
+                <SelectField field="Right_VendorSK" selected="True" input="Right_" />
+                <SelectField field="Right_BusinessEntityID" selected="False" rename="Right_BusinessEntityID" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="378" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="VendorSK" selected="True" />
+            <SelectField field="BusinessEntityID" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="222" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" FileFormat="23">odbc:DSN=Team_Assignment_AdvntureWorks|||select Person.BusinessEntity.BusinessEntityID 
+from Person.BusinessEntity</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <ReadCentroids>False</ReadCentroids>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=Team_Assignment_AdvntureWorks
+Query=select Person.BusinessEntity...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="BusinessEntityID" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select Person.BusinessEntity.BusinessEntityID &#xA;from Person.BusinessEntity" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="534" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Vendor_BusinessEntityID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="BusinessEntityID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="222" y="486" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\PersonDemographics_202103261437.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>PersonDemographics_202103261437.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="BusinessEntityID" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\PersonDemographics_202103261437.csv" type="V_String" />
+            <Field name="TotalPurchaseYTD" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\PersonDemographics_202103261437.csv" type="V_String" />
+            <Field name="DateFirstPurchase" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\PersonDemographics_202103261437.csv" type="V_String" />
+            <Field name="BirthDate" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\PersonDemographics_202103261437.csv" type="V_String" />
+            <Field name="MaritalStatus" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\PersonDemographics_202103261437.csv" type="V_String" />
+            <Field name="YearlyIncome" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\PersonDemographics_202103261437.csv" type="V_String" />
+            <Field name="Gender" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\PersonDemographics_202103261437.csv" type="V_String" />
+            <Field name="TotalChildren" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\PersonDemographics_202103261437.csv" type="V_String" />
+            <Field name="NumberChildrenAtHome" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\PersonDemographics_202103261437.csv" type="V_String" />
+            <Field name="Education" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\PersonDemographics_202103261437.csv" type="V_String" />
+            <Field name="Occupation" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\PersonDemographics_202103261437.csv" type="V_String" />
+            <Field name="HomeOwnerFlag" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\PersonDemographics_202103261437.csv" type="V_String" />
+            <Field name="NumberCarsOwned" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\PersonDemographics_202103261437.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="366" y="486" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="BusinessEntityID" selected="True" rename="Person_BusinessEntityID" type="Int32" size="4" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="546" y="474" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="BusinessEntityID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Person_BusinessEntityID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_Title" selected="True" rename="Right_Title" input="Right_" />
+                <SelectField field="Right_FirstName" selected="True" rename="Right_FirstName" input="Right_" />
+                <SelectField field="Right_MiddleName" selected="True" rename="Right_MiddleName" input="Right_" />
+                <SelectField field="Right_LastName" selected="True" rename="Right_LastName" input="Right_" />
+                <SelectField field="Right_Suffix" selected="True" rename="Right_Suffix" input="Right_" />
+                <SelectField field="Right_PhoneNumber" selected="True" rename="Right_PhoneNumber" input="Right_" />
+                <SelectField field="Right_PhoneNumberType" selected="True" rename="Right_PhoneNumberType" input="Right_" />
+                <SelectField field="Right_EmailAddress" selected="True" rename="Right_EmailAddress" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="774" y="474" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="906" y="474" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Name" selected="False" />
+            <SelectField field="BusinessEntityID" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1050" y="474" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="18">odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=AdventureWorksDW_Part_3;Data Source=localhost;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-5TJH5F4;Use Encryption for Data=False;Tag with column collation when possible=False|||DIM_vendorcontacts</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <TransactionSize>10000</TransactionSize>
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <PostSQL />
+            <TableStyle>Quoted</TableStyle>
+            <AppendMap>
+              <AppendMapping mode="Custom">
+                <Field Source="Vendor_BusinessEntityID" Dest="Vendor_BusinessEntityID" />
+                <Field Source="ContactType" Dest="ContactType" />
+                <Field Source="Title" Dest="Title" />
+                <Field Source="FirstName" Dest="FirstName" />
+                <Field Source="MiddleName" Dest="MiddleName" />
+                <Field Source="LastName" Dest="LastName" />
+                <Field Source="Suffix" Dest="Suffix" />
+                <Field Source="PhoneNumber" Dest="PhoneNumber" />
+                <Field Source="PhoneNumberType" Dest="PhoneNumberType" />
+                <Field Source="EmailAddress" Dest="EmailAddress" />
+                <Field Source="VendorSK" Dest="VendorSK" />
+                <Field Source="Person_BusinessEntityID" Dest="Person_BusinessEntityID" />
+              </AppendMapping>
+            </AppendMap>
+            <PreSQL />
+            <TransactionMessages>False</TransactionMessages>
+            <OutputOption>Delete</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Source=localhost
+Catalog=AdventureWorksDW_Part_3
+Query=DIM_vendorcontacts</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="42" y="66" width="124" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Vendor Contact (csv)</Text>
+          <Font name="Arial" size="9.75" style="0" />
+          <TextColor name="Red" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="42" y="186" width="124" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Dim Vendor</Text>
+          <Font name="Arial" size="9.75" style="0" />
+          <TextColor name="Red" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="42" y="342" width="124" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>BusinessEntity (Person)</Text>
+          <Font name="Arial" size="9.75" style="0" />
+          <TextColor name="Red" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="42" y="498" width="124" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Person Demographics</Text>
+          <Font name="Arial" size="9.75" style="0" />
+          <TextColor name="Red" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="5" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Join" />
+      <Destination ToolID="8" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="8" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Join" />
+      <Destination ToolID="11" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="11" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="11" Connection="Join" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="11" Connection="Left" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>DIM_vendorcontacts</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

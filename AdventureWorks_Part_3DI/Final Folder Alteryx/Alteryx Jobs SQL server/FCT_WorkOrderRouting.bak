@@ -1,0 +1,804 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.1">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="66" y="30" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" FileFormat="23">odbc:DSN=Team_Assignment_AdvntureWorks|||select Production.WorkOrderRouting.* 
+from Production.WorkOrderRouting</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <ReadCentroids>False</ReadCentroids>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=Team_Assignment_AdvntureWorks
+Query=select Production.WorkOrderR...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="WorkOrderID" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select Production.WorkOrderRouting.* &#xA;from Production.WorkOrderRouting" type="Int32" />
+            <Field name="ProductID" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select Production.WorkOrderRouting.* &#xA;from Production.WorkOrderRouting" type="Int32" />
+            <Field name="OperationSequence" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select Production.WorkOrderRouting.* &#xA;from Production.WorkOrderRouting" type="Int16" />
+            <Field name="LocationID" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select Production.WorkOrderRouting.* &#xA;from Production.WorkOrderRouting" type="Int16" />
+            <Field name="ScheduledStartDate" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select Production.WorkOrderRouting.* &#xA;from Production.WorkOrderRouting" type="DateTime" />
+            <Field name="ScheduledEndDate" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select Production.WorkOrderRouting.* &#xA;from Production.WorkOrderRouting" type="DateTime" />
+            <Field name="ActualStartDate" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select Production.WorkOrderRouting.* &#xA;from Production.WorkOrderRouting" type="DateTime" />
+            <Field name="ActualEndDate" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select Production.WorkOrderRouting.* &#xA;from Production.WorkOrderRouting" type="DateTime" />
+            <Field name="ActualResourceHrs" scale="4" size="11" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select Production.WorkOrderRouting.* &#xA;from Production.WorkOrderRouting" type="FixedDecimal" />
+            <Field name="PlannedCost" scale="4" size="21" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select Production.WorkOrderRouting.* &#xA;from Production.WorkOrderRouting" type="FixedDecimal" />
+            <Field name="ActualCost" scale="4" size="21" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select Production.WorkOrderRouting.* &#xA;from Production.WorkOrderRouting" type="FixedDecimal" />
+            <Field name="ModifiedDate" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select Production.WorkOrderRouting.* &#xA;from Production.WorkOrderRouting" type="DateTime" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="66" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" FileFormat="23">odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.FCT_WorkOrder.WorkOrderID,
+	AdventureWorksDW_Part_3.dbo.FCT_WorkOrder.WorkOrderSK 
+from AdventureWorksDW_Part_3.dbo.FCT_WorkOrder</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <ReadCentroids>False</ReadCentroids>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=Team_Assignment_AdvntureWorks
+Query=select AdventureWorksDW_Part...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="WorkOrderID" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.FCT_WorkOrder.WorkOrderID,&#xA;	AdventureWorksDW_Part_3.dbo.FCT_WorkOrder.WorkOrderSK &#xA;from AdventureWorksDW_Part_3.dbo.FCT_WorkOrder" type="Int32" />
+            <Field name="WorkOrderSK" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.FCT_WorkOrder.WorkOrderID,&#xA;	AdventureWorksDW_Part_3.dbo.FCT_WorkOrder.WorkOrderSK &#xA;from AdventureWorksDW_Part_3.dbo.FCT_WorkOrder" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="282" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="WorkOrderID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="WorkOrderID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_WorkOrderID" selected="False" input="Left_" />
+                <SelectField field="Right_WorkOrderID" selected="False" rename="Right_WorkOrderID" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="66" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" FileFormat="23">odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_product.ProductID,
+	AdventureWorksDW_Part_3.dbo.DIM_product.ProductSK 
+from AdventureWorksDW_Part_3.dbo.DIM_product</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <ReadCentroids>False</ReadCentroids>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=Team_Assignment_AdvntureWorks
+Query=select AdventureWorksDW_Part...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ProductID" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_product.ProductID,&#xA;	AdventureWorksDW_Part_3.dbo.DIM_product.ProductSK &#xA;from AdventureWorksDW_Part_3.dbo.DIM_product" type="Int32" />
+            <Field name="ProductSK" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_product.ProductID,&#xA;	AdventureWorksDW_Part_3.dbo.DIM_product.ProductSK &#xA;from AdventureWorksDW_Part_3.dbo.DIM_product" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="270" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="ProductID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="ProductID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_OperationSequence" selected="True" input="Left_" />
+                <SelectField field="Left_LocationID" selected="True" input="Left_" />
+                <SelectField field="Left_ScheduledStartDate" selected="True" input="Left_" />
+                <SelectField field="Left_ScheduledEndDate" selected="True" input="Left_" />
+                <SelectField field="Left_ActualStartDate" selected="True" input="Left_" />
+                <SelectField field="Left_ActualEndDate" selected="True" input="Left_" />
+                <SelectField field="Left_ActualResourceHrs" selected="True" input="Left_" />
+                <SelectField field="Left_PlannedCost" selected="True" input="Left_" />
+                <SelectField field="Left_ActualCost" selected="True" input="Left_" />
+                <SelectField field="Left_ModifiedDate" selected="True" input="Left_" />
+                <SelectField field="Left_WorkOrderSK" selected="True" input="Left_" />
+                <SelectField field="Right_ProductID" selected="False" rename="Right_ProductID" input="Right_" />
+                <SelectField field="Right_ProductSK" selected="True" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="66" y="522" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" FileFormat="23">odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_location.LocationSK,
+	AdventureWorksDW_Part_3.dbo.DIM_location.LocationID 
+from AdventureWorksDW_Part_3.dbo.DIM_location</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <ReadCentroids>False</ReadCentroids>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=Team_Assignment_AdvntureWorks
+Query=select AdventureWorksDW_Part...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="LocationSK" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_location.LocationSK,&#xA;	AdventureWorksDW_Part_3.dbo.DIM_location.LocationID &#xA;from AdventureWorksDW_Part_3.dbo.DIM_location" type="Int32" />
+            <Field name="LocationID" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_location.LocationSK,&#xA;	AdventureWorksDW_Part_3.dbo.DIM_location.LocationID &#xA;from AdventureWorksDW_Part_3.dbo.DIM_location" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="270" y="510" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="LocationID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="LocationID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_OperationSequence" selected="True" input="Left_" />
+                <SelectField field="Left_ScheduledStartDate" selected="True" input="Left_" />
+                <SelectField field="Left_ScheduledEndDate" selected="True" input="Left_" />
+                <SelectField field="Left_ActualStartDate" selected="True" input="Left_" />
+                <SelectField field="Left_ActualEndDate" selected="True" input="Left_" />
+                <SelectField field="Left_ActualResourceHrs" selected="True" input="Left_" />
+                <SelectField field="Left_PlannedCost" selected="True" input="Left_" />
+                <SelectField field="Left_ActualCost" selected="True" input="Left_" />
+                <SelectField field="Left_ModifiedDate" selected="True" input="Left_" />
+                <SelectField field="Left_WorkOrderSK" selected="True" input="Left_" />
+                <SelectField field="Left_ProductSK" selected="True" input="Left_" />
+                <SelectField field="Right_LocationSK" selected="True" input="Right_" />
+                <SelectField field="Right_LocationID" selected="False" rename="Right_LocationID" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="66" y="690" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" FileFormat="23">odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_date.Date,
+	AdventureWorksDW_Part_3.dbo.DIM_date.DateSK 
+from AdventureWorksDW_Part_3.dbo.DIM_date</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <ReadCentroids>False</ReadCentroids>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=Team_Assignment_AdvntureWorks
+Query=select AdventureWorksDW_Part...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Date" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_date.Date,&#xA;	AdventureWorksDW_Part_3.dbo.DIM_date.DateSK &#xA;from AdventureWorksDW_Part_3.dbo.DIM_date" type="DateTime" />
+            <Field name="DateSK" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_date.Date,&#xA;	AdventureWorksDW_Part_3.dbo.DIM_date.DateSK &#xA;from AdventureWorksDW_Part_3.dbo.DIM_date" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="270" y="678" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="ScheduledStartDate" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Date" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_OperationSequence" selected="True" input="Left_" />
+                <SelectField field="Left_ScheduledStartDate" selected="True" input="Left_" />
+                <SelectField field="Left_ScheduledEndDate" selected="True" input="Left_" />
+                <SelectField field="Left_ActualStartDate" selected="True" input="Left_" />
+                <SelectField field="Left_ActualEndDate" selected="True" input="Left_" />
+                <SelectField field="Left_ActualResourceHrs" selected="True" input="Left_" />
+                <SelectField field="Left_PlannedCost" selected="True" input="Left_" />
+                <SelectField field="Left_ActualCost" selected="True" input="Left_" />
+                <SelectField field="Left_ModifiedDate" selected="True" input="Left_" />
+                <SelectField field="Left_WorkOrderSK" selected="True" input="Left_" />
+                <SelectField field="Left_ProductSK" selected="True" input="Left_" />
+                <SelectField field="Left_LocationSK" selected="True" input="Left_" />
+                <SelectField field="Right_DateSK" selected="True" rename="ScheduledStartDateSK" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="282" y="798" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="ScheduledEndDate" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Date" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_OperationSequence" selected="True" input="Left_" />
+                <SelectField field="Left_ScheduledStartDate" selected="True" input="Left_" />
+                <SelectField field="Left_ScheduledEndDate" selected="True" input="Left_" />
+                <SelectField field="Left_ActualStartDate" selected="True" input="Left_" />
+                <SelectField field="Left_ActualEndDate" selected="True" input="Left_" />
+                <SelectField field="Left_ActualResourceHrs" selected="True" input="Left_" />
+                <SelectField field="Left_PlannedCost" selected="True" input="Left_" />
+                <SelectField field="Left_ActualCost" selected="True" input="Left_" />
+                <SelectField field="Left_ModifiedDate" selected="True" input="Left_" />
+                <SelectField field="Left_WorkOrderSK" selected="True" input="Left_" />
+                <SelectField field="Left_ProductSK" selected="True" input="Left_" />
+                <SelectField field="Left_LocationSK" selected="True" input="Left_" />
+                <SelectField field="Left_ScheduledStartDateSK" selected="True" input="Left_" />
+                <SelectField field="Right_DateSK" selected="True" rename="ScheduledEndDateSK" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="282" y="918" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="ActualStartDate" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Date" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_OperationSequence" selected="True" input="Left_" />
+                <SelectField field="Left_ScheduledStartDate" selected="True" input="Left_" />
+                <SelectField field="Left_ScheduledEndDate" selected="True" input="Left_" />
+                <SelectField field="Left_ActualStartDate" selected="True" input="Left_" />
+                <SelectField field="Left_ActualEndDate" selected="True" input="Left_" />
+                <SelectField field="Left_ActualResourceHrs" selected="True" input="Left_" />
+                <SelectField field="Left_PlannedCost" selected="True" input="Left_" />
+                <SelectField field="Left_ActualCost" selected="True" input="Left_" />
+                <SelectField field="Left_ModifiedDate" selected="True" input="Left_" />
+                <SelectField field="Left_WorkOrderSK" selected="True" input="Left_" />
+                <SelectField field="Left_ProductSK" selected="True" input="Left_" />
+                <SelectField field="Left_LocationSK" selected="True" input="Left_" />
+                <SelectField field="Left_ScheduledStartDateSK" selected="True" input="Left_" />
+                <SelectField field="Left_ScheduledEndDateSK" selected="True" input="Left_" />
+                <SelectField field="Right_DateSK" selected="True" rename="ActualStartDateSK" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="282" y="1038" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="ActualEndDate" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Date" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_OperationSequence" selected="True" input="Left_" />
+                <SelectField field="Left_ScheduledStartDate" selected="True" input="Left_" />
+                <SelectField field="Left_ScheduledEndDate" selected="True" input="Left_" />
+                <SelectField field="Left_ActualStartDate" selected="True" input="Left_" />
+                <SelectField field="Left_ActualEndDate" selected="True" input="Left_" />
+                <SelectField field="Left_ActualResourceHrs" selected="True" input="Left_" />
+                <SelectField field="Left_PlannedCost" selected="True" input="Left_" />
+                <SelectField field="Left_ActualCost" selected="True" input="Left_" />
+                <SelectField field="Left_ModifiedDate" selected="True" input="Left_" />
+                <SelectField field="Left_WorkOrderSK" selected="True" input="Left_" />
+                <SelectField field="Left_ProductSK" selected="True" input="Left_" />
+                <SelectField field="Left_LocationSK" selected="True" input="Left_" />
+                <SelectField field="Left_ScheduledStartDateSK" selected="True" input="Left_" />
+                <SelectField field="Left_ScheduledEndDateSK" selected="True" input="Left_" />
+                <SelectField field="Left_ActualStartDateSK" selected="True" input="Left_" />
+                <SelectField field="Right_DateSK" selected="True" rename="ActualEndDateSK" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="414" y="1038" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="DateTimeNow()" field="DI_Create_Date" size="19" type="DateTime" />
+            <FormulaField expression="DateTimeNow()" field="DI_Modified_Date" size="19" type="DateTime" />
+            <FormulaField expression="[Engine.WorkflowFileName]" field="DI_JobID" size="40" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DI_Create_Date = DateTimeNow()
+DI_Modified_Date = DateTimeNow()
+DI_JobID = [Engi...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="534" y="1038" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\gupta\AppData\Local\Temp\Engine_5436_725b974a075b4d5983a8bcdc19ac6245_\Engine_17004_e46fe38762b44a5b92937cf960fb3bf6_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="906" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="402" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="-800" field="WorkOrderSK" size="8" type="Int64" />
+            <FormulaField expression="-800" field="DI_Reject_SK" size="8" type="Int64" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[WorkOrderSK = -800
+DI_Reject_SK = -800
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1122" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="DateTimeNow()" field="DI_Create_Date" size="19" type="DateTime" />
+            <FormulaField expression="DateTimeNow()" field="DI_Modified_Date" size="19" type="DateTime" />
+            <FormulaField expression="[Engine.WorkflowFileName]" field="DI_JobID" size="40" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DI_Create_Date = DateTimeNow()
+DI_Modified_Date = DateTimeNow()
+DI_JobID = [Engi...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1014" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="WorkOrderID" selected="True" />
+            <SelectField field="ProductID" selected="True" />
+            <SelectField field="OperationSequence" selected="True" />
+            <SelectField field="LocationID" selected="True" />
+            <SelectField field="ScheduledStartDate" selected="True" />
+            <SelectField field="ScheduledEndDate" selected="True" />
+            <SelectField field="ActualStartDate" selected="True" />
+            <SelectField field="ActualEndDate" selected="True" />
+            <SelectField field="ActualResourceHrs" selected="True" />
+            <SelectField field="PlannedCost" selected="True" />
+            <SelectField field="ActualCost" selected="True" />
+            <SelectField field="ModifiedDate" selected="True" />
+            <SelectField field="WorkOrderSK" selected="True" />
+            <SelectField field="ProductSK" selected="True" />
+            <SelectField field="LocationSK" selected="True" />
+            <SelectField field="ScheduledStartDateSK" selected="True" />
+            <SelectField field="ScheduledEndDateSK" selected="True" />
+            <SelectField field="ActualStartDateSK" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1254" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\gupta\AppData\Local\Temp\Engine_5436_725b974a075b4d5983a8bcdc19ac6245_\Engine_17004_da00fe8264f54539a76b16ada77c7318_.yxdb</TempFile>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Join" />
+      <Destination ToolID="5" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Left" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Join" />
+      <Destination ToolID="7" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="7" Connection="Right" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="5" Connection="Left" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="7" Connection="Left" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection name="#4">
+      <Origin ToolID="9" Connection="Left" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection name="#5">
+      <Origin ToolID="10" Connection="Left" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection name="#6">
+      <Origin ToolID="11" Connection="Left" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection name="#7">
+      <Origin ToolID="12" Connection="Left" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Join" />
+      <Destination ToolID="9" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="9" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="10" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Join" />
+      <Destination ToolID="10" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="11" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Join" />
+      <Destination ToolID="11" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="12" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Join" />
+      <Destination ToolID="12" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Join" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>FCT_WorkOrderRouting</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

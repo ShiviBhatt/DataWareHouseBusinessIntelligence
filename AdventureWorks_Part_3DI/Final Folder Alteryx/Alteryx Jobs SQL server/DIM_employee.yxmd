@@ -1,0 +1,1383 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.1">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="234" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\EmployeeData_202103261432.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>EmployeeData_202103261432.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="BusinessEntityID" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\EmployeeData_202103261432.csv" type="V_String" />
+            <Field name="Title" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\EmployeeData_202103261432.csv" type="V_String" />
+            <Field name="FirstName" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\EmployeeData_202103261432.csv" type="V_String" />
+            <Field name="MiddleName" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\EmployeeData_202103261432.csv" type="V_String" />
+            <Field name="LastName" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\EmployeeData_202103261432.csv" type="V_String" />
+            <Field name="Suffix" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\EmployeeData_202103261432.csv" type="V_String" />
+            <Field name="JobTitle" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\EmployeeData_202103261432.csv" type="V_String" />
+            <Field name="PhoneNumber" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\EmployeeData_202103261432.csv" type="V_String" />
+            <Field name="PhoneNumberType" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\EmployeeData_202103261432.csv" type="V_String" />
+            <Field name="EmailAddress" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\EmployeeData_202103261432.csv" type="V_String" />
+            <Field name="EmailPromotion" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\EmployeeData_202103261432.csv" type="V_String" />
+            <Field name="AddressLine1" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\EmployeeData_202103261432.csv" type="V_String" />
+            <Field name="AddressLine2" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\EmployeeData_202103261432.csv" type="V_String" />
+            <Field name="City" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\EmployeeData_202103261432.csv" type="V_String" />
+            <Field name="StateProvinceName" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\EmployeeData_202103261432.csv" type="V_String" />
+            <Field name="PostalCode" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\EmployeeData_202103261432.csv" type="V_String" />
+            <Field name="CountryRegionName" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\EmployeeData_202103261432.csv" type="V_String" />
+            <Field name="AdditionalContactInfo" size="254" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\EmployeeData_202103261432.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="354" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="BusinessEntityID" selected="True" />
+            <Field field="Title" selected="True" />
+            <Field field="FirstName" selected="True" />
+            <Field field="MiddleName" selected="True" />
+            <Field field="LastName" selected="True" />
+            <Field field="Suffix" selected="True" />
+            <Field field="JobTitle" selected="True" />
+            <Field field="PhoneNumber" selected="True" />
+            <Field field="PhoneNumberType" selected="True" />
+            <Field field="EmailAddress" selected="True" />
+            <Field field="EmailPromotion" selected="True" />
+            <Field field="AddressLine1" selected="True" />
+            <Field field="AddressLine2" selected="True" />
+            <Field field="City" selected="True" />
+            <Field field="StateProvinceName" selected="True" />
+            <Field field="PostalCode" selected="True" />
+            <Field field="CountryRegionName" selected="True" />
+            <Field field="AdditionalContactInfo" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="BusinessEntityID" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\EmployeeData_202103261432.csv" type="Int16" />
+            <Field name="Title" size="3" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\EmployeeData_202103261432.csv" type="String" />
+            <Field name="FirstName" size="11" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\EmployeeData_202103261432.csv" type="V_String" />
+            <Field name="MiddleName" size="16" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\EmployeeData_202103261432.csv" type="V_String" />
+            <Field name="LastName" size="17" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\EmployeeData_202103261432.csv" type="V_String" />
+            <Field name="Suffix" size="3" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\EmployeeData_202103261432.csv" type="String" />
+            <Field name="JobTitle" size="40" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\EmployeeData_202103261432.csv" type="V_String" />
+            <Field name="PhoneNumber" size="19" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\EmployeeData_202103261432.csv" type="V_String" />
+            <Field name="PhoneNumberType" size="4" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\EmployeeData_202103261432.csv" type="String" />
+            <Field name="EmailAddress" size="32" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\EmployeeData_202103261432.csv" type="V_String" />
+            <Field name="EmailPromotion" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\EmployeeData_202103261432.csv" type="Byte" />
+            <Field name="AddressLine1" size="26" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\EmployeeData_202103261432.csv" type="V_String" />
+            <Field name="AddressLine2" size="6" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\EmployeeData_202103261432.csv" type="String" />
+            <Field name="City" size="13" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\EmployeeData_202103261432.csv" type="V_String" />
+            <Field name="StateProvinceName" size="13" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\EmployeeData_202103261432.csv" type="String" />
+            <Field name="PostalCode" size="7" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\EmployeeData_202103261432.csv" type="String" />
+            <Field name="CountryRegionName" size="14" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\EmployeeData_202103261432.csv" type="String" />
+            <Field name="AdditionalContactInfo" source="File: D:\Study\DWBI\Adventureworks Part 3\OneDrive_2021-03-27\Homework - AdventureWorksDW 2nd\EmployeeData_202103261432.csv" type="Bool" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="486" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="BusinessEntityID" selected="True" type="Int32" size="4" />
+            <SelectField field="Title" selected="False" />
+            <SelectField field="FirstName" selected="True" size="50" />
+            <SelectField field="MiddleName" selected="True" size="50" />
+            <SelectField field="LastName" selected="True" size="50" />
+            <SelectField field="Suffix" selected="False" size="50" />
+            <SelectField field="JobTitle" selected="True" size="50" />
+            <SelectField field="PhoneNumber" selected="True" size="25" />
+            <SelectField field="PhoneNumberType" selected="True" size="25" />
+            <SelectField field="EmailAddress" selected="True" size="50" />
+            <SelectField field="EmailPromotion" selected="False" />
+            <SelectField field="AddressLine1" selected="True" size="60" />
+            <SelectField field="AddressLine2" selected="True" size="60" />
+            <SelectField field="City" selected="False" />
+            <SelectField field="StateProvinceName" selected="False" />
+            <SelectField field="PostalCode" selected="False" />
+            <SelectField field="CountryRegionName" selected="False" />
+            <SelectField field="AdditionalContactInfo" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="234" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" FileFormat="23">odbc:DSN=Team_Assignment_AdvntureWorks|||select HumanResources.Employee.BusinessEntityID,
+	HumanResources.Employee.LoginID,
+	HumanResources.Employee.NationalIDNumber,
+	HumanResources.Employee.BirthDate,
+	HumanResources.Employee.HireDate,
+	HumanResources.Employee.MaritalStatus,
+	HumanResources.Employee.SalariedFlag,
+	HumanResources.Employee.Gender,
+	HumanResources.Employee.VacationHours,
+	HumanResources.Employee.SickLeaveHours,
+	HumanResources.Employee.CurrentFlag 
+from HumanResources.Employee</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <ReadCentroids>False</ReadCentroids>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=Team_Assignment_AdvntureWorks
+Query=select HumanResources.Employ...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="BusinessEntityID" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select HumanResources.Employee.BusinessEntityID,&#xA;	HumanResources.Employee.LoginID,&#xA;	HumanResources.Employee.NationalIDNumber,&#xA;	HumanResources.Employee.BirthDate,&#xA;	HumanResources.Employee.HireDate,&#xA;	HumanResources.Employee.MaritalStatus,&#xA;	HumanResources.Employee.SalariedFlag,&#xA;	HumanResources.Employee.Gender,&#xA;	HumanResources.Employee.VacationHours,&#xA;	HumanResources.Employee.SickLeaveHours,&#xA;	HumanResources.Employee.CurrentFlag &#xA;from HumanResources.Employee" type="Int32" />
+            <Field name="LoginID" size="256" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select HumanResources.Employee.BusinessEntityID,&#xA;	HumanResources.Employee.LoginID,&#xA;	HumanResources.Employee.NationalIDNumber,&#xA;	HumanResources.Employee.BirthDate,&#xA;	HumanResources.Employee.HireDate,&#xA;	HumanResources.Employee.MaritalStatus,&#xA;	HumanResources.Employee.SalariedFlag,&#xA;	HumanResources.Employee.Gender,&#xA;	HumanResources.Employee.VacationHours,&#xA;	HumanResources.Employee.SickLeaveHours,&#xA;	HumanResources.Employee.CurrentFlag &#xA;from HumanResources.Employee" type="V_WString" />
+            <Field name="NationalIDNumber" size="15" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select HumanResources.Employee.BusinessEntityID,&#xA;	HumanResources.Employee.LoginID,&#xA;	HumanResources.Employee.NationalIDNumber,&#xA;	HumanResources.Employee.BirthDate,&#xA;	HumanResources.Employee.HireDate,&#xA;	HumanResources.Employee.MaritalStatus,&#xA;	HumanResources.Employee.SalariedFlag,&#xA;	HumanResources.Employee.Gender,&#xA;	HumanResources.Employee.VacationHours,&#xA;	HumanResources.Employee.SickLeaveHours,&#xA;	HumanResources.Employee.CurrentFlag &#xA;from HumanResources.Employee" type="V_WString" />
+            <Field name="BirthDate" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select HumanResources.Employee.BusinessEntityID,&#xA;	HumanResources.Employee.LoginID,&#xA;	HumanResources.Employee.NationalIDNumber,&#xA;	HumanResources.Employee.BirthDate,&#xA;	HumanResources.Employee.HireDate,&#xA;	HumanResources.Employee.MaritalStatus,&#xA;	HumanResources.Employee.SalariedFlag,&#xA;	HumanResources.Employee.Gender,&#xA;	HumanResources.Employee.VacationHours,&#xA;	HumanResources.Employee.SickLeaveHours,&#xA;	HumanResources.Employee.CurrentFlag &#xA;from HumanResources.Employee" type="Date" />
+            <Field name="HireDate" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select HumanResources.Employee.BusinessEntityID,&#xA;	HumanResources.Employee.LoginID,&#xA;	HumanResources.Employee.NationalIDNumber,&#xA;	HumanResources.Employee.BirthDate,&#xA;	HumanResources.Employee.HireDate,&#xA;	HumanResources.Employee.MaritalStatus,&#xA;	HumanResources.Employee.SalariedFlag,&#xA;	HumanResources.Employee.Gender,&#xA;	HumanResources.Employee.VacationHours,&#xA;	HumanResources.Employee.SickLeaveHours,&#xA;	HumanResources.Employee.CurrentFlag &#xA;from HumanResources.Employee" type="Date" />
+            <Field name="MaritalStatus" size="1" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select HumanResources.Employee.BusinessEntityID,&#xA;	HumanResources.Employee.LoginID,&#xA;	HumanResources.Employee.NationalIDNumber,&#xA;	HumanResources.Employee.BirthDate,&#xA;	HumanResources.Employee.HireDate,&#xA;	HumanResources.Employee.MaritalStatus,&#xA;	HumanResources.Employee.SalariedFlag,&#xA;	HumanResources.Employee.Gender,&#xA;	HumanResources.Employee.VacationHours,&#xA;	HumanResources.Employee.SickLeaveHours,&#xA;	HumanResources.Employee.CurrentFlag &#xA;from HumanResources.Employee" type="WString" />
+            <Field name="SalariedFlag" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select HumanResources.Employee.BusinessEntityID,&#xA;	HumanResources.Employee.LoginID,&#xA;	HumanResources.Employee.NationalIDNumber,&#xA;	HumanResources.Employee.BirthDate,&#xA;	HumanResources.Employee.HireDate,&#xA;	HumanResources.Employee.MaritalStatus,&#xA;	HumanResources.Employee.SalariedFlag,&#xA;	HumanResources.Employee.Gender,&#xA;	HumanResources.Employee.VacationHours,&#xA;	HumanResources.Employee.SickLeaveHours,&#xA;	HumanResources.Employee.CurrentFlag &#xA;from HumanResources.Employee" type="Bool" />
+            <Field name="Gender" size="1" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select HumanResources.Employee.BusinessEntityID,&#xA;	HumanResources.Employee.LoginID,&#xA;	HumanResources.Employee.NationalIDNumber,&#xA;	HumanResources.Employee.BirthDate,&#xA;	HumanResources.Employee.HireDate,&#xA;	HumanResources.Employee.MaritalStatus,&#xA;	HumanResources.Employee.SalariedFlag,&#xA;	HumanResources.Employee.Gender,&#xA;	HumanResources.Employee.VacationHours,&#xA;	HumanResources.Employee.SickLeaveHours,&#xA;	HumanResources.Employee.CurrentFlag &#xA;from HumanResources.Employee" type="WString" />
+            <Field name="VacationHours" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select HumanResources.Employee.BusinessEntityID,&#xA;	HumanResources.Employee.LoginID,&#xA;	HumanResources.Employee.NationalIDNumber,&#xA;	HumanResources.Employee.BirthDate,&#xA;	HumanResources.Employee.HireDate,&#xA;	HumanResources.Employee.MaritalStatus,&#xA;	HumanResources.Employee.SalariedFlag,&#xA;	HumanResources.Employee.Gender,&#xA;	HumanResources.Employee.VacationHours,&#xA;	HumanResources.Employee.SickLeaveHours,&#xA;	HumanResources.Employee.CurrentFlag &#xA;from HumanResources.Employee" type="Int16" />
+            <Field name="SickLeaveHours" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select HumanResources.Employee.BusinessEntityID,&#xA;	HumanResources.Employee.LoginID,&#xA;	HumanResources.Employee.NationalIDNumber,&#xA;	HumanResources.Employee.BirthDate,&#xA;	HumanResources.Employee.HireDate,&#xA;	HumanResources.Employee.MaritalStatus,&#xA;	HumanResources.Employee.SalariedFlag,&#xA;	HumanResources.Employee.Gender,&#xA;	HumanResources.Employee.VacationHours,&#xA;	HumanResources.Employee.SickLeaveHours,&#xA;	HumanResources.Employee.CurrentFlag &#xA;from HumanResources.Employee" type="Int16" />
+            <Field name="CurrentFlag" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select HumanResources.Employee.BusinessEntityID,&#xA;	HumanResources.Employee.LoginID,&#xA;	HumanResources.Employee.NationalIDNumber,&#xA;	HumanResources.Employee.BirthDate,&#xA;	HumanResources.Employee.HireDate,&#xA;	HumanResources.Employee.MaritalStatus,&#xA;	HumanResources.Employee.SalariedFlag,&#xA;	HumanResources.Employee.Gender,&#xA;	HumanResources.Employee.VacationHours,&#xA;	HumanResources.Employee.SickLeaveHours,&#xA;	HumanResources.Employee.CurrentFlag &#xA;from HumanResources.Employee" type="Bool" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="486" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="BusinessEntityID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="BusinessEntityID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_BusinessEntityID" selected="True" rename="Right_BusinessEntityID" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="594" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="BusinessEntityID" selected="True" />
+            <SelectField field="FirstName" selected="True" />
+            <SelectField field="MiddleName" selected="True" />
+            <SelectField field="LastName" selected="True" />
+            <SelectField field="JobTitle" selected="True" />
+            <SelectField field="PhoneNumber" selected="True" />
+            <SelectField field="PhoneNumberType" selected="True" />
+            <SelectField field="EmailAddress" selected="True" />
+            <SelectField field="AddressLine1" selected="True" />
+            <SelectField field="AddressLine2" selected="True" />
+            <SelectField field="LoginID" selected="True" />
+            <SelectField field="NationalIDNumber" selected="True" />
+            <SelectField field="BirthDate" selected="True" />
+            <SelectField field="HireDate" selected="True" />
+            <SelectField field="MaritalStatus" selected="True" />
+            <SelectField field="SalariedFlag" selected="True" />
+            <SelectField field="Gender" selected="True" />
+            <SelectField field="VacationHours" selected="True" />
+            <SelectField field="SickLeaveHours" selected="True" />
+            <SelectField field="CurrentFlag" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="234" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" FileFormat="23">odbc:DSN=Team_Assignment_AdvntureWorks|||select HumanResources.EmployeePayHistory.BusinessEntityID,
+	HumanResources.EmployeePayHistory.RateChangeDate,
+	HumanResources.EmployeePayHistory.Rate,
+	HumanResources.EmployeePayHistory.PayFrequency 
+from HumanResources.EmployeePayHistory</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <ReadCentroids>False</ReadCentroids>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=Team_Assignment_AdvntureWorks
+Query=select HumanResources.Employ...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="BusinessEntityID" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select HumanResources.EmployeePayHistory.BusinessEntityID,&#xA;	HumanResources.EmployeePayHistory.RateChangeDate,&#xA;	HumanResources.EmployeePayHistory.Rate,&#xA;	HumanResources.EmployeePayHistory.PayFrequency &#xA;from HumanResources.EmployeePayHistory" type="Int32" />
+            <Field name="RateChangeDate" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select HumanResources.EmployeePayHistory.BusinessEntityID,&#xA;	HumanResources.EmployeePayHistory.RateChangeDate,&#xA;	HumanResources.EmployeePayHistory.Rate,&#xA;	HumanResources.EmployeePayHistory.PayFrequency &#xA;from HumanResources.EmployeePayHistory" type="DateTime" />
+            <Field name="Rate" scale="4" size="21" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select HumanResources.EmployeePayHistory.BusinessEntityID,&#xA;	HumanResources.EmployeePayHistory.RateChangeDate,&#xA;	HumanResources.EmployeePayHistory.Rate,&#xA;	HumanResources.EmployeePayHistory.PayFrequency &#xA;from HumanResources.EmployeePayHistory" type="FixedDecimal" />
+            <Field name="PayFrequency" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select HumanResources.EmployeePayHistory.BusinessEntityID,&#xA;	HumanResources.EmployeePayHistory.RateChangeDate,&#xA;	HumanResources.EmployeePayHistory.Rate,&#xA;	HumanResources.EmployeePayHistory.PayFrequency &#xA;from HumanResources.EmployeePayHistory" type="Int16" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="594" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="BusinessEntityID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="BusinessEntityID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_BusinessEntityID" selected="False" rename="Right_BusinessEntityID" input="Right_" />
+                <SelectField field="Right_RateChangeDate" selected="False" input="Right_" />
+                <SelectField field="Right_Rate" selected="True" rename="BaseRate" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="234" y="486" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" FileFormat="23">odbc:DSN=Team_Assignment_AdvntureWorks|||select HumanResources.EmployeeDepartmentHistory.BusinessEntityID,
+	HumanResources.EmployeeDepartmentHistory.DepartmentID,
+	HumanResources.EmployeeDepartmentHistory.StartDate,
+	HumanResources.EmployeeDepartmentHistory.EndDate 
+from HumanResources.EmployeeDepartmentHistory</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <ReadCentroids>False</ReadCentroids>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=Team_Assignment_AdvntureWorks
+Query=select HumanResources.Employ...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="BusinessEntityID" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select HumanResources.EmployeeDepartmentHistory.BusinessEntityID,&#xA;	HumanResources.EmployeeDepartmentHistory.DepartmentID,&#xA;	HumanResources.EmployeeDepartmentHistory.StartDate,&#xA;	HumanResources.EmployeeDepartmentHistory.EndDate &#xA;from HumanResources.EmployeeDepartmentHistory" type="Int32" />
+            <Field name="DepartmentID" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select HumanResources.EmployeeDepartmentHistory.BusinessEntityID,&#xA;	HumanResources.EmployeeDepartmentHistory.DepartmentID,&#xA;	HumanResources.EmployeeDepartmentHistory.StartDate,&#xA;	HumanResources.EmployeeDepartmentHistory.EndDate &#xA;from HumanResources.EmployeeDepartmentHistory" type="Int16" />
+            <Field name="StartDate" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select HumanResources.EmployeeDepartmentHistory.BusinessEntityID,&#xA;	HumanResources.EmployeeDepartmentHistory.DepartmentID,&#xA;	HumanResources.EmployeeDepartmentHistory.StartDate,&#xA;	HumanResources.EmployeeDepartmentHistory.EndDate &#xA;from HumanResources.EmployeeDepartmentHistory" type="Date" />
+            <Field name="EndDate" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select HumanResources.EmployeeDepartmentHistory.BusinessEntityID,&#xA;	HumanResources.EmployeeDepartmentHistory.DepartmentID,&#xA;	HumanResources.EmployeeDepartmentHistory.StartDate,&#xA;	HumanResources.EmployeeDepartmentHistory.EndDate &#xA;from HumanResources.EmployeeDepartmentHistory" type="Date" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="594" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="BusinessEntityID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="BusinessEntityID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_BusinessEntityID" selected="False" rename="Right_BusinessEntityID" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="234" y="642" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" FileFormat="23">odbc:DSN=Team_Assignment_AdvntureWorks|||select HumanResources.Department.Name,
+	HumanResources.Department.DepartmentID 
+from HumanResources.Department</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <ReadCentroids>False</ReadCentroids>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=Team_Assignment_AdvntureWorks
+Query=select HumanResources.Depart...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Name" size="50" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select HumanResources.Department.Name,&#xA;	HumanResources.Department.DepartmentID &#xA;from HumanResources.Department" type="V_WString" />
+            <Field name="DepartmentID" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select HumanResources.Department.Name,&#xA;	HumanResources.Department.DepartmentID &#xA;from HumanResources.Department" type="Int16" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="594" y="630" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="DepartmentID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="DepartmentID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_BusinessEntityID" selected="True" input="Left_" />
+                <SelectField field="Left_FirstName" selected="True" input="Left_" />
+                <SelectField field="Left_MiddleName" selected="True" input="Left_" />
+                <SelectField field="Left_LastName" selected="True" input="Left_" />
+                <SelectField field="Left_JobTitle" selected="True" input="Left_" />
+                <SelectField field="Left_PhoneNumber" selected="True" input="Left_" />
+                <SelectField field="Left_PhoneNumberType" selected="True" input="Left_" />
+                <SelectField field="Left_EmailAddress" selected="True" input="Left_" />
+                <SelectField field="Left_AddressLine1" selected="True" input="Left_" />
+                <SelectField field="Left_AddressLine2" selected="True" input="Left_" />
+                <SelectField field="Left_LoginID" selected="True" input="Left_" />
+                <SelectField field="Left_NationalIDNumber" selected="True" input="Left_" />
+                <SelectField field="Left_BirthDate" selected="True" input="Left_" />
+                <SelectField field="Left_HireDate" selected="True" input="Left_" />
+                <SelectField field="Left_MaritalStatus" selected="True" input="Left_" />
+                <SelectField field="Left_SalariedFlag" selected="True" input="Left_" />
+                <SelectField field="Left_Gender" selected="True" input="Left_" />
+                <SelectField field="Left_VacationHours" selected="True" input="Left_" />
+                <SelectField field="Left_SickLeaveHours" selected="True" input="Left_" />
+                <SelectField field="Left_CurrentFlag" selected="True" input="Left_" />
+                <SelectField field="Left_BaseRate" selected="True" input="Left_" />
+                <SelectField field="Left_PayFrequency" selected="True" input="Left_" />
+                <SelectField field="Left_StartDate" selected="True" input="Left_" />
+                <SelectField field="Left_EndDate" selected="True" input="Left_" />
+                <SelectField field="Right_Name" selected="True" input="Right_" />
+                <SelectField field="Right_DepartmentID" selected="False" rename="Right_DepartmentID" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="234" y="798" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" FileFormat="23">odbc:DSN=Team_Assignment_AdvntureWorks|||select Person.BusinessEntityAddress.BusinessEntityID,
+	Person.BusinessEntityAddress.AddressID,
+	Person.BusinessEntityAddress.AddressTypeID,
+	Person.Person.BusinessEntityID as BusinessEntityID1,
+	Person.Person.PersonType 
+from Person.BusinessEntityAddress 
+	inner join Person.Person on Person.BusinessEntityAddress.BusinessEntityID = Person.Person.BusinessEntityID</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <ReadCentroids>False</ReadCentroids>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=Team_Assignment_AdvntureWorks
+Query=select Person.BusinessEntity...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="BusinessEntityID" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select Person.BusinessEntityAddress.BusinessEntityID,&#xA;	Person.BusinessEntityAddress.AddressID,&#xA;	Person.BusinessEntityAddress.AddressTypeID,&#xA;	Person.Person.BusinessEntityID as BusinessEntityID1,&#xA;	Person.Person.PersonType &#xA;from Person.BusinessEntityAddress &#xA;	inner join Person.Person on Person.BusinessEntityAddress.BusinessEntityID = Person.Person.BusinessEntityID" type="Int32" />
+            <Field name="AddressID" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select Person.BusinessEntityAddress.BusinessEntityID,&#xA;	Person.BusinessEntityAddress.AddressID,&#xA;	Person.BusinessEntityAddress.AddressTypeID,&#xA;	Person.Person.BusinessEntityID as BusinessEntityID1,&#xA;	Person.Person.PersonType &#xA;from Person.BusinessEntityAddress &#xA;	inner join Person.Person on Person.BusinessEntityAddress.BusinessEntityID = Person.Person.BusinessEntityID" type="Int32" />
+            <Field name="AddressTypeID" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select Person.BusinessEntityAddress.BusinessEntityID,&#xA;	Person.BusinessEntityAddress.AddressID,&#xA;	Person.BusinessEntityAddress.AddressTypeID,&#xA;	Person.Person.BusinessEntityID as BusinessEntityID1,&#xA;	Person.Person.PersonType &#xA;from Person.BusinessEntityAddress &#xA;	inner join Person.Person on Person.BusinessEntityAddress.BusinessEntityID = Person.Person.BusinessEntityID" type="Int32" />
+            <Field name="BusinessEntityID1" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select Person.BusinessEntityAddress.BusinessEntityID,&#xA;	Person.BusinessEntityAddress.AddressID,&#xA;	Person.BusinessEntityAddress.AddressTypeID,&#xA;	Person.Person.BusinessEntityID as BusinessEntityID1,&#xA;	Person.Person.PersonType &#xA;from Person.BusinessEntityAddress &#xA;	inner join Person.Person on Person.BusinessEntityAddress.BusinessEntityID = Person.Person.BusinessEntityID" type="Int32" />
+            <Field name="PersonType" size="2" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select Person.BusinessEntityAddress.BusinessEntityID,&#xA;	Person.BusinessEntityAddress.AddressID,&#xA;	Person.BusinessEntityAddress.AddressTypeID,&#xA;	Person.Person.BusinessEntityID as BusinessEntityID1,&#xA;	Person.Person.PersonType &#xA;from Person.BusinessEntityAddress &#xA;	inner join Person.Person on Person.BusinessEntityAddress.BusinessEntityID = Person.Person.BusinessEntityID" type="WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="594" y="786" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="BusinessEntityID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="BusinessEntityID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_BusinessEntityID" selected="True" input="Left_" />
+                <SelectField field="Left_FirstName" selected="True" input="Left_" />
+                <SelectField field="Left_MiddleName" selected="True" input="Left_" />
+                <SelectField field="Left_LastName" selected="True" input="Left_" />
+                <SelectField field="Left_JobTitle" selected="True" input="Left_" />
+                <SelectField field="Left_PhoneNumber" selected="True" input="Left_" />
+                <SelectField field="Left_PhoneNumberType" selected="True" input="Left_" />
+                <SelectField field="Left_EmailAddress" selected="True" input="Left_" />
+                <SelectField field="Left_AddressLine1" selected="True" input="Left_" />
+                <SelectField field="Left_AddressLine2" selected="True" input="Left_" />
+                <SelectField field="Left_LoginID" selected="True" input="Left_" />
+                <SelectField field="Left_NationalIDNumber" selected="True" input="Left_" />
+                <SelectField field="Left_BirthDate" selected="True" input="Left_" />
+                <SelectField field="Left_HireDate" selected="True" input="Left_" />
+                <SelectField field="Left_MaritalStatus" selected="True" input="Left_" />
+                <SelectField field="Left_SalariedFlag" selected="True" input="Left_" />
+                <SelectField field="Left_Gender" selected="True" input="Left_" />
+                <SelectField field="Left_VacationHours" selected="True" input="Left_" />
+                <SelectField field="Left_SickLeaveHours" selected="True" input="Left_" />
+                <SelectField field="Left_CurrentFlag" selected="True" input="Left_" />
+                <SelectField field="Left_BaseRate" selected="True" input="Left_" />
+                <SelectField field="Left_PayFrequency" selected="True" input="Left_" />
+                <SelectField field="Left_StartDate" selected="True" input="Left_" />
+                <SelectField field="Left_EndDate" selected="True" input="Left_" />
+                <SelectField field="Left_Name" selected="True" rename="DepartmentName" input="Left_" />
+                <SelectField field="Right_BusinessEntityID" selected="False" rename="Right_BusinessEntityID" input="Right_" />
+                <SelectField field="Right_AddressID" selected="True" input="Right_" />
+                <SelectField field="Right_AddressTypeID" selected="True" input="Right_" />
+                <SelectField field="Right_PersonType" selected="True" rename="PurchaseBuyer" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="234" y="966" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" FileFormat="23">odbc:DSN=Team_Assignment_AdvntureWorks|||select Person.AddressType.AddressTypeID,
+	Person.AddressType.Name 
+from Person.AddressType</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <ReadCentroids>False</ReadCentroids>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=Team_Assignment_AdvntureWorks
+Query=select Person.AddressType.Ad...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="AddressTypeID" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select Person.AddressType.AddressTypeID,&#xA;	Person.AddressType.Name &#xA;from Person.AddressType" type="Int32" />
+            <Field name="Name" size="50" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select Person.AddressType.AddressTypeID,&#xA;	Person.AddressType.Name &#xA;from Person.AddressType" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="594" y="954" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="AddressTypeID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="AddressTypeID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_AddressTypeID" selected="False" input="Left_" />
+                <SelectField field="Right_AddressTypeID" selected="False" rename="Right_AddressTypeID" input="Right_" />
+                <SelectField field="Right_Name" selected="True" rename="AddressType" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="234" y="1134" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" FileFormat="23">odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_address.* 
+from AdventureWorksDW_Part_3.dbo.DIM_address</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <ReadCentroids>False</ReadCentroids>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=Team_Assignment_AdvntureWorks
+Query=select AdventureWorksDW_Part...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="AddressSK" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_address.* &#xA;from AdventureWorksDW_Part_3.dbo.DIM_address" type="Int32" />
+            <Field name="AddressID" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_address.* &#xA;from AdventureWorksDW_Part_3.dbo.DIM_address" type="Int32" />
+            <Field name="AddressLine1" size="60" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_address.* &#xA;from AdventureWorksDW_Part_3.dbo.DIM_address" type="V_String" />
+            <Field name="AddressLine2" size="60" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_address.* &#xA;from AdventureWorksDW_Part_3.dbo.DIM_address" type="V_String" />
+            <Field name="City" size="30" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_address.* &#xA;from AdventureWorksDW_Part_3.dbo.DIM_address" type="V_String" />
+            <Field name="StateProvinceID" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_address.* &#xA;from AdventureWorksDW_Part_3.dbo.DIM_address" type="Int32" />
+            <Field name="PostalCode" size="15" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_address.* &#xA;from AdventureWorksDW_Part_3.dbo.DIM_address" type="V_String" />
+            <Field name="StateProvinceCode" size="3" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_address.* &#xA;from AdventureWorksDW_Part_3.dbo.DIM_address" type="V_String" />
+            <Field name="CountryRegionCode" size="3" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_address.* &#xA;from AdventureWorksDW_Part_3.dbo.DIM_address" type="V_String" />
+            <Field name="IsOnlyStateProvinceFlag" size="1" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_address.* &#xA;from AdventureWorksDW_Part_3.dbo.DIM_address" type="V_String" />
+            <Field name="StateProvinceName" size="50" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_address.* &#xA;from AdventureWorksDW_Part_3.dbo.DIM_address" type="V_String" />
+            <Field name="TerritoryID" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_address.* &#xA;from AdventureWorksDW_Part_3.dbo.DIM_address" type="Int32" />
+            <Field name="State_ModifiedDate" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_address.* &#xA;from AdventureWorksDW_Part_3.dbo.DIM_address" type="DateTime" />
+            <Field name="CountryRegionName" size="50" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_address.* &#xA;from AdventureWorksDW_Part_3.dbo.DIM_address" type="V_String" />
+            <Field name="CountryRegionModifiedDate" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_address.* &#xA;from AdventureWorksDW_Part_3.dbo.DIM_address" type="DateTime" />
+            <Field name="DI_JobID" size="20" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_address.* &#xA;from AdventureWorksDW_Part_3.dbo.DIM_address" type="V_String" />
+            <Field name="DI_Create_Date" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_address.* &#xA;from AdventureWorksDW_Part_3.dbo.DIM_address" type="DateTime" />
+            <Field name="DI_Modified_Date" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_address.* &#xA;from AdventureWorksDW_Part_3.dbo.DIM_address" type="DateTime" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="606" y="1122" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="AddressID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="AddressID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_AddressID" selected="True" rename="Right_AddressID" input="Right_" />
+                <SelectField field="Right_AddressLine1" selected="True" rename="Right_AddressLine1" input="Right_" />
+                <SelectField field="Right_AddressLine2" selected="True" rename="Right_AddressLine2" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="354" y="1134" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="AddressID" selected="True" />
+            <SelectField field="TerritoryID" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="606" y="1266" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="TerritoryID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="TerritoryID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_AddressID" selected="False" input="Left_" />
+                <SelectField field="Left_Right_AddressID" selected="False" input="Left_" />
+                <SelectField field="Left_TerritoryID" selected="False" input="Left_" />
+                <SelectField field="Right_TerritoryID" selected="False" rename="Right_TerritoryID" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="234" y="1278" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" FileFormat="23">odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_salesterritory.SalesTerritorySK,
+	AdventureWorksDW_Part_3.dbo.DIM_geography.SalesTerritorySK as SalesTerritorySK1,
+	AdventureWorksDW_Part_3.dbo.DIM_geography.GeoSK,
+	AdventureWorksDW_Part_3.dbo.DIM_salesterritory.TerritoryID 
+from AdventureWorksDW_Part_3.dbo.DIM_salesterritory 
+	inner join AdventureWorksDW_Part_3.dbo.DIM_geography on AdventureWorksDW_Part_3.dbo.DIM_salesterritory.SalesTerritorySK = AdventureWorksDW_Part_3.dbo.DIM_geography.SalesTerritorySK</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <ReadCentroids>False</ReadCentroids>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=Team_Assignment_AdvntureWorks
+Query=select AdventureWorksDW_Part...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="SalesTerritorySK" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_salesterritory.SalesTerritorySK,&#xA;	AdventureWorksDW_Part_3.dbo.DIM_geography.SalesTerritorySK as SalesTerritorySK1,&#xA;	AdventureWorksDW_Part_3.dbo.DIM_geography.GeoSK,&#xA;	AdventureWorksDW_Part_3.dbo.DIM_salesterritory.TerritoryID &#xA;from AdventureWorksDW_Part_3.dbo.DIM_salesterritory &#xA;	inner join AdventureWorksDW_Part_3.dbo.DIM_geography on AdventureWorksDW_Part_3.dbo.DIM_salesterritory.SalesTerritorySK = AdventureWorksDW_Part_3.dbo.DIM_geography.SalesTerritorySK" type="Int32" />
+            <Field name="SalesTerritorySK1" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_salesterritory.SalesTerritorySK,&#xA;	AdventureWorksDW_Part_3.dbo.DIM_geography.SalesTerritorySK as SalesTerritorySK1,&#xA;	AdventureWorksDW_Part_3.dbo.DIM_geography.GeoSK,&#xA;	AdventureWorksDW_Part_3.dbo.DIM_salesterritory.TerritoryID &#xA;from AdventureWorksDW_Part_3.dbo.DIM_salesterritory &#xA;	inner join AdventureWorksDW_Part_3.dbo.DIM_geography on AdventureWorksDW_Part_3.dbo.DIM_salesterritory.SalesTerritorySK = AdventureWorksDW_Part_3.dbo.DIM_geography.SalesTerritorySK" type="Int32" />
+            <Field name="GeoSK" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_salesterritory.SalesTerritorySK,&#xA;	AdventureWorksDW_Part_3.dbo.DIM_geography.SalesTerritorySK as SalesTerritorySK1,&#xA;	AdventureWorksDW_Part_3.dbo.DIM_geography.GeoSK,&#xA;	AdventureWorksDW_Part_3.dbo.DIM_salesterritory.TerritoryID &#xA;from AdventureWorksDW_Part_3.dbo.DIM_salesterritory &#xA;	inner join AdventureWorksDW_Part_3.dbo.DIM_geography on AdventureWorksDW_Part_3.dbo.DIM_salesterritory.SalesTerritorySK = AdventureWorksDW_Part_3.dbo.DIM_geography.SalesTerritorySK" type="Int32" />
+            <Field name="TerritoryID" source="File: odbc:DSN=Team_Assignment_AdvntureWorks|||select AdventureWorksDW_Part_3.dbo.DIM_salesterritory.SalesTerritorySK,&#xA;	AdventureWorksDW_Part_3.dbo.DIM_geography.SalesTerritorySK as SalesTerritorySK1,&#xA;	AdventureWorksDW_Part_3.dbo.DIM_geography.GeoSK,&#xA;	AdventureWorksDW_Part_3.dbo.DIM_salesterritory.TerritoryID &#xA;from AdventureWorksDW_Part_3.dbo.DIM_salesterritory &#xA;	inner join AdventureWorksDW_Part_3.dbo.DIM_geography on AdventureWorksDW_Part_3.dbo.DIM_salesterritory.SalesTerritorySK = AdventureWorksDW_Part_3.dbo.DIM_geography.SalesTerritorySK" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="354" y="1278" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="SalesTerritorySK" selected="True" />
+            <SelectField field="GeoSK" selected="True" />
+            <SelectField field="TerritoryID" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="702" y="1266" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="PhoneNumber" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="798" y="1266" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="BusinessEntityID" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="894" y="1254" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IF [DepartmentName] = &quot;Sales&quot; THEN 1 ELSE 0 ENDIF" field="SalesPersonFlag" size="1" type="Bool" />
+            <FormulaField expression="IF IsNull([EndDate]) THEN &quot;Current&quot; &#xA;ELSE &quot;null&quot;&#xA;ENDIF" field="Status" size="50" type="V_WString" />
+            <FormulaField expression="DateTimeNow()" field="DI_Create_Date" size="19" type="DateTime" />
+            <FormulaField expression="DateTimeNow()" field="DI_Modified_Date" size="19" type="DateTime" />
+            <FormulaField expression="ToNumber(REPLACE(REPLACE(REPLACE([DI_Create_Date],'-',''),' ',''),':',''))" field="DI_JobID" size="40" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>SalesPersonFlag = IF [DepartmentName] = "Sales" THEN 1 ELSE 0 ENDIF
+Status = IF ...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1014" y="1254" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="NationalIDNumber" selected="True" rename="EmployeeNationalID" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1170" y="1254" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="18">odb:Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=AdventureWorksDW_Part_3;Data Source=localhost;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DESKTOP-5TJH5F4;Use Encryption for Data=False;Tag with column collation when possible=False|||DIM_employee</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <TransactionSize>10000</TransactionSize>
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <PostSQL />
+            <TableStyle>Quoted</TableStyle>
+            <AppendMap>
+              <AppendMapping mode="Custom">
+                <Field Source="BusinessEntityID" Dest="BusinessEntityID" />
+                <Field Source="FirstName" Dest="FirstName" />
+                <Field Source="MiddleName" Dest="MiddleName" />
+                <Field Source="LastName" Dest="LastName" />
+                <Field Source="JobTitle" Dest="JobTitle" />
+                <Field Source="PhoneNumberType" Dest="PhoneNumberType" />
+                <Field Source="EmailAddress" Dest="EmailAddress" />
+                <Field Source="AddressLine1" Dest="AddressLine1" />
+                <Field Source="AddressLine2" Dest="AddressLine2" />
+                <Field Source="LoginID" Dest="LoginID" />
+                <Field Source="EmployeeNationalID" Dest="EmployeeNationalID" />
+                <Field Source="BirthDate" Dest="BirthDate" />
+                <Field Source="HireDate" Dest="HireDate" />
+                <Field Source="MaritalStatus" Dest="MaritalStatus" />
+                <Field Source="SalariedFlag" Dest="SalariedFlag" />
+                <Field Source="Gender" Dest="Gender" />
+                <Field Source="VacationHours" Dest="VacationHours" />
+                <Field Source="SickLeaveHours" Dest="SickLeaveHours" />
+                <Field Source="CurrentFlag" Dest="CurrentFlag" />
+                <Field Source="BaseRate" Dest="BaseRate" />
+                <Field Source="PayFrequency" Dest="PayFrequency" />
+                <Field Source="StartDate" Dest="StartDate" />
+                <Field Source="EndDate" Dest="EndDate" />
+                <Field Source="DepartmentName" Dest="DepartmentName" />
+                <Field Source="AddressType" Dest="AddressType" />
+                <Field Source="SalesTerritorySK" Dest="SalesTerritorySK" />
+                <Field Source="GeoSK" Dest="GeoSK" />
+                <Field Source="SalesPersonFlag" Dest="SalesPersonFlag" />
+                <Field Source="Status" Dest="Status" />
+                <Field Source="DI_Create_Date" Dest="DI_Create_Date" />
+                <Field Source="DI_Modified_Date" Dest="DI_Modified_Date" />
+                <Field Source="DI_JobID" Dest="DI_JobID" />
+              </AppendMapping>
+            </AppendMap>
+            <PreSQL />
+            <TransactionMessages>False</TransactionMessages>
+            <OutputOption>Delete</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Source=localhost
+Catalog=AdventureWorksDW_Part_3
+Query=DIM_employee</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="66" y="78" width="100" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Employee CSV</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Red" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="66" y="186" width="100" height="36" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>HumanResources.Employee</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Red" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="330" width="156" height="48" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>HumanResources.EmployeePayHistory</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Red" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="66" y="498" width="156" height="48" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>HumanResources.EmployeeDepartmentHistory</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Red" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="33">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="78" y="666" width="100" height="36" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>HumanResources.Department</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Red" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="78" y="822" width="100" height="36" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Person.BusinessEntity</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Red" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="35">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="66" y="990" width="120" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Person.AddressType</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Red" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="36">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="66" y="1158" width="100" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>DIM_address</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Red" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="37">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="66" y="1302" width="120" height="36" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Dim_SalesTerritory + DIM_geography</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Red" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="38">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="414" y="798" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="&quot;EM&quot;" field="PersonType" size="2" type="WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[PersonType = "EM"
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="5" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Join" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="8" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="8" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Join" />
+      <Destination ToolID="10" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="10" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Join" />
+      <Destination ToolID="12" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="12" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Join" />
+      <Destination ToolID="15" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="Output" />
+      <Destination ToolID="15" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="38" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Join" />
+      <Destination ToolID="17" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="17" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Join" />
+      <Destination ToolID="19" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="19" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Join" />
+      <Destination ToolID="21" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="21" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Join" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Unique" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>DIM_employee</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
