@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <TalendMetadata:DelimitedFileConnection Encoding="UTF-8" FieldSeparatorType="Tabulation" FieldSeparatorValue="&quot;\t&quot;" FilePath="D:/Study/DWBI/NewYork Assignments/NYC-collisions/Homework - NYC Collisions/Motor_Vehicle_Collisions_-_Person.tsv" FirstLineCaption="true" Format="WINDOWS" HeaderValue="1" RowSeparatorValue="&quot;\n&quot;" Server="Localhost 127.0.0.1" UseHeader="true" dataPackage="_BC7CcpqVEeu5HcEJxfzpDA" id="_BC7CcJqVEeu5HcEJxfzpDA" name="Person" xmi:id="_BC7CcZqVEeu5HcEJxfzpDA"/>
+  <orgomg.cwm.resource.record:RecordFile dataManager="_BC7CcZqVEeu5HcEJxfzpDA" name="default" xmi:id="_BC7CcpqVEeu5HcEJxfzpDA">
+    <ownedElement id="_6xVIkJqUEeu5HcEJxfzpDA" label="metadata" xmi:id="_BC7Cc5qVEeu5HcEJxfzpDA" xsi:type="TalendMetadata:MetadataTable">
+      <feature label="UNIQUE_ID" length="8" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_BC7CdJqVEeu5HcEJxfzpDA" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="COLLISION_ID" length="7" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_BC7CdZqVEeu5HcEJxfzpDA" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="CRASH_DATE" length="10" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_BC7CdpqVEeu5HcEJxfzpDA" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="CRASH_TIME" length="5" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_BC7Cd5qVEeu5HcEJxfzpDA" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="PERSON_ID" length="36" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_BC7CeJqVEeu5HcEJxfzpDA" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="PERSON_TYPE" length="10" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_BC7CeZqVEeu5HcEJxfzpDA" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="PERSON_INJURY" length="11" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_BC7CepqVEeu5HcEJxfzpDA" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="VEHICLE_ID" length="8" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_BC7Ce5qVEeu5HcEJxfzpDA" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="PERSON_AGE" length="2" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_BC7CfJqVEeu5HcEJxfzpDA" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="EJECTION" length="11" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_BC7CfZqVEeu5HcEJxfzpDA" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="EMOTIONAL_STATUS" length="14" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_BC7CfpqVEeu5HcEJxfzpDA" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="BODILY_INJURY" length="20" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_BC7Cf5qVEeu5HcEJxfzpDA" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="POSITION_IN_VEHICLE" length="84" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_BC7CgJqVEeu5HcEJxfzpDA" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="SAFETY_EQUIPMENT" length="18" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_BC7CgZqVEeu5HcEJxfzpDA" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="PED_LOCATION" length="53" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_BC7CgpqVEeu5HcEJxfzpDA" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="PED_ACTION" length="20" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_BC7Cg5qVEeu5HcEJxfzpDA" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="COMPLAINT" length="27" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_BC7ChJqVEeu5HcEJxfzpDA" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="PED_ROLE" length="15" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_BC7ChZqVEeu5HcEJxfzpDA" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="CONTRIBUTING_FACTOR_1" length="11" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_BC7ChpqVEeu5HcEJxfzpDA" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="CONTRIBUTING_FACTOR_2" length="11" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_BC7Ch5qVEeu5HcEJxfzpDA" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="PERSON_SEX" length="1" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_BC7CiJqVEeu5HcEJxfzpDA" xsi:type="TalendMetadata:MetadataColumn"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_588b4098-69d0-465a-a0db-b0ee0fa90292"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>PSjzTK1QUBHhjgWPnoZhBIJ9QIvWvKzDj8R6qHcLENr5oPg2oFw85l6SCcrlEkUE0OkpH2APNwDv
+ka2MW8rA8Q==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_98b3bcf3-1bcc-40cb-9a1c-a5ec7b19890b"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>vDDBlKOMQ6dzSPcph/bWLUWxZQuhvYyZaK9AJOvqKa7kir54lSvenGVE7s4cahwOoB7nzITlJz5t
+9HW1KKBckw==</DigestValue></Reference></SignedInfo><SignatureValue>CRMJwYYrJSK9itLIA3s+x9sSKm4h/eBa1H7tGL45XdE+ENme5XPVvRQOfBRsCqG+jwcem2gjpF5Y
+OygSpAGDT4nEGheP+ffzdhA3fkJ9DflVZNzwR8fQmfDbjNlY9GY6CmrUUFfJnO2itmtirYFwCHFu
+tkKKBX4oDFsrV1ToEqyQ+wBPWHkl1VQilO5/ELY44Ppx9+g6xAiyTAnmXKXiK6FHb/bG3ik8K+tZ
+pGUkLB7UELMLyWR179YXGe8FBo0WvTHvCU3uZQDdNYFvWBtCmX5ZLc19JzrfeNfrnMT2mN4Adl5a
+4gzQF4gWbXnnqpZIiKA8hizcQba/E8mtqZLXYg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_98b3bcf3-1bcc-40cb-9a1c-a5ec7b19890b" Target="#_588b4098-69d0-465a-a0db-b0ee0fa90292"><Timestamp>2021-04-11 23:58:04</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
