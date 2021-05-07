@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Project xmi:id="_VOP2QIQuEeuY4q4IBFwEPg" label="DI-HandlingVariousStructures" description="" language="java" technicalLabel="DI_HANDLINGVARIOUSSTRUCTURES" local="true" author="_VOP2QYQuEeuY4q4IBFwEPg" productVersion="Talend Real-time Big Data Platform-7.3.1.20200219_1130" itemsRelationVersion="1.3">
+    <componentsSettings xmi:id="_fUD24I8qEeucGsmuXCaKlQ" name="DI|tArray" family="Technical"/>
+    <componentsSettings xmi:id="_fUD24Y8qEeucGsmuXCaKlQ" name="DI|tArrayIn" family="Technical"/>
+    <componentsSettings xmi:id="_fUD24o8qEeucGsmuXCaKlQ" name="DI|tHashOutput" family="Technical"/>
+    <componentsSettings xmi:id="_fUD2448qEeucGsmuXCaKlQ" name="DI|tHashInput" family="Technical"/>
+    <componentsSettings xmi:id="_f1a3gI8qEeucGsmuXCaKlQ" name="DI|tDotNETInstantiate" hidden="true" family="DotNET"/>
+    <componentsSettings xmi:id="_f1a3gY8qEeucGsmuXCaKlQ" name="DI|tDotNETRow" hidden="true" family="DotNET"/>
+    <componentsSettings xmi:id="_gJGBcI8qEeucGsmuXCaKlQ" name="DI|tRESTResponse" hidden="true" family="ESB/REST"/>
+    <componentsSettings xmi:id="_gJGBcY8qEeucGsmuXCaKlQ" name="DI|tESBConsumer" hidden="true" family="ESB/Web Services"/>
+    <componentsSettings xmi:id="_gJGBco8qEeucGsmuXCaKlQ" name="DI|tRouteInput" hidden="true" family="ESB/Route"/>
+    <componentsSettings xmi:id="_gJGBc48qEeucGsmuXCaKlQ" name="DI|tESBProviderResponse" hidden="true" family="ESB/Web Services"/>
+    <componentsSettings xmi:id="_gJGBdI8qEeucGsmuXCaKlQ" name="DI|tRESTClient" hidden="true" family="ESB/REST"/>
+    <componentsSettings xmi:id="_gJGBdY8qEeucGsmuXCaKlQ" name="DI|tESBProviderRequest" hidden="true" family="ESB/Web Services"/>
+    <componentsSettings xmi:id="_gJGBdo8qEeucGsmuXCaKlQ" name="DI|tRouteFault" hidden="true" family="ESB/Route"/>
+    <componentsSettings xmi:id="_gJGBd48qEeucGsmuXCaKlQ" name="DI|tESBProviderFault" hidden="true" family="ESB/Web Services"/>
+    <componentsSettings xmi:id="_gJGBeI8qEeucGsmuXCaKlQ" name="DI|tRESTRequest" hidden="true" family="ESB/REST"/>
+    <componentsSettings xmi:id="_gJGBeY8qEeucGsmuXCaKlQ" name="DI|tRouteOutput" hidden="true" family="ESB/Route"/>
+    <componentsSettings xmi:id="_hmvEII8qEeucGsmuXCaKlQ" name="DI|tDataStewardshipTaskInput" hidden="true" family="Talend Data Stewardship"/>
+    <componentsSettings xmi:id="_hmvEIY8qEeucGsmuXCaKlQ" name="DI|tDataStewardshipTaskOutput" hidden="true" family="Talend Data Stewardship"/>
+    <componentsSettings xmi:id="_hmvEIo8qEeucGsmuXCaKlQ" name="DI|tDataStewardshipTaskDelete" hidden="true" family="Talend Data Stewardship"/>
+    <componentsSettings xmi:id="_jjcBYI8qEeucGsmuXCaKlQ" name="DI|tEXARow" hidden="true" family="Databases/DB Specifics/EXASolution"/>
+    <componentsSettings xmi:id="_jjcBYY8qEeucGsmuXCaKlQ" name="DI|tEXAConnection" hidden="true" family="Databases/DB Specifics/EXASolution"/>
+    <componentsSettings xmi:id="_jjcBYo8qEeucGsmuXCaKlQ" name="DI|tEXABulkExec" hidden="true" family="Databases/DB Specifics/EXASolution"/>
+    <componentsSettings xmi:id="_jjcBY48qEeucGsmuXCaKlQ" name="DI|tEXAInput" hidden="true" family="Databases/DB Specifics/EXASolution"/>
+    <componentsSettings xmi:id="_jjcBZI8qEeucGsmuXCaKlQ" name="DI|tEXAClose" hidden="true" family="Databases/DB Specifics/EXASolution"/>
+    <componentsSettings xmi:id="_jjcBZY8qEeucGsmuXCaKlQ" name="DI|tEXARollback" hidden="true" family="Databases/DB Specifics/EXASolution"/>
+    <componentsSettings xmi:id="_jjcBZo8qEeucGsmuXCaKlQ" name="DI|tEXACommit" hidden="true" family="Databases/DB Specifics/EXASolution"/>
+    <componentsSettings xmi:id="_jjcBZ48qEeucGsmuXCaKlQ" name="DI|tEXAOutput" hidden="true" family="Databases/DB Specifics/EXASolution"/>
+    <componentsSettings xmi:id="_kKSmAI8qEeucGsmuXCaKlQ" name="DI|tEXistConnection" hidden="true" family="Databases/DB Specifics/eXist"/>
+    <componentsSettings xmi:id="_kKSmAY8qEeucGsmuXCaKlQ" name="DI|tEXistDelete" hidden="true" family="Databases/DB Specifics/eXist"/>
+    <componentsSettings xmi:id="_kKSmAo8qEeucGsmuXCaKlQ" name="DI|tEXistGet" hidden="true" family="Databases/DB Specifics/eXist"/>
+    <componentsSettings xmi:id="_kKSmA48qEeucGsmuXCaKlQ" name="DI|tEXistList" hidden="true" family="Databases/DB Specifics/eXist"/>
+    <componentsSettings xmi:id="_kKSmBI8qEeucGsmuXCaKlQ" name="DI|tEXistXUpdate" hidden="true" family="Databases/DB Specifics/eXist"/>
+    <componentsSettings xmi:id="_kKSmBY8qEeucGsmuXCaKlQ" name="DI|tEXistXQuery" hidden="true" family="Databases/DB Specifics/eXist"/>
+    <componentsSettings xmi:id="_kKSmBo8qEeucGsmuXCaKlQ" name="DI|tEXistPut" hidden="true" family="Databases/DB Specifics/eXist"/>
+    <componentsSettings xmi:id="_qHxREI8qEeucGsmuXCaKlQ" name="DI|tVectorWiseRollback" hidden="true" family="Databases/DB Specifics/VectorWise"/>
+    <componentsSettings xmi:id="_qHxREY8qEeucGsmuXCaKlQ" name="DI|tAccessRollback" hidden="true" family="Databases/DB Specifics/Access"/>
+    <componentsSettings xmi:id="_qHxREo8qEeucGsmuXCaKlQ" name="DI|tHSQLDbInput" hidden="true" family="Databases/DB Specifics/HSQLDb"/>
+    <componentsSettings xmi:id="_qHxRE48qEeucGsmuXCaKlQ" name="DI|tAS400Close" hidden="true" family="Databases/DB Specifics/AS400"/>
+    <componentsSettings xmi:id="_qHxRFI8qEeucGsmuXCaKlQ" name="DI|tSybaseOutputBulk" hidden="true" family="Databases/DB Specifics/Sybase"/>
+    <componentsSettings xmi:id="_qHxRFY8qEeucGsmuXCaKlQ" name="DI|tTeradataFastLoad" hidden="true" family="Databases/DB Specifics/Teradata"/>
+    <componentsSettings xmi:id="_qHxRFo8qEeucGsmuXCaKlQ" name="DI|tVectorWiseConnection" hidden="true" family="Databases/DB Specifics/VectorWise"/>
+    <componentsSettings xmi:id="_qHxRF48qEeucGsmuXCaKlQ" name="DI|tIngresRollback" hidden="true" family="Databases/DB Specifics/Ingres"/>
+    <componentsSettings xmi:id="_qHxRGI8qEeucGsmuXCaKlQ" name="DI|tGreenplumClose" hidden="true" family="Databases/DB Specifics/Greenplum"/>
+    <componentsSettings xmi:id="_qHxRGY8qEeucGsmuXCaKlQ" name="DI|tTeradataCommit" hidden="true" family="Databases/DB Specifics/Teradata"/>
+    <componentsSettings xmi:id="_qHxRGo8qEeucGsmuXCaKlQ" name="DI|tSQLiteCommit" hidden="true" family="Databases/DB Specifics/SQLite"/>
+    <componentsSettings xmi:id="_qHxRG48qEeucGsmuXCaKlQ" name="DI|tSybaseCDC" hidden="true" family="Databases/DB Specifics/Sybase"/>
+    <componentsSettings xmi:id="_qHxRHI8qEeucGsmuXCaKlQ" name="DI|tGreenplumConnection" hidden="true" family="Databases/DB Specifics/Greenplum"/>
+    <componentsSettings xmi:id="_qHxRHY8qEeucGsmuXCaKlQ" name="DI|tSybaseRollback" hidden="true" family="Databases/DB Specifics/Sybase"/>
+    <componentsSettings xmi:id="_qHxRHo8qEeucGsmuXCaKlQ" name="DI|tTeradataRow" hidden="true" family="Databases/DB Specifics/Teradata"/>
+    <componentsSettings xmi:id="_qHxRH48qEeucGsmuXCaKlQ" name="DI|tFirebirdInput" hidden="true" family="Databases/DB Specifics/FireBird"/>
+    <componentsSettings xmi:id="_qHxRII8qEeucGsmuXCaKlQ" name="DI|tGreenplumOutputBulkExec" hidden="true" family="Databases/DB Specifics/Greenplum"/>
+    <componentsSettings xmi:id="_qHxRIY8qEeucGsmuXCaKlQ" name="DI|tJavaDBInput" hidden="true" family="Databases/DB Specifics/JavaDb"/>
+    <componentsSettings xmi:id="_qHxRIo8qEeucGsmuXCaKlQ" name="DI|tAS400Commit" hidden="true" family="Databases/DB Specifics/AS400"/>
+    <componentsSettings xmi:id="_qHxRI48qEeucGsmuXCaKlQ" name="DI|tFirebirdRollback" hidden="true" family="Databases/DB Specifics/FireBird"/>
+    <componentsSettings xmi:id="_qHxRJI8qEeucGsmuXCaKlQ" name="DI|tTeradataClose" hidden="true" family="Databases/DB Specifics/Teradata"/>
+    <componentsSettings xmi:id="_qHxRJY8qEeucGsmuXCaKlQ" name="DI|tTeradataTPTExec" hidden="true" family="Databases/DB Specifics/Teradata"/>
+    <componentsSettings xmi:id="_qHxRJo8qEeucGsmuXCaKlQ" name="DI|tAS400Row" hidden="true" family="Databases/DB Specifics/AS400"/>
+    <componentsSettings xmi:id="_qHxRJ48qEeucGsmuXCaKlQ" name="DI|tJavaDBRow" hidden="true" family="Databases/DB Specifics/JavaDb"/>
+    <componentsSettings xmi:id="_qHxRKI8qEeucGsmuXCaKlQ" name="DI|tAS400Output" hidden="true" family="Databases/DB Specifics/AS400"/>
+    <componentsSettings xmi:id="_qHxRKY8qEeucGsmuXCaKlQ" name="DI|tAccessOutputBulk" hidden="true" family="Databases/DB Specifics/Access"/>
+    <componentsSettings xmi:id="_qHxRKo8qEeucGsmuXCaKlQ" name="DI|tSybaseCommit" hidden="true" family="Databases/DB Specifics/Sybase"/>
+    <componentsSettings xmi:id="_qHxRK48qEeucGsmuXCaKlQ" name="DI|tAS400LastInsertId" hidden="true" family="Databases/DB Specifics/AS400"/>
+    <componentsSettings xmi:id="_qHxRLI8qEeucGsmuXCaKlQ" name="DI|tAccessOutput" hidden="true" family="Databases/DB Specifics/Access"/>
+    <componentsSettings xmi:id="_qHxRLY8qEeucGsmuXCaKlQ" name="DI|tSybaseSP" hidden="true" family="Databases/DB Specifics/Sybase"/>
+    <componentsSettings xmi:id="_qHxRLo8qEeucGsmuXCaKlQ" name="DI|tGreenplumRow" hidden="true" family="Databases/DB Specifics/Greenplum"/>
+    <componentsSettings xmi:id="_qHxRL48qEeucGsmuXCaKlQ" name="DI|tSQLiteInput" hidden="true" family="Databases/DB Specifics/SQLite"/>
+    <componentsSettings xmi:id="_qHxRMI8qEeucGsmuXCaKlQ" name="DI|tSybaseSCDELT" hidden="true" family="Databases/DB Specifics/Sybase"/>
+    <componentsSettings xmi:id="_qHxRMY8qEeucGsmuXCaKlQ" name="DI|tSQLiteClose" hidden="true" family="Databases/DB Specifics/SQLite"/>
+    <componentsSettings xmi:id="_qHxRMo8qEeucGsmuXCaKlQ" name="DI|tSybaseOutput" hidden="true" family="Databases/DB Specifics/Sybase"/>
+    <componentsSettings xmi:id="_qHxRM48qEeucGsmuXCaKlQ" name="DI|tAS400Rollback" hidden="true" family="Databases/DB Specifics/AS400"/>
+    <componentsSettings xmi:id="_qHxRNI8qEeucGsmuXCaKlQ" name="DI|tAS400Input" hidden="true" family="Databases/DB Specifics/AS400"/>
+    <componentsSettings xmi:id="_qHxRNY8qEeucGsmuXCaKlQ" name="DI|tVectorWiseCommit" hidden="true" family="Databases/DB Specifics/VectorWise"/>
+    <componentsSettings xmi:id="_qHxRNo8qEeucGsmuXCaKlQ" name="DI|tVectorWiseRow" hidden="true" family="Databases/DB Specifics/VectorWise"/>
+    <componentsSettings xmi:id="_qHxRN48qEeucGsmuXCaKlQ" name="DI|tAccessInput" hidden="true" family="Databases/DB Specifics/Access"/>
+    <componentsSettings xmi:id="_qHxROI8qEeucGsmuXCaKlQ" name="DI|tSQLiteRollback" hidden="true" family="Databases/DB Specifics/SQLite"/>
+    <componentsSettings xmi:id="_qHxROY8qEeucGsmuXCaKlQ" name="DI|tSybaseClose" hidden="true" family="Databases/DB Specifics/Sybase"/>
+    <componentsSettings xmi:id="_qHxROo8qEeucGsmuXCaKlQ" name="DI|tSAPHanaBulkExec" hidden="true" family="Databases/DB Specifics/SAP Hana"/>
+    <componentsSettings xmi:id="_qHxRO48qEeucGsmuXCaKlQ" name="DI|tGreenplumSCD" hidden="true" family="Databases/DB Specifics/Greenplum"/>
+    <componentsSettings xmi:id="_qHxRPI8qEeucGsmuXCaKlQ" name="DI|tGreenplumOutputBulk" hidden="true" family="Databases/DB Specifics/Greenplum"/>
+    <componentsSettings xmi:id="_qHxRPY8qEeucGsmuXCaKlQ" name="DI|tTeradataRollback" hidden="true" family="Databases/DB Specifics/Teradata"/>
+    <componentsSettings xmi:id="_qHxRPo8qEeucGsmuXCaKlQ" name="DI|tTeradataFastExport" hidden="true" family="Databases/DB Specifics/Teradata"/>
+    <componentsSettings xmi:id="_qHxRP48qEeucGsmuXCaKlQ" name="DI|tSybaseSCD" hidden="true" family="Databases/DB Specifics/Sybase"/>
+    <componentsSettings xmi:id="_qHxRQI8qEeucGsmuXCaKlQ" name="DI|tIngresRow" hidden="true" family="Databases/DB Specifics/Ingres"/>
+    <componentsSettings xmi:id="_qHxRQY8qEeucGsmuXCaKlQ" name="DI|tSAPHanaConnection" hidden="true" family="Databases/DB Specifics/SAP Hana"/>
+    <componentsSettings xmi:id="_qHxRQo8qEeucGsmuXCaKlQ" name="DI|tSQLiteRow" hidden="true" family="Databases/DB Specifics/SQLite"/>
+    <componentsSettings xmi:id="_qHx4II8qEeucGsmuXCaKlQ" name="DI|tTeradataSCD" hidden="true" family="Databases/DB Specifics/Teradata"/>
+    <componentsSettings xmi:id="_qHx4IY8qEeucGsmuXCaKlQ" name="DI|tFirebirdOutput" hidden="true" family="Databases/DB Specifics/FireBird"/>
+    <componentsSettings xmi:id="_qHx4Io8qEeucGsmuXCaKlQ" name="DI|tTeradataTPTUtility" hidden="true" family="Databases/DB Specifics/Teradata"/>
+    <componentsSettings xmi:id="_qHx4I48qEeucGsmuXCaKlQ" name="DI|tInterbaseCommit" hidden="true" family="Databases/DB Specifics/Interbase"/>
+    <componentsSettings xmi:id="_qHx4JI8qEeucGsmuXCaKlQ" name="DI|tInterbaseRollback" hidden="true" family="Databases/DB Specifics/Interbase"/>
+    <componentsSettings xmi:id="_qHx4JY8qEeucGsmuXCaKlQ" name="DI|tSAPHanaOutput" hidden="true" family="Databases/DB Specifics/SAP Hana"/>
+    <componentsSettings xmi:id="_qHx4Jo8qEeucGsmuXCaKlQ" name="DI|tTeradataCDC" hidden="true" family="Databases/DB Specifics/Teradata"/>
+    <componentsSettings xmi:id="_qHx4J48qEeucGsmuXCaKlQ" name="DI|tGreenplumBulkExec" hidden="true" family="Databases/DB Specifics/Greenplum"/>
+    <componentsSettings xmi:id="_qHx4KI8qEeucGsmuXCaKlQ" name="DI|tIngresOutputBulkExec" hidden="true" family="Databases/DB Specifics/Ingres"/>
+    <componentsSettings xmi:id="_qHx4KY8qEeucGsmuXCaKlQ" name="DI|tTeradataInput" hidden="true" family="Databases/DB Specifics/Teradata"/>
+    <componentsSettings xmi:id="_qHx4Ko8qEeucGsmuXCaKlQ" name="DI|tFirebirdCommit" hidden="true" family="Databases/DB Specifics/FireBird"/>
+    <componentsSettings xmi:id="_qHx4K48qEeucGsmuXCaKlQ" name="DI|tAccessCommit" hidden="true" family="Databases/DB Specifics/Access"/>
+    <componentsSettings xmi:id="_qHx4LI8qEeucGsmuXCaKlQ" name="DI|tSybaseIQOutputBulkExec" hidden="true" family="Databases/DB Specifics/Sybase"/>
+    <componentsSettings xmi:id="_qHx4LY8qEeucGsmuXCaKlQ" name="DI|tAccessRow" hidden="true" family="Databases/DB Specifics/Access"/>
+    <componentsSettings xmi:id="_qHx4Lo8qEeucGsmuXCaKlQ" name="DI|tGreenplumRollback" hidden="true" family="Databases/DB Specifics/Greenplum"/>
+    <componentsSettings xmi:id="_qHx4L48qEeucGsmuXCaKlQ" name="DI|tSybaseOutputBulkExec" hidden="true" family="Databases/DB Specifics/Sybase"/>
+    <componentsSettings xmi:id="_qHx4MI8qEeucGsmuXCaKlQ" name="DI|tIngresClose" hidden="true" family="Databases/DB Specifics/Ingres"/>
+    <componentsSettings xmi:id="_qHx4MY8qEeucGsmuXCaKlQ" name="DI|tIngresBulkExec" hidden="true" family="Databases/DB Specifics/Ingres"/>
+    <componentsSettings xmi:id="_qHx4Mo8qEeucGsmuXCaKlQ" name="DI|tTeradataOutput" hidden="true" family="Databases/DB Specifics/Teradata"/>
+    <componentsSettings xmi:id="_qHx4M48qEeucGsmuXCaKlQ" name="DI|tSQLiteConnection" hidden="true" family="Databases/DB Specifics/SQLite"/>
+    <componentsSettings xmi:id="_qHx4NI8qEeucGsmuXCaKlQ" name="DI|tSybaseInput" hidden="true" family="Databases/DB Specifics/Sybase"/>
+    <componentsSettings xmi:id="_qHx4NY8qEeucGsmuXCaKlQ" name="DI|tTeradataTPump" hidden="true" family="Databases/DB Specifics/Teradata"/>
+    <componentsSettings xmi:id="_qHx4No8qEeucGsmuXCaKlQ" name="DI|tSAPHanaClose" hidden="true" family="Databases/DB Specifics/SAP Hana"/>
+    <componentsSettings xmi:id="_qHx4N48qEeucGsmuXCaKlQ" name="DI|tGreenplumOutput" hidden="true" family="Databases/DB Specifics/Greenplum"/>
+    <componentsSettings xmi:id="_qHx4OI8qEeucGsmuXCaKlQ" name="DI|tMaxDBOutput" hidden="true" family="Databases/DB Specifics/MaxDB"/>
+    <componentsSettings xmi:id="_qHx4OY8qEeucGsmuXCaKlQ" name="DI|tHSQLDbOutput" hidden="true" family="Databases/DB Specifics/HSQLDb"/>
+    <componentsSettings xmi:id="_qHx4Oo8qEeucGsmuXCaKlQ" name="DI|tIngresOutput" hidden="true" family="Databases/DB Specifics/Ingres"/>
+    <componentsSettings xmi:id="_qHx4O48qEeucGsmuXCaKlQ" name="DI|tSybaseIQBulkExec" hidden="true" family="Databases/DB Specifics/Sybase"/>
+    <componentsSettings xmi:id="_qHx4PI8qEeucGsmuXCaKlQ" name="DI|tAccessConnection" hidden="true" family="Databases/DB Specifics/Access"/>
+    <componentsSettings xmi:id="_qHx4PY8qEeucGsmuXCaKlQ" name="DI|tGreenplumCommit" hidden="true" family="Databases/DB Specifics/Greenplum"/>
+    <componentsSettings xmi:id="_qHx4Po8qEeucGsmuXCaKlQ" name="DI|tIngresCDC" hidden="true" family="Databases/DB Specifics/Ingres"/>
+    <componentsSettings xmi:id="_qHx4P48qEeucGsmuXCaKlQ" name="DI|tSybaseConnection" hidden="true" family="Databases/DB Specifics/Sybase"/>
+    <componentsSettings xmi:id="_qHx4QI8qEeucGsmuXCaKlQ" name="DI|tIngresConnection" hidden="true" family="Databases/DB Specifics/Ingres"/>
+    <componentsSettings xmi:id="_qHx4QY8qEeucGsmuXCaKlQ" name="DI|tIngresCommit" hidden="true" family="Databases/DB Specifics/Ingres"/>
+    <componentsSettings xmi:id="_qHx4Qo8qEeucGsmuXCaKlQ" name="DI|tJavaDBOutput" hidden="true" family="Databases/DB Specifics/JavaDb"/>
+    <componentsSettings xmi:id="_qHx4Q48qEeucGsmuXCaKlQ" name="DI|tInterbaseClose" hidden="true" family="Databases/DB Specifics/Interbase"/>
+    <componentsSettings xmi:id="_qHx4RI8qEeucGsmuXCaKlQ" name="DI|tAccessClose" hidden="true" family="Databases/DB Specifics/Access"/>
+    <componentsSettings xmi:id="_qHx4RY8qEeucGsmuXCaKlQ" name="DI|tFirebirdClose" hidden="true" family="Databases/DB Specifics/FireBird"/>
+    <componentsSettings xmi:id="_qHx4Ro8qEeucGsmuXCaKlQ" name="DI|tMaxDBRow" hidden="true" family="Databases/DB Specifics/MaxDB"/>
+    <componentsSettings xmi:id="_qHx4R48qEeucGsmuXCaKlQ" name="DI|tTeradataMultiLoad" hidden="true" family="Databases/DB Specifics/Teradata"/>
+    <componentsSettings xmi:id="_qHx4SI8qEeucGsmuXCaKlQ" name="DI|tTeradataFastLoadUtility" hidden="true" family="Databases/DB Specifics/Teradata"/>
+    <componentsSettings xmi:id="_qHx4SY8qEeucGsmuXCaKlQ" name="DI|tTeradataSCDELT" hidden="true" family="Databases/DB Specifics/Teradata"/>
+    <componentsSettings xmi:id="_qHx4So8qEeucGsmuXCaKlQ" name="DI|tGreenplumGPLoad" hidden="true" family="Databases/DB Specifics/Greenplum"/>
+    <componentsSettings xmi:id="_qHx4S48qEeucGsmuXCaKlQ" name="DI|tTeradataConnection" hidden="true" family="Databases/DB Specifics/Teradata"/>
+    <componentsSettings xmi:id="_qHx4TI8qEeucGsmuXCaKlQ" name="DI|tSybaseBulkExec" hidden="true" family="Databases/DB Specifics/Sybase"/>
+    <componentsSettings xmi:id="_qHx4TY8qEeucGsmuXCaKlQ" name="DI|tInterbaseInput" hidden="true" family="Databases/DB Specifics/Interbase"/>
+    <componentsSettings xmi:id="_qHx4To8qEeucGsmuXCaKlQ" name="DI|tSAPHanaCommit" hidden="true" family="Databases/DB Specifics/SAP Hana"/>
+    <componentsSettings xmi:id="_qHx4T48qEeucGsmuXCaKlQ" name="DI|tFirebirdConnection" hidden="true" family="Databases/DB Specifics/FireBird"/>
+    <componentsSettings xmi:id="_qHx4UI8qEeucGsmuXCaKlQ" name="DI|tSybaseRow" hidden="true" family="Databases/DB Specifics/Sybase"/>
+    <componentsSettings xmi:id="_qHx4UY8qEeucGsmuXCaKlQ" name="DI|tHSQLDbRow" hidden="true" family="Databases/DB Specifics/HSQLDb"/>
+    <componentsSettings xmi:id="_qHx4Uo8qEeucGsmuXCaKlQ" name="DI|tIngresOutputBulk" hidden="true" family="Databases/DB Specifics/Ingres"/>
+    <componentsSettings xmi:id="_qHx4U48qEeucGsmuXCaKlQ" name="DI|tInterbaseOutput" hidden="true" family="Databases/DB Specifics/Interbase"/>
+    <componentsSettings xmi:id="_qHx4VI8qEeucGsmuXCaKlQ" name="DI|tSQLiteOutput" hidden="true" family="Databases/DB Specifics/SQLite"/>
+    <componentsSettings xmi:id="_qHx4VY8qEeucGsmuXCaKlQ" name="DI|tAS400CDC" hidden="true" family="Databases/DB Specifics/AS400"/>
+    <componentsSettings xmi:id="_qHx4Vo8qEeucGsmuXCaKlQ" name="DI|tIngresSCD" hidden="true" family="Databases/DB Specifics/Ingres"/>
+    <componentsSettings xmi:id="_qHx4V48qEeucGsmuXCaKlQ" name="DI|tMaxDBInput" hidden="true" family="Databases/DB Specifics/MaxDB"/>
+    <componentsSettings xmi:id="_qHx4WI8qEeucGsmuXCaKlQ" name="DI|tSAPHanaRollback" hidden="true" family="Databases/DB Specifics/SAP Hana"/>
+    <componentsSettings xmi:id="_qHx4WY8qEeucGsmuXCaKlQ" name="DI|tSAPHanaRow" hidden="true" family="Databases/DB Specifics/SAP Hana"/>
+    <componentsSettings xmi:id="_qHx4Wo8qEeucGsmuXCaKlQ" name="DI|tIngresInput" hidden="true" family="Databases/DB Specifics/Ingres"/>
+    <componentsSettings xmi:id="_qHx4W48qEeucGsmuXCaKlQ" name="DI|tInterbaseConnection" hidden="true" family="Databases/DB Specifics/Interbase"/>
+    <componentsSettings xmi:id="_qHx4XI8qEeucGsmuXCaKlQ" name="DI|tFirebirdRow" hidden="true" family="Databases/DB Specifics/FireBird"/>
+    <componentsSettings xmi:id="_qHx4XY8qEeucGsmuXCaKlQ" name="DI|tGreenplumInput" hidden="true" family="Databases/DB Specifics/Greenplum"/>
+    <componentsSettings xmi:id="_qHx4Xo8qEeucGsmuXCaKlQ" name="DI|tInterbaseRow" hidden="true" family="Databases/DB Specifics/Interbase"/>
+    <componentsSettings xmi:id="_qHyfMI8qEeucGsmuXCaKlQ" name="DI|tVectorWiseInput" hidden="true" family="Databases/DB Specifics/VectorWise"/>
+    <componentsSettings xmi:id="_qHyfMY8qEeucGsmuXCaKlQ" name="DI|tAS400Connection" hidden="true" family="Databases/DB Specifics/AS400"/>
+    <componentsSettings xmi:id="_qHyfMo8qEeucGsmuXCaKlQ" name="DI|tSAPHanaInput" hidden="true" family="Databases/DB Specifics/SAP Hana"/>
+    <componentsSettings xmi:id="_qHyfM48qEeucGsmuXCaKlQ" name="DI|tVectorWiseOutput" hidden="true" family="Databases/DB Specifics/VectorWise"/>
+    <componentsSettings xmi:id="_rA-J8I8qEeucGsmuXCaKlQ" name="DI|tInformixOutputBulkExec" hidden="true" family="Databases/DB Specifics/Informix"/>
+    <componentsSettings xmi:id="_rA-J8Y8qEeucGsmuXCaKlQ" name="DI|tInformixRollback" hidden="true" family="Databases/DB Specifics/Informix"/>
+    <componentsSettings xmi:id="_rA-J8o8qEeucGsmuXCaKlQ" name="DI|tInformixBulkExec" hidden="true" family="Databases/DB Specifics/Informix"/>
+    <componentsSettings xmi:id="_rA-J848qEeucGsmuXCaKlQ" name="DI|tInformixSCD" hidden="true" family="Databases/DB Specifics/Informix"/>
+    <componentsSettings xmi:id="_rA-J9I8qEeucGsmuXCaKlQ" name="DI|tInformixOutputBulk" hidden="true" family="Databases/DB Specifics/Informix"/>
+    <componentsSettings xmi:id="_rA-J9Y8qEeucGsmuXCaKlQ" name="DI|tInformixRow" hidden="true" family="Databases/DB Specifics/Informix"/>
+    <componentsSettings xmi:id="_rA-J9o8qEeucGsmuXCaKlQ" name="DI|tInformixSP" hidden="true" family="Databases/DB Specifics/Informix"/>
+    <componentsSettings xmi:id="_rA-J948qEeucGsmuXCaKlQ" name="DI|tInformixConnection" hidden="true" family="Databases/DB Specifics/Informix"/>
+    <componentsSettings xmi:id="_rA-J-I8qEeucGsmuXCaKlQ" name="DI|tInformixCommit" hidden="true" family="Databases/DB Specifics/Informix"/>
+    <componentsSettings xmi:id="_rA-J-Y8qEeucGsmuXCaKlQ" name="DI|tInformixOutput" hidden="true" family="Databases/DB Specifics/Informix"/>
+    <componentsSettings xmi:id="_rA-J-o8qEeucGsmuXCaKlQ" name="DI|tInformixInput" hidden="true" family="Databases/DB Specifics/Informix"/>
+    <componentsSettings xmi:id="_rA-J-48qEeucGsmuXCaKlQ" name="DI|tInformixClose" hidden="true" family="Databases/DB Specifics/Informix"/>
+    <componentsSettings xmi:id="_rA-J_I8qEeucGsmuXCaKlQ" name="DI|tInformixCDC" hidden="true" family="Databases/DB Specifics/Informix"/>
+    <componentsSettings xmi:id="_rpIWII8qEeucGsmuXCaKlQ" name="DI|tNetezzaBulkExec" hidden="true" family="Databases/DB Specifics/Netezza"/>
+    <componentsSettings xmi:id="_rpIWIY8qEeucGsmuXCaKlQ" name="DI|tNetezzaOutput" hidden="true" family="Databases/DB Specifics/Netezza"/>
+    <componentsSettings xmi:id="_rpIWIo8qEeucGsmuXCaKlQ" name="DI|tNetezzaClose" hidden="true" family="Databases/DB Specifics/Netezza"/>
+    <componentsSettings xmi:id="_rpIWI48qEeucGsmuXCaKlQ" name="DI|tNetezzaRollback" hidden="true" family="Databases/DB Specifics/Netezza"/>
+    <componentsSettings xmi:id="_rpIWJI8qEeucGsmuXCaKlQ" name="DI|tNetezzaNzLoad" hidden="true" family="Databases/DB Specifics/Netezza"/>
+    <componentsSettings xmi:id="_rpIWJY8qEeucGsmuXCaKlQ" name="DI|tNetezzaInput" hidden="true" family="Databases/DB Specifics/Netezza"/>
+    <componentsSettings xmi:id="_rpIWJo8qEeucGsmuXCaKlQ" name="DI|tNetezzaCommit" hidden="true" family="Databases/DB Specifics/Netezza"/>
+    <componentsSettings xmi:id="_rpIWJ48qEeucGsmuXCaKlQ" name="DI|tNetezzaConnection" hidden="true" family="Databases/DB Specifics/Netezza"/>
+    <componentsSettings xmi:id="_rpIWKI8qEeucGsmuXCaKlQ" name="DI|tNetezzaSCD" hidden="true" family="Databases/DB Specifics/Netezza"/>
+    <componentsSettings xmi:id="_rpIWKY8qEeucGsmuXCaKlQ" name="DI|tNetezzaRow" hidden="true" family="Databases/DB Specifics/Netezza"/>
+    <componentsSettings xmi:id="_sN8TYI8qEeucGsmuXCaKlQ" name="DI|tParAccelInput" hidden="true" family="Databases/DB Specifics/ParAccel"/>
+    <componentsSettings xmi:id="_sN8TYY8qEeucGsmuXCaKlQ" name="DI|tParAccelOutputBulk" hidden="true" family="Databases/DB Specifics/ParAccel"/>
+    <componentsSettings xmi:id="_sN8TYo8qEeucGsmuXCaKlQ" name="DI|tParAccelOutput" hidden="true" family="Databases/DB Specifics/ParAccel"/>
+    <componentsSettings xmi:id="_sN8TY48qEeucGsmuXCaKlQ" name="DI|tParAccelClose" hidden="true" family="Databases/DB Specifics/ParAccel"/>
+    <componentsSettings xmi:id="_sN8TZI8qEeucGsmuXCaKlQ" name="DI|tParAccelRow" hidden="true" family="Databases/DB Specifics/ParAccel"/>
+    <componentsSettings xmi:id="_sN8TZY8qEeucGsmuXCaKlQ" name="DI|tParAccelRollback" hidden="true" family="Databases/DB Specifics/ParAccel"/>
+    <componentsSettings xmi:id="_sN8TZo8qEeucGsmuXCaKlQ" name="DI|tParAccelCommit" hidden="true" family="Databases/DB Specifics/ParAccel"/>
+    <componentsSettings xmi:id="_sN8TZ48qEeucGsmuXCaKlQ" name="DI|tParAccelConnection" hidden="true" family="Databases/DB Specifics/ParAccel"/>
+    <componentsSettings xmi:id="_sN8TaI8qEeucGsmuXCaKlQ" name="DI|tParAccelSCD" hidden="true" family="Databases/DB Specifics/ParAccel"/>
+    <componentsSettings xmi:id="_sN8TaY8qEeucGsmuXCaKlQ" name="DI|tParAccelOutputBulkExec" hidden="true" family="Databases/DB Specifics/ParAccel"/>
+    <componentsSettings xmi:id="_sN8Tao8qEeucGsmuXCaKlQ" name="DI|tParAccelBulkExec" hidden="true" family="Databases/DB Specifics/ParAccel"/>
+    <componentsSettings xmi:id="_sifAAI8qEeucGsmuXCaKlQ" name="DI|tVerticaRow" hidden="true" family="Databases/DB Specifics/Vertica"/>
+    <componentsSettings xmi:id="_sifAAY8qEeucGsmuXCaKlQ" name="DI|tVerticaOutputBulkExec" hidden="true" family="Databases/DB Specifics/Vertica"/>
+    <componentsSettings xmi:id="_sifAAo8qEeucGsmuXCaKlQ" name="DI|tVerticaOutput" hidden="true" family="Databases/DB Specifics/Vertica"/>
+    <componentsSettings xmi:id="_sifAA48qEeucGsmuXCaKlQ" name="DI|tVerticaClose" hidden="true" family="Databases/DB Specifics/Vertica"/>
+    <componentsSettings xmi:id="_sifABI8qEeucGsmuXCaKlQ" name="DI|tVerticaInput" hidden="true" family="Databases/DB Specifics/Vertica"/>
+    <componentsSettings xmi:id="_sifABY8qEeucGsmuXCaKlQ" name="DI|tVerticaRollback" hidden="true" family="Databases/DB Specifics/Vertica"/>
+    <componentsSettings xmi:id="_sifABo8qEeucGsmuXCaKlQ" name="DI|tVerticaSCD" hidden="true" family="Databases/DB Specifics/Vertica"/>
+    <componentsSettings xmi:id="_sifAB48qEeucGsmuXCaKlQ" name="DI|tVerticaCommit" hidden="true" family="Databases/DB Specifics/Vertica"/>
+    <componentsSettings xmi:id="_sifACI8qEeucGsmuXCaKlQ" name="DI|tVerticaConnection" hidden="true" family="Databases/DB Specifics/Vertica"/>
+    <componentsSettings xmi:id="_sifACY8qEeucGsmuXCaKlQ" name="DI|tVerticaBulkExec" hidden="true" family="Databases/DB Specifics/Vertica"/>
+    <componentsSettings xmi:id="_sifACo8qEeucGsmuXCaKlQ" name="DI|tVerticaOutputBulk" hidden="true" family="Databases/DB Specifics/Vertica"/>
+    <migrationTask xmi:id="_VVREQIQuEeuY4q4IBFwEPg" id="org.talend.repository.model.migration.CheckProductVersionMigrationTask" breaks="7.1.0" version="7.1.1"/>
+  </TalendProperties:Project>
+  <TalendProperties:User xmi:id="_VOP2QYQuEeuY4q4IBFwEPg" login="user@talend.com" password="D41D8CD98F00B204E9800998ECF8427E"/>
+</xmi:XMI>
