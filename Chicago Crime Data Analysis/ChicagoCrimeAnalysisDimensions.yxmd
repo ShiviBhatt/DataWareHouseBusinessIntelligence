@@ -1,0 +1,784 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.1">
+  <Nodes>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="198" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="IUCR" selected="True" />
+            <SelectField field="PRIMARY DESCRIPTION" selected="True" />
+            <SelectField field="SECONDARY DESCRIPTION" selected="True" />
+            <SelectField field="INDEX CODE" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="330" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="IUCR" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="450" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>RecordID</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="606" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="DateTimeNow()" field="DI_CreateDate" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[DI_CreateDate = DateTimeNow()
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="762" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">aka:ChicagoCrimeSQL|||Dim_IUCRCode</File>
+          <Passwords />
+          <CachedCosmeticName />
+          <FormatSpecificOptions>
+            <TransactionSize>10000</TransactionSize>
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <PostSQL />
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL />
+            <TransactionMessages>False</TransactionMessages>
+            <OutputOption>Overwrite</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:ChicagoCrimeSQL
+Query=Dim_IUCRCode</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="222" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="District" selected="True" />
+            <SelectField field="DISTRICT NAME" selected="True" />
+            <SelectField field="ADDRESS" selected="True" />
+            <SelectField field="CITY" selected="True" />
+            <SelectField field="STATE" selected="True" />
+            <SelectField field="ZIP" selected="True" />
+            <SelectField field="WEBSITE" selected="True" />
+            <SelectField field="PHONE" selected="True" />
+            <SelectField field="FAX" selected="True" />
+            <SelectField field="TTY" selected="True" />
+            <SelectField field="X COORDINATE" selected="True" />
+            <SelectField field="Y COORDINATE" selected="True" />
+            <SelectField field="Latitude" selected="True" />
+            <SelectField field="Longitude" selected="True" />
+            <SelectField field="LOCATION" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="354" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="DISTRICT" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="474" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>RecordID</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="630" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="DateTimeNow()" field="DI_CreateDate" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[DI_CreateDate = DateTimeNow()
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="786" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">aka:ChicagoCrimeSQL|||Dim_PoliceStation</File>
+          <Passwords />
+          <CachedCosmeticName />
+          <FormatSpecificOptions>
+            <TransactionSize>10000</TransactionSize>
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <PostSQL />
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL />
+            <TransactionMessages>False</TransactionMessages>
+            <OutputOption>Overwrite</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:ChicagoCrimeSQL
+Query=Dim_PoliceStation</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="222" y="414" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Ward" selected="True" />
+            <SelectField field="ALDERMAN" selected="True" />
+            <SelectField field="ADDRESS" selected="True" />
+            <SelectField field="STATE" selected="True" />
+            <SelectField field="ZIPCODE" selected="True" />
+            <SelectField field="WARD PHONE" selected="True" />
+            <SelectField field="WARD FAX" selected="True" />
+            <SelectField field="EMAIL" selected="True" />
+            <SelectField field="WEBSITE" selected="True" />
+            <SelectField field="LOCATION" selected="True" />
+            <SelectField field="CITY HALL ADDRESS" selected="True" />
+            <SelectField field="CITY HALL CITY" selected="True" />
+            <SelectField field="CITY HALL STATE" selected="True" />
+            <SelectField field="CITY HALL ZIPCODE" selected="True" />
+            <SelectField field="CITY HALL PHONE" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="354" y="414" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="WARD" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="474" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>RecordID</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="630" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="DateTimeNow()" field="DI_CreateDate" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[DI_CreateDate = DateTimeNow()
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="786" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">aka:ChicagoCrimeSQL|||Dim_WardOffices</File>
+          <Passwords />
+          <CachedCosmeticName />
+          <FormatSpecificOptions>
+            <TransactionSize>10000</TransactionSize>
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <PostSQL />
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL />
+            <TransactionMessages>False</TransactionMessages>
+            <OutputOption>Overwrite</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:ChicagoCrimeSQL
+Query=Dim_WardOffices</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="198" y="558" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Number" selected="True" />
+            <SelectField field="Name" selected="True" />
+            <SelectField field="2017 Population" selected="True" />
+            <SelectField field="Area Sq Mi" selected="True" />
+            <SelectField field="Area Km" selected="True" />
+            <SelectField field="2017  Population Density sq" selected="True" />
+            <SelectField field="2017 Population Density Km" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="330" y="558" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="Number" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="450" y="546" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>RecordID</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="606" y="546" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="DateTimeNow()" field="DI_CreateDate" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[DI_CreateDate = DateTimeNow()
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="762" y="546" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">aka:ChicagoCrimeSQL|||Dim_CommunityArea</File>
+          <Passwords />
+          <CachedCosmeticName />
+          <FormatSpecificOptions>
+            <TransactionSize>10000</TransactionSize>
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <PostSQL />
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL />
+            <TransactionMessages>False</TransactionMessages>
+            <OutputOption>Overwrite</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:ChicagoCrimeSQL
+Query=Dim_CommunityArea</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\INFO 7370-dwbi-spring2021-cdrive\Workshop\Chicago Crime Data Analysis\dataFiles\Chicago_Police_Department_-_Illinois_Uniform_Crime_Reporting__IUCR__Codes.tsv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>\t</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Chicago_Police_Department_-_Illinois_Uniform_Crime_Reporting__IUCR__Codes.tsv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="IUCR" size="254" source="File: C:\INFO 7370-dwbi-spring2021-cdrive\Workshop\Chicago Crime Data Analysis\dataFiles\Chicago_Police_Department_-_Illinois_Uniform_Crime_Reporting__IUCR__Codes.tsv" type="V_WString" />
+            <Field name="PRIMARY DESCRIPTION" size="254" source="File: C:\INFO 7370-dwbi-spring2021-cdrive\Workshop\Chicago Crime Data Analysis\dataFiles\Chicago_Police_Department_-_Illinois_Uniform_Crime_Reporting__IUCR__Codes.tsv" type="V_WString" />
+            <Field name="SECONDARY DESCRIPTION" size="254" source="File: C:\INFO 7370-dwbi-spring2021-cdrive\Workshop\Chicago Crime Data Analysis\dataFiles\Chicago_Police_Department_-_Illinois_Uniform_Crime_Reporting__IUCR__Codes.tsv" type="V_WString" />
+            <Field name="INDEX CODE" size="254" source="File: C:\INFO 7370-dwbi-spring2021-cdrive\Workshop\Chicago Crime Data Analysis\dataFiles\Chicago_Police_Department_-_Illinois_Uniform_Crime_Reporting__IUCR__Codes.tsv" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="66" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\INFO 7370-dwbi-spring2021-cdrive\Workshop\Chicago Crime Data Analysis\dataFiles\Police_Stations.tsv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>\t</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Police_Stations.tsv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="DISTRICT" size="254" source="File: C:\INFO 7370-dwbi-spring2021-cdrive\Workshop\Chicago Crime Data Analysis\dataFiles\Police_Stations.tsv" type="V_WString" />
+            <Field name="DISTRICT NAME" size="254" source="File: C:\INFO 7370-dwbi-spring2021-cdrive\Workshop\Chicago Crime Data Analysis\dataFiles\Police_Stations.tsv" type="V_WString" />
+            <Field name="ADDRESS" size="254" source="File: C:\INFO 7370-dwbi-spring2021-cdrive\Workshop\Chicago Crime Data Analysis\dataFiles\Police_Stations.tsv" type="V_WString" />
+            <Field name="CITY" size="254" source="File: C:\INFO 7370-dwbi-spring2021-cdrive\Workshop\Chicago Crime Data Analysis\dataFiles\Police_Stations.tsv" type="V_WString" />
+            <Field name="STATE" size="254" source="File: C:\INFO 7370-dwbi-spring2021-cdrive\Workshop\Chicago Crime Data Analysis\dataFiles\Police_Stations.tsv" type="V_WString" />
+            <Field name="ZIP" size="254" source="File: C:\INFO 7370-dwbi-spring2021-cdrive\Workshop\Chicago Crime Data Analysis\dataFiles\Police_Stations.tsv" type="V_WString" />
+            <Field name="WEBSITE" size="254" source="File: C:\INFO 7370-dwbi-spring2021-cdrive\Workshop\Chicago Crime Data Analysis\dataFiles\Police_Stations.tsv" type="V_WString" />
+            <Field name="PHONE" size="254" source="File: C:\INFO 7370-dwbi-spring2021-cdrive\Workshop\Chicago Crime Data Analysis\dataFiles\Police_Stations.tsv" type="V_WString" />
+            <Field name="FAX" size="254" source="File: C:\INFO 7370-dwbi-spring2021-cdrive\Workshop\Chicago Crime Data Analysis\dataFiles\Police_Stations.tsv" type="V_WString" />
+            <Field name="TTY" size="254" source="File: C:\INFO 7370-dwbi-spring2021-cdrive\Workshop\Chicago Crime Data Analysis\dataFiles\Police_Stations.tsv" type="V_WString" />
+            <Field name="X COORDINATE" size="254" source="File: C:\INFO 7370-dwbi-spring2021-cdrive\Workshop\Chicago Crime Data Analysis\dataFiles\Police_Stations.tsv" type="V_WString" />
+            <Field name="Y COORDINATE" size="254" source="File: C:\INFO 7370-dwbi-spring2021-cdrive\Workshop\Chicago Crime Data Analysis\dataFiles\Police_Stations.tsv" type="V_WString" />
+            <Field name="LATITUDE" size="254" source="File: C:\INFO 7370-dwbi-spring2021-cdrive\Workshop\Chicago Crime Data Analysis\dataFiles\Police_Stations.tsv" type="V_WString" />
+            <Field name="LONGITUDE" size="254" source="File: C:\INFO 7370-dwbi-spring2021-cdrive\Workshop\Chicago Crime Data Analysis\dataFiles\Police_Stations.tsv" type="V_WString" />
+            <Field name="LOCATION" size="254" source="File: C:\INFO 7370-dwbi-spring2021-cdrive\Workshop\Chicago Crime Data Analysis\dataFiles\Police_Stations.tsv" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="78" y="414" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\INFO 7370-dwbi-spring2021-cdrive\Workshop\Chicago Crime Data Analysis\dataFiles\Ward_Offices.tsv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>\t</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Ward_Offices.tsv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="WARD" size="254" source="File: C:\INFO 7370-dwbi-spring2021-cdrive\Workshop\Chicago Crime Data Analysis\dataFiles\Ward_Offices.tsv" type="V_WString" />
+            <Field name="ALDERMAN" size="254" source="File: C:\INFO 7370-dwbi-spring2021-cdrive\Workshop\Chicago Crime Data Analysis\dataFiles\Ward_Offices.tsv" type="V_WString" />
+            <Field name="ADDRESS" size="254" source="File: C:\INFO 7370-dwbi-spring2021-cdrive\Workshop\Chicago Crime Data Analysis\dataFiles\Ward_Offices.tsv" type="V_WString" />
+            <Field name="CITY" size="254" source="File: C:\INFO 7370-dwbi-spring2021-cdrive\Workshop\Chicago Crime Data Analysis\dataFiles\Ward_Offices.tsv" type="V_WString" />
+            <Field name="STATE" size="254" source="File: C:\INFO 7370-dwbi-spring2021-cdrive\Workshop\Chicago Crime Data Analysis\dataFiles\Ward_Offices.tsv" type="V_WString" />
+            <Field name="ZIPCODE" size="254" source="File: C:\INFO 7370-dwbi-spring2021-cdrive\Workshop\Chicago Crime Data Analysis\dataFiles\Ward_Offices.tsv" type="V_WString" />
+            <Field name="WARD PHONE" size="254" source="File: C:\INFO 7370-dwbi-spring2021-cdrive\Workshop\Chicago Crime Data Analysis\dataFiles\Ward_Offices.tsv" type="V_WString" />
+            <Field name="WARD FAX" size="254" source="File: C:\INFO 7370-dwbi-spring2021-cdrive\Workshop\Chicago Crime Data Analysis\dataFiles\Ward_Offices.tsv" type="V_WString" />
+            <Field name="EMAIL" size="254" source="File: C:\INFO 7370-dwbi-spring2021-cdrive\Workshop\Chicago Crime Data Analysis\dataFiles\Ward_Offices.tsv" type="V_WString" />
+            <Field name="WEBSITE" size="254" source="File: C:\INFO 7370-dwbi-spring2021-cdrive\Workshop\Chicago Crime Data Analysis\dataFiles\Ward_Offices.tsv" type="V_WString" />
+            <Field name="LOCATION" size="254" source="File: C:\INFO 7370-dwbi-spring2021-cdrive\Workshop\Chicago Crime Data Analysis\dataFiles\Ward_Offices.tsv" type="V_WString" />
+            <Field name="CITY HALL ADDRESS" size="254" source="File: C:\INFO 7370-dwbi-spring2021-cdrive\Workshop\Chicago Crime Data Analysis\dataFiles\Ward_Offices.tsv" type="V_WString" />
+            <Field name="CITY HALL CITY" size="254" source="File: C:\INFO 7370-dwbi-spring2021-cdrive\Workshop\Chicago Crime Data Analysis\dataFiles\Ward_Offices.tsv" type="V_WString" />
+            <Field name="CITY HALL STATE" size="254" source="File: C:\INFO 7370-dwbi-spring2021-cdrive\Workshop\Chicago Crime Data Analysis\dataFiles\Ward_Offices.tsv" type="V_WString" />
+            <Field name="CITY HALL ZIPCODE" size="254" source="File: C:\INFO 7370-dwbi-spring2021-cdrive\Workshop\Chicago Crime Data Analysis\dataFiles\Ward_Offices.tsv" type="V_WString" />
+            <Field name="CITY HALL PHONE" size="254" source="File: C:\INFO 7370-dwbi-spring2021-cdrive\Workshop\Chicago Crime Data Analysis\dataFiles\Ward_Offices.tsv" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="66" y="558" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\INFO 7370-dwbi-spring2021-cdrive\Workshop\Chicago Crime Data Analysis\dataFiles\CommunityChicagoCrime.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>CommunityChicagoCrime.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Number" size="254" source="File: C:\INFO 7370-dwbi-spring2021-cdrive\Workshop\Chicago Crime Data Analysis\dataFiles\CommunityChicagoCrime.csv" type="V_String" />
+            <Field name="Name" size="254" source="File: C:\INFO 7370-dwbi-spring2021-cdrive\Workshop\Chicago Crime Data Analysis\dataFiles\CommunityChicagoCrime.csv" type="V_String" />
+            <Field name="2017 Population" size="254" source="File: C:\INFO 7370-dwbi-spring2021-cdrive\Workshop\Chicago Crime Data Analysis\dataFiles\CommunityChicagoCrime.csv" type="V_String" />
+            <Field name="Area Sq Mi" size="254" source="File: C:\INFO 7370-dwbi-spring2021-cdrive\Workshop\Chicago Crime Data Analysis\dataFiles\CommunityChicagoCrime.csv" type="V_String" />
+            <Field name="Area Km" size="254" source="File: C:\INFO 7370-dwbi-spring2021-cdrive\Workshop\Chicago Crime Data Analysis\dataFiles\CommunityChicagoCrime.csv" type="V_String" />
+            <Field name="2017  Population Density sq" size="254" source="File: C:\INFO 7370-dwbi-spring2021-cdrive\Workshop\Chicago Crime Data Analysis\dataFiles\CommunityChicagoCrime.csv" type="V_String" />
+            <Field name="2017 Population Density Km" size="254" source="File: C:\INFO 7370-dwbi-spring2021-cdrive\Workshop\Chicago Crime Data Analysis\dataFiles\CommunityChicagoCrime.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="150" y="54" width="516" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Chicago Crime Analysis Dimension</Text>
+          <Font name="Segoe UI" size="20.25" style="1" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Unique" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Unique" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Unique" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Unique" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>ChicagoCrimeAnalysisDimensions</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
